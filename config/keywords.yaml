@@ -1,0 +1,104 @@
+# Content filter: university policy, immigration policy, post-graduation work rights.
+
+# At least one required match (case-insensitive).
+required_any:
+  - visa
+  - permit
+  - student visa
+  - study visa
+  - student permit
+  - immigration
+  - visa policy
+  - visa change
+  - visa rule
+  - work permit
+  - work right
+  - post-study
+  - post study
+  - post-graduation
+  - post graduation
+  - graduate route
+  - graduate visa
+  - opt
+  - optional practical training
+  - stem opt
+  - psw
+  - pgwp
+  - post-study work
+  - post study work
+  - temporary graduate
+  - 485 visa
+  - open work permit
+  - residence permit
+  - tuition fee
+  - tuition policy
+  - international student
+  - international students
+  - overseas student
+  - foreign student
+  - admission policy
+  - admissions policy
+  - enrolment policy
+  - enrollment policy
+  - english-taught
+  - english taught
+  - english programme
+  - english program
+  - scholarship
+  - bno
+  - iang
+  - dependent visa
+  - spouse visa
+  - right to work
+  - working rights
+  - employment after graduation
+  - stay back
+  - bridging visa
+
+# Boost score when matched (used for ranking).
+priority_boost:
+  - policy change
+  - new rule
+  - updated guidance
+  - announced
+  - effective
+  - graduate route
+  - post-study work
+  - work rights
+  - tuition
+  - admission
+  - visa extension
+  - visa restriction
+  - cap
+  - quota
+  - english-taught
+
+# Netherlands-only extra requirement: must match at least one when country is nl.
+netherlands_extra_any:
+  - international student
+  - international students
+  - english-taught
+  - english taught
+  - english programme
+  - english program
+  - english degree
+  - non-eu student
+  - non-eu students
+
+# Exclude obvious noise.
+exclude_any:
+  - sports
+  - football
+  - basketball
+  - concert
+  - festival
+  - obituary
+  - alumni reunion
+  - wedding
+  - cookbook
+  - recipe
+  - sentenced to
+  - charged for
+  - charged with
+  - convicted of
+  - arrested for
