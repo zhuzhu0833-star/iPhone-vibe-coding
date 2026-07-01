@@ -225,23 +225,48 @@ export LLM_PROVIDER="deepseek"
 python -m src.main
 ```
 
-## 自定义信源
+## 网页后台管理来源（推荐）
 
-编辑 `config/sources.yaml`。高校与政府机构优先使用 `site:大学官网域名` 的 Google News RSS（免费、稳定），格式示例：
+在浏览器里勾选国家、院校和机构，无需手改 YAML。
 
-```yaml
-- name: Imperial College London
-  type: university
-  url: "https://news.google.com/rss/search?q=site:imperial.ac.uk+international+student&hl=en-GB&gl=GB&ceid=GB:en"
+### 1. 启用 GitHub Pages（只需一次）
+
+1. 仓库 → **Settings** → **Pages**
+2. **Build and deployment** → Source 选 **GitHub Actions**
+3. 合并本功能后，推送 `main` 会自动部署管理页
+
+### 2. 打开管理后台
+
+部署完成后访问：
+
+```text
+https://zhuzhu0833-star.github.io/iPhone-vibe-coding/
 ```
 
-`type` 可选：
+### 3. 勾选并保存
 
-- `immigration` — 移民/签证机构
-- `education` — 教育主管部门
-- `university` — 高校官网
+- 按国家展开，勾选/取消 **高校**、**教育部门**、**移民机构**
+- 快捷按钮：**仅选高校** / **全选** / **全不选**
+- 可添加**自定义院校**（填名称 + 官网域名）
+- 保存方式二选一：
+  - **保存到 GitHub**：填入 [Personal Access Token](https://github.com/settings/tokens)（勾选 `repo` 权限）
+  - **下载 JSON**：手动上传为 `data/selections.json`
 
-荷兰高校源会自动额外要求 `international student` / `English-taught` 等关键词（见 `config/keywords.yaml`）。
+保存后，下次 **Daily Study Policy Digest** 运行即生效。
+
+### 数据文件说明
+
+| 文件 | 作用 |
+|------|------|
+| `data/catalog.json` | 全部可选来源（国家、院校、机构） |
+| `data/selections.json` | 你勾选的来源（后台保存的文件） |
+| `config/sources.yaml` | 仅保留抓取参数（条数、回看时间等） |
+
+新增预设院校到目录：编辑 `data/catalog.json` 后重新部署，或运行 `python3 scripts/build_catalog.py`（从 `config/sources.full.yaml` 生成）。
+
+## 手动编辑（高级）
+
+仍可直接编辑 `data/selections.json` 或 `data/catalog.json`。
 
 ## 推送时间
 
