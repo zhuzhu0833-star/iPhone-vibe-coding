@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import hashlib
 import json
 import logging
 import re
@@ -31,13 +30,29 @@ def _matches_any(text: str, patterns: list[str]) -> bool:
     return any(p.lower() in lower for p in patterns)
 
 
-def _score_article(text: str, keywords: dict) -> float:
+def _count_matches(text: str, patterns: list[str]) -> int:
+    lower = text.lower()
+    return sum(1 for p in patterns if p.lower() in lower)
+
+
+def _score_article(article: RawArticle, text: str, keywords: dict) -> float:
     score = 0.0
+
+    source_bonus = keywords.get("source_type_bonus", {})
+    score += float(source_bonus.get(article.source_type, 0))
+
     if _matches_any(text, keywords.get("required_any", [])):
         score += 10.0
-    for term in keywords.get("priority_boost", []):
-        if term.lower() in text.lower():
-            score += 2.0
+
+    score += 5.0 * _count_matches(text, keywords.get("admissions_priority", []))
+    score += 2.0 * _count_matches(text, keywords.get("priority_boost", []))
+    score -= 4.0 * _count_matches(text, keywords.get("immigration_penalty", []))
+
+    # Immigration-only stories without admissions angle are ranked lower.
+    if article.source_type == "immigration":
+        if not _matches_any(text, keywords.get("admissions_priority", [])):
+            score -= 10.0
+
     return score
 
 
@@ -56,12 +71,29 @@ def _category(source_type: str, text: str) -> str:
         "employment after",
         "right to work",
     )
+    admissions_terms = (
+        "admission",
+        "admissions",
+        "enrolment",
+        "enrollment",
+        "intake",
+        "tuition",
+        "scholarship",
+        "entry requirement",
+        "application deadline",
+        "offer",
+    )
+
     if any(t in lower for t in work_terms):
         return "Post-graduation work rights"
-    if source_type == "immigration" or "visa" in lower or "immigration" in lower:
-        return "Immigration policy"
+    if source_type == "university" and any(t in lower for t in admissions_terms):
+        return "University admissions"
     if source_type == "university":
         return "University policy"
+    if any(t in lower for t in admissions_terms):
+        return "Education admissions"
+    if source_type == "immigration" or "visa" in lower or "immigration" in lower:
+        return "Immigration policy"
     return "Education policy"
 
 
@@ -115,18 +147,15 @@ def filter_and_rank(articles: list[RawArticle]) -> list[DigestItem]:
         if _matches_any(text, keywords.get("exclude_any", [])):
             continue
 
-        if article.source_type == "immigration":
-            score = 15.0 + _score_article(text, keywords)
-        else:
-            if not _matches_any(text, keywords.get("required_any", [])):
-                continue
-            score = _score_article(text, keywords)
+        if not _matches_any(text, keywords.get("required_any", [])):
+            continue
 
         if article.country_id == "nl" and not _matches_any(
             text, keywords.get("netherlands_extra_any", [])
         ):
             continue
 
+        score = _score_article(article, text, keywords)
         if score <= 0:
             continue
 

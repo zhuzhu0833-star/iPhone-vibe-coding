@@ -1,6 +1,6 @@
 # Global Study Policy Daily Digest
 
-每日早上 **8:30（北京时间）** 自动抓取全球英语系国家及地区的**留学、高校政策、移民签证、毕业后工作权利**相关新闻，生成**中英双语摘要**并推送到 **企业微信群 + 邮件**。
+每日早上 **8:30（北京时间）** 自动抓取全球英语系国家及地区的**高校招生、留学教育、毕业后工作权利、移民签证**相关新闻，生成**中英双语摘要**并推送到 **企业微信群 + 邮件**。
 
 覆盖地区：美国、英国、澳大利亚、加拿大、新西兰、爱尔兰、香港、新加坡、马来西亚、荷兰（英语授课）、挪威、瑞典、丹麦、芬兰。
 
@@ -8,7 +8,8 @@
 
 - 政府/移民局官方 RSS
 - **各大高校官网**新闻 RSS（可在 `config/sources.yaml` 增删）
-- 关键词过滤：高校政策、移民配套政策、毕业后有偿工作权利（PSW / OPT / PGWP 等）
+- **内容优先级**：高校招生政策 > 毕业后工作权利 > 移民政策（移民类自动降级排序）
+- 关键词过滤：招生、学费、奖学金、国际生录取、工签/PSW/OPT 等
 - 中英双语摘要（DeepSeek / 通义千问 / 智谱等国内可用 API）
 - 企业微信群机器人 + HTML 邮件每日推送
 - URL 去重（`data/seen_urls.json`）
@@ -38,7 +39,7 @@
 
 \* 企业微信和邮件至少配置一种；按你的需求建议**两种都配**。
 
-### 推荐组合：企业微信 + Outlook + DeepSeek
+### 推荐组合：企业微信 + Gmail/Outlook + DeepSeek
 
 下面是一份可直接照填的完整配置指南（**AI 摘要默认使用 DeepSeek，国内可注册使用**）。
 
@@ -52,9 +53,23 @@
 |------|--------|
 | `WECHAT_WORK_WEBHOOK_URL` | `https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=你的key` |
 
-#### 二、Outlook 邮箱
+#### 二、Gmail 或 Outlook 邮箱
 
-**个人 Outlook（@outlook.com / @hotmail.com / @live.com）**
+**Gmail（@gmail.com）**
+
+1. Google 账号开启 [两步验证](https://myaccount.google.com/security)
+2. 生成 [应用专用密码](https://myaccount.google.com/apppasswords)
+3. GitHub Secrets：
+
+| Name | 填什么 |
+|------|--------|
+| `SMTP_HOST` | `smtp.gmail.com` |
+| `SMTP_PORT` | `587` |
+| `SMTP_USER` | 你的 Gmail 地址 |
+| `SMTP_PASSWORD` | 16 位应用专用密码（非登录密码） |
+| `EMAIL_RECIPIENTS` | 收件人，英文逗号分隔 |
+
+**Outlook 个人邮箱（@outlook.com / @hotmail.com）**
 
 1. 登录 [Microsoft 账户安全中心](https://account.microsoft.com/security)
 2. 开启**两步验证**（若尚未开启）
