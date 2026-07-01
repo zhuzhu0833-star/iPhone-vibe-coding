@@ -38,6 +38,94 @@
 
 \* 企业微信和邮件至少配置一种；按你的需求建议**两种都配**。
 
+### 推荐组合：企业微信 + Outlook + Gemini
+
+下面是一份可直接照填的完整配置指南。
+
+#### 一、企业微信群机器人
+
+1. 企业微信 → 打开顾问群 → 右上角 **「…」** → **群机器人** → **添加机器人**
+2. 名称：`留学政策日报` → 复制 Webhook
+3. GitHub Secret：
+
+| Name | 填什么 |
+|------|--------|
+| `WECHAT_WORK_WEBHOOK_URL` | `https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=你的key` |
+
+#### 二、Outlook 邮箱
+
+**个人 Outlook（@outlook.com / @hotmail.com / @live.com）**
+
+1. 登录 [Microsoft 账户安全中心](https://account.microsoft.com/security)
+2. 开启**两步验证**（若尚未开启）
+3. 进入 **高级安全选项** → **应用密码**（或「App passwords」）→ 生成新密码
+4. GitHub Secrets：
+
+| Name | 填什么 | 示例 |
+|------|--------|------|
+| `SMTP_HOST` | `smtp-mail.outlook.com` | 固定值 |
+| `SMTP_PORT` | `587` | 固定值 |
+| `SMTP_USER` | 你的 Outlook 邮箱 | `you@outlook.com` |
+| `SMTP_PASSWORD` | 应用密码（16位，非登录密码） | `abcd efgh ijkl mnop` |
+| `EMAIL_FROM` | 发件人（可不填） | 默认同 `SMTP_USER` |
+| `EMAIL_RECIPIENTS` | 收件人，英文逗号分隔 | `you@outlook.com,同事@company.com` |
+
+**Microsoft 365 企业邮箱（@company.com）**
+
+| Name | 填什么 |
+|------|--------|
+| `SMTP_HOST` | `smtp.office365.com` |
+| `SMTP_PORT` | `587` |
+| `SMTP_USER` | 你的企业邮箱完整地址 |
+| `SMTP_PASSWORD` | 邮箱密码或应用密码 |
+
+> 若企业 IT 禁用了 SMTP 基本认证，需联系管理员开启，或改用已开启 SMTP 的邮箱。
+
+#### 三、Gemini API
+
+1. 打开 [Google AI Studio](https://aistudio.google.com/apikey)
+2. 登录 Google 账号 → **Create API Key** → 复制 Key（形如 `AIzaSy...`）
+3. GitHub Secrets：
+
+| Name | 填什么 |
+|------|--------|
+| `LLM_API_KEY` | 你的 Gemini Key |
+| `LLM_PROVIDER` | `gemini`（可不填，默认就是 gemini） |
+
+#### 四、全部 Secrets 清单（复制对照）
+
+配置完成后，GitHub Actions Secrets 中应有：
+
+```text
+WECHAT_WORK_WEBHOOK_URL = https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=xxxx
+SMTP_HOST               = smtp-mail.outlook.com
+SMTP_PORT               = 587
+SMTP_USER               = you@outlook.com
+SMTP_PASSWORD           = 你的Outlook应用密码
+EMAIL_RECIPIENTS        = you@outlook.com,同事A@outlook.com
+LLM_API_KEY             = AIzaSy你的gemini密钥
+LLM_PROVIDER            = gemini
+```
+
+#### 五、测试
+
+1. 合并 PR 到 `main` 分支
+2. 仓库 → **Actions** → **Daily Study Policy Digest** → **Run workflow**
+3. 约 1～3 分钟后检查：
+   - 企业微信群收到 Markdown 日报
+   - Outlook 收件箱（及垃圾箱）收到 HTML 邮件
+
+**邮件发不出去？**
+
+- 确认用的是**应用密码**，不是 Outlook 登录密码
+- 确认 `SMTP_HOST` 个人邮箱用 `smtp-mail.outlook.com`，企业邮箱用 `smtp.office365.com`
+- 查看 Actions 日志中 `SMTP` 相关报错
+
+**中文摘要显示「请参阅原文链接」？**
+
+- 检查 `LLM_API_KEY` 是否正确
+- 确认 `LLM_PROVIDER` 为 `gemini` 或未填写
+
 ### 3. 企业微信群机器人
 
 1. 在企业微信中创建或打开顾问团队群聊
@@ -55,7 +143,11 @@ https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=xxxxxxxx-xxxx-xxxx-xxxx-xxx
 
 > 注意：Webhook 地址包含密钥，不要公开分享。若泄露，在企业微信机器人设置里重置。
 
-### 4. 邮件（Gmail 示例）
+### 4. 邮件（Outlook / Gmail 示例）
+
+**Outlook 个人邮箱**：见上方「推荐组合」章节。
+
+**Gmail 示例**
 
 1. Google 账号开启两步验证
 2. 生成[应用专用密码](https://myaccount.google.com/apppasswords)
