@@ -9,7 +9,7 @@
 - 政府/移民局官方 RSS
 - **各大高校官网**新闻 RSS（可在 `config/sources.yaml` 增删）
 - 关键词过滤：高校政策、移民配套政策、毕业后有偿工作权利（PSW / OPT / PGWP 等）
-- 中英双语摘要（Gemini 或 Groq 免费 API）
+- 中英双语摘要（DeepSeek / 通义千问 / 智谱等国内可用 API）
 - 企业微信群机器人 + HTML 邮件每日推送
 - URL 去重（`data/seen_urls.json`）
 
@@ -33,14 +33,14 @@
 | `SMTP_USE_TLS` | 否 | 默认 `true` |
 | `EMAIL_FROM` | 否 | 发件人，默认同 `SMTP_USER` |
 | `EMAIL_RECIPIENTS` | 是* | 收件人，逗号分隔 |
-| `LLM_PROVIDER` | 否 | `gemini`（默认）或 `groq` |
-| `LLM_API_KEY` | 推荐 | Gemini 或 Groq API Key |
+| `LLM_PROVIDER` | 否 | `deepseek`（默认）、`qwen`、`zhipu`、`groq` |
+| `LLM_API_KEY` | 推荐 | DeepSeek 或其他 LLM API Key |
 
 \* 企业微信和邮件至少配置一种；按你的需求建议**两种都配**。
 
-### 推荐组合：企业微信 + Outlook + Gemini
+### 推荐组合：企业微信 + Outlook + DeepSeek
 
-下面是一份可直接照填的完整配置指南。
+下面是一份可直接照填的完整配置指南（**AI 摘要默认使用 DeepSeek，国内可注册使用**）。
 
 #### 一、企业微信群机器人
 
@@ -81,16 +81,24 @@
 
 > 若企业 IT 禁用了 SMTP 基本认证，需联系管理员开启，或改用已开启 SMTP 的邮箱。
 
-#### 三、Gemini API
+#### 三、DeepSeek API（国内可用，推荐）
 
-1. 打开 [Google AI Studio](https://aistudio.google.com/apikey)
-2. 登录 Google 账号 → **Create API Key** → 复制 Key（形如 `AIzaSy...`）
-3. GitHub Secrets：
+1. 打开 [DeepSeek 开放平台](https://platform.deepseek.com/)
+2. 注册账号 → **API Keys** → 创建 Key
+3. 新用户通常有免费额度，小团队日报足够用
+4. GitHub Secrets：
 
 | Name | 填什么 |
 |------|--------|
-| `LLM_API_KEY` | 你的 Gemini Key |
-| `LLM_PROVIDER` | `gemini`（可不填，默认就是 gemini） |
+| `LLM_API_KEY` | 你的 DeepSeek Key（形如 `sk-...`） |
+| `LLM_PROVIDER` | `deepseek`（可不填，默认就是 deepseek） |
+
+**其他国内可选 LLM（二选一）**
+
+| LLM_PROVIDER | 申请地址 | 说明 |
+|--------------|----------|------|
+| `qwen` | [阿里云百炼 / 通义](https://bailian.console.aliyun.com/) | 填 `DASHSCOPE_API_KEY` 或 `LLM_API_KEY` |
+| `zhipu` | [智谱开放平台](https://open.bigmodel.cn/) | 填 `ZHIPU_API_KEY` 或 `LLM_API_KEY` |
 
 #### 四、全部 Secrets 清单（复制对照）
 
@@ -103,8 +111,8 @@ SMTP_PORT               = 587
 SMTP_USER               = you@outlook.com
 SMTP_PASSWORD           = 你的Outlook应用密码
 EMAIL_RECIPIENTS        = you@outlook.com,同事A@outlook.com
-LLM_API_KEY             = AIzaSy你的gemini密钥
-LLM_PROVIDER            = gemini
+LLM_API_KEY             = sk-你的deepseek密钥
+LLM_PROVIDER            = deepseek
 ```
 
 #### 五、测试
@@ -123,8 +131,8 @@ LLM_PROVIDER            = gemini
 
 **中文摘要显示「请参阅原文链接」？**
 
-- 检查 `LLM_API_KEY` 是否正确
-- 确认 `LLM_PROVIDER` 为 `gemini` 或未填写
+- 检查 `LLM_API_KEY` 是否正确、账户是否有余额
+- 确认 `LLM_PROVIDER` 为 `deepseek` 或未填写
 
 ### 3. 企业微信群机器人
 
@@ -160,18 +168,24 @@ https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=xxxxxxxx-xxxx-xxxx-xxxx-xxx
 
 **QQ 邮箱**：`SMTP_HOST=smtp.qq.com`，`SMTP_PASSWORD` 填 QQ 邮箱授权码（非 QQ 密码）。
 
-### 5. 免费 LLM API
+### 5. AI 摘要 API（国内可用）
 
-**Gemini（推荐）**
+**DeepSeek（默认推荐）**
 
-1. 打开 [Google AI Studio](https://aistudio.google.com/apikey) 申请 API Key
-2. `LLM_PROVIDER` = `gemini`
+1. 打开 [DeepSeek 开放平台](https://platform.deepseek.com/) 注册并创建 API Key
+2. `LLM_PROVIDER` = `deepseek`（可不填）
 3. `LLM_API_KEY` = 你的 Key
 
-**Groq**
+**通义千问（阿里云）**
 
-1. 打开 [Groq Console](https://console.groq.com/) 申请 API Key
-2. `LLM_PROVIDER` = `groq`
+1. 打开 [阿里云百炼](https://bailian.console.aliyun.com/) 开通 DashScope
+2. `LLM_PROVIDER` = `qwen`
+3. `LLM_API_KEY` = DashScope API Key
+
+**智谱 GLM**
+
+1. 打开 [智谱开放平台](https://open.bigmodel.cn/) 申请 API Key
+2. `LLM_PROVIDER` = `zhipu`
 3. `LLM_API_KEY` = 你的 Key
 
 未配置 LLM 时仍可运行，但中文摘要会降级为「请参阅原文链接」。
@@ -190,7 +204,8 @@ export SMTP_HOST="smtp.gmail.com"
 export SMTP_USER="you@gmail.com"
 export SMTP_PASSWORD="your-app-password"
 export EMAIL_RECIPIENTS="you@gmail.com"
-export LLM_API_KEY="your-key"
+export LLM_API_KEY="sk-your-deepseek-key"
+export LLM_PROVIDER="deepseek"
 
 python -m src.main
 ```
@@ -226,4 +241,4 @@ GitHub Actions cron：`30 0 * * *`（UTC）= **每天北京时间 08:30**。
 - GitHub Actions：公开仓库免费额度内通常 $0
 - 企业微信群机器人：免费
 - Gmail SMTP：免费
-- Gemini / Groq 免费档：小团队日报通常够用
+- DeepSeek / 通义 / 智谱：新用户通常有免费额度，小团队日报成本低
