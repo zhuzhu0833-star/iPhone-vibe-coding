@@ -150,6 +150,11 @@ def filter_and_rank(articles: list[RawArticle]) -> list[DigestItem]:
         if not _matches_any(text, keywords.get("required_any", [])):
             continue
 
+        if article.source_type == "university" and not _matches_any(
+            text, keywords.get("admissions_priority", [])
+        ):
+            continue
+
         if article.country_id == "nl" and not _matches_any(
             text, keywords.get("netherlands_extra_any", [])
         ):

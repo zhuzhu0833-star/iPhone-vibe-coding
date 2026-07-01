@@ -21,25 +21,25 @@
           "id": "us-harvard-university",
           "name": "Harvard University",
           "type": "university",
-          "url": "https://news.google.com/rss/search?q=site:harvard.edu+international+student+OR+visa&hl=en-US&gl=US&ceid=US:en"
+          "url": "https://news.google.com/rss/search?q=site:harvard.edu+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-US&gl=US&ceid=US:en"
         },
         {
           "id": "us-mit",
           "name": "MIT",
           "type": "university",
-          "url": "https://news.google.com/rss/search?q=site:mit.edu+international+student+OR+visa&hl=en-US&gl=US&ceid=US:en"
+          "url": "https://news.google.com/rss/search?q=site:mit.edu+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-US&gl=US&ceid=US:en"
         },
         {
           "id": "us-stanford-university",
           "name": "Stanford University",
           "type": "university",
-          "url": "https://news.google.com/rss/search?q=site:stanford.edu+international+student+OR+OPT&hl=en-US&gl=US&ceid=US:en"
+          "url": "https://news.google.com/rss/search?q=site:stanford.edu+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-US&gl=US&ceid=US:en"
         },
         {
           "id": "us-ucla",
           "name": "UCLA",
           "type": "university",
-          "url": "https://news.google.com/rss/search?q=site:ucla.edu+international+student+OR+visa&hl=en-US&gl=US&ceid=US:en"
+          "url": "https://news.google.com/rss/search?q=site:ucla.edu+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-US&gl=US&ceid=US:en"
         }
       ]
     },
@@ -64,25 +64,25 @@
           "id": "uk-university-of-oxford",
           "name": "University of Oxford",
           "type": "university",
-          "url": "https://news.google.com/rss/search?q=site:ox.ac.uk+international+student&hl=en-GB&gl=GB&ceid=GB:en"
+          "url": "https://news.google.com/rss/search?q=site:ox.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
         },
         {
           "id": "uk-university-of-cambridge",
           "name": "University of Cambridge",
           "type": "university",
-          "url": "https://news.google.com/rss/search?q=site:cam.ac.uk+international+student&hl=en-GB&gl=GB&ceid=GB:en"
+          "url": "https://news.google.com/rss/search?q=site:cam.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
         },
         {
           "id": "uk-ucl",
           "name": "UCL",
           "type": "university",
-          "url": "https://news.google.com/rss/search?q=site:ucl.ac.uk+international+student+OR+visa&hl=en-GB&gl=GB&ceid=GB:en"
+          "url": "https://news.google.com/rss/search?q=site:ucl.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
         },
         {
           "id": "uk-imperial-college-london",
           "name": "Imperial College London",
           "type": "university",
-          "url": "https://news.google.com/rss/search?q=site:imperial.ac.uk+international+student&hl=en-GB&gl=GB&ceid=GB:en"
+          "url": "https://news.google.com/rss/search?q=site:imperial.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
         }
       ]
     },
@@ -107,19 +107,19 @@
           "id": "au-university-of-melbourne",
           "name": "University of Melbourne",
           "type": "university",
-          "url": "https://news.google.com/rss/search?q=site:unimelb.edu.au+international+student+OR+visa&hl=en-AU&gl=AU&ceid=AU:en"
+          "url": "https://news.google.com/rss/search?q=site:unimelb.edu.au+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-AU&gl=AU&ceid=AU:en"
         },
         {
           "id": "au-university-of-sydney",
           "name": "University of Sydney",
           "type": "university",
-          "url": "https://news.google.com/rss/search?q=site:sydney.edu.au+international+student&hl=en-AU&gl=AU&ceid=AU:en"
+          "url": "https://news.google.com/rss/search?q=site:sydney.edu.au+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-AU&gl=AU&ceid=AU:en"
         },
         {
           "id": "au-australian-national-university",
           "name": "Australian National University",
           "type": "university",
-          "url": "https://news.google.com/rss/search?q=site:anu.edu.au+international+student&hl=en-AU&gl=AU&ceid=AU:en"
+          "url": "https://news.google.com/rss/search?q=site:anu.edu.au+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-AU&gl=AU&ceid=AU:en"
         }
       ]
     },
@@ -144,19 +144,19 @@
           "id": "ca-university-of-toronto",
           "name": "University of Toronto",
           "type": "university",
-          "url": "https://news.google.com/rss/search?q=site:utoronto.ca+international+student+OR+visa&hl=en-CA&gl=CA&ceid=CA:en"
+          "url": "https://news.google.com/rss/search?q=site:utoronto.ca+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-CA&gl=CA&ceid=CA:en"
         },
         {
           "id": "ca-ubc",
           "name": "UBC",
           "type": "university",
-          "url": "https://news.google.com/rss/search?q=site:ubc.ca+international+student&hl=en-CA&gl=CA&ceid=CA:en"
+          "url": "https://news.google.com/rss/search?q=site:ubc.ca+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-CA&gl=CA&ceid=CA:en"
         },
         {
           "id": "ca-mcgill-university",
           "name": "McGill University",
           "type": "university",
-          "url": "https://news.google.com/rss/search?q=site:mcgill.ca+international+student&hl=en-CA&gl=CA&ceid=CA:en"
+          "url": "https://news.google.com/rss/search?q=site:mcgill.ca+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-CA&gl=CA&ceid=CA:en"
         }
       ]
     },
@@ -181,13 +181,13 @@
           "id": "nz-university-of-auckland",
           "name": "University of Auckland",
           "type": "university",
-          "url": "https://news.google.com/rss/search?q=site:auckland.ac.nz+international+student&hl=en-NZ&gl=NZ&ceid=NZ:en"
+          "url": "https://news.google.com/rss/search?q=site:auckland.ac.nz+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-NZ&gl=NZ&ceid=NZ:en"
         },
         {
           "id": "nz-university-of-otago",
           "name": "University of Otago",
           "type": "university",
-          "url": "https://news.google.com/rss/search?q=site:otago.ac.nz+international+student&hl=en-NZ&gl=NZ&ceid=NZ:en"
+          "url": "https://news.google.com/rss/search?q=site:otago.ac.nz+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-NZ&gl=NZ&ceid=NZ:en"
         }
       ]
     },
@@ -212,13 +212,13 @@
           "id": "ie-trinity-college-dublin",
           "name": "Trinity College Dublin",
           "type": "university",
-          "url": "https://news.google.com/rss/search?q=site:tcd.ie+international+student&hl=en-IE&gl=IE&ceid=IE:en"
+          "url": "https://news.google.com/rss/search?q=site:tcd.ie+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-IE&gl=IE&ceid=IE:en"
         },
         {
           "id": "ie-university-college-dublin",
           "name": "University College Dublin",
           "type": "university",
-          "url": "https://news.google.com/rss/search?q=site:ucd.ie+international+student&hl=en-IE&gl=IE&ceid=IE:en"
+          "url": "https://news.google.com/rss/search?q=site:ucd.ie+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-IE&gl=IE&ceid=IE:en"
         }
       ]
     },
@@ -243,19 +243,19 @@
           "id": "hk-hku",
           "name": "HKU",
           "type": "university",
-          "url": "https://news.google.com/rss/search?q=site:hku.hk+international+student+OR+non-local&hl=en&gl=HK&ceid=HK:en"
+          "url": "https://news.google.com/rss/search?q=site:hku.hk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en&gl=HK&ceid=HK:en"
         },
         {
           "id": "hk-cuhk",
           "name": "CUHK",
           "type": "university",
-          "url": "https://news.google.com/rss/search?q=site:cuhk.edu.hk+international+student&hl=en&gl=HK&ceid=HK:en"
+          "url": "https://news.google.com/rss/search?q=site:cuhk.edu.hk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en&gl=HK&ceid=HK:en"
         },
         {
           "id": "hk-hkust",
           "name": "HKUST",
           "type": "university",
-          "url": "https://news.google.com/rss/search?q=site:hkust.edu.hk+international+student&hl=en&gl=HK&ceid=HK:en"
+          "url": "https://news.google.com/rss/search?q=site:hkust.edu.hk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en&gl=HK&ceid=HK:en"
         }
       ]
     },
@@ -280,13 +280,13 @@
           "id": "sg-nus",
           "name": "NUS",
           "type": "university",
-          "url": "https://news.google.com/rss/search?q=site:nus.edu.sg+international+student&hl=en&gl=SG&ceid=SG:en"
+          "url": "https://news.google.com/rss/search?q=site:nus.edu.sg+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en&gl=SG&ceid=SG:en"
         },
         {
           "id": "sg-ntu-singapore",
           "name": "NTU Singapore",
           "type": "university",
-          "url": "https://news.google.com/rss/search?q=site:ntu.edu.sg+international+student&hl=en&gl=SG&ceid=SG:en"
+          "url": "https://news.google.com/rss/search?q=site:ntu.edu.sg+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en&gl=SG&ceid=SG:en"
         }
       ]
     },
@@ -305,13 +305,13 @@
           "id": "my-university-of-malaya",
           "name": "University of Malaya",
           "type": "university",
-          "url": "https://news.google.com/rss/search?q=site:um.edu.my+international+student&hl=en&gl=MY&ceid=MY:en"
+          "url": "https://news.google.com/rss/search?q=site:um.edu.my+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en&gl=MY&ceid=MY:en"
         },
         {
           "id": "my-monash-university-malaysia",
           "name": "Monash University Malaysia",
           "type": "university",
-          "url": "https://news.google.com/rss/search?q=site:monash.edu.my+international+student&hl=en&gl=MY&ceid=MY:en"
+          "url": "https://news.google.com/rss/search?q=site:monash.edu.my+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en&gl=MY&ceid=MY:en"
         }
       ]
     },
@@ -336,19 +336,19 @@
           "id": "nl-tu-delft",
           "name": "TU Delft",
           "type": "university",
-          "url": "https://news.google.com/rss/search?q=site:tudelft.nl+international+student+english&hl=en&gl=NL&ceid=NL:en"
+          "url": "https://news.google.com/rss/search?q=site:tudelft.nl+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en&gl=NL&ceid=NL:en"
         },
         {
           "id": "nl-university-of-amsterdam",
           "name": "University of Amsterdam",
           "type": "university",
-          "url": "https://news.google.com/rss/search?q=site:uva.nl+international+student+english&hl=en&gl=NL&ceid=NL:en"
+          "url": "https://news.google.com/rss/search?q=site:uva.nl+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en&gl=NL&ceid=NL:en"
         },
         {
           "id": "nl-leiden-university",
           "name": "Leiden University",
           "type": "university",
-          "url": "https://news.google.com/rss/search?q=site:universiteitleiden.nl+international+student+english&hl=en&gl=NL&ceid=NL:en"
+          "url": "https://news.google.com/rss/search?q=site:universiteitleiden.nl+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en&gl=NL&ceid=NL:en"
         }
       ]
     },
@@ -373,7 +373,7 @@
           "id": "no-university-of-oslo",
           "name": "University of Oslo",
           "type": "university",
-          "url": "https://news.google.com/rss/search?q=site:uio.no+international+student&hl=en&gl=NO&ceid=NO:en"
+          "url": "https://news.google.com/rss/search?q=site:uio.no+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en&gl=NO&ceid=NO:en"
         }
       ]
     },
@@ -398,7 +398,7 @@
           "id": "se-lund-university",
           "name": "Lund University",
           "type": "university",
-          "url": "https://news.google.com/rss/search?q=site:lu.se+international+student&hl=en&gl=SE&ceid=SE:en"
+          "url": "https://news.google.com/rss/search?q=site:lu.se+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en&gl=SE&ceid=SE:en"
         }
       ]
     },
@@ -423,7 +423,7 @@
           "id": "dk-university-of-copenhagen",
           "name": "University of Copenhagen",
           "type": "university",
-          "url": "https://news.google.com/rss/search?q=site:ku.dk+international+student&hl=en&gl=DK&ceid=DK:en"
+          "url": "https://news.google.com/rss/search?q=site:ku.dk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en&gl=DK&ceid=DK:en"
         }
       ]
     },
@@ -448,7 +448,7 @@
           "id": "fi-university-of-helsinki",
           "name": "University of Helsinki",
           "type": "university",
-          "url": "https://news.google.com/rss/search?q=site:helsinki.fi+international+student&hl=en&gl=FI&ceid=FI:en"
+          "url": "https://news.google.com/rss/search?q=site:helsinki.fi+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en&gl=FI&ceid=FI:en"
         }
       ]
     }
