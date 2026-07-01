@@ -11,7 +11,7 @@ from src.fetcher import fetch_all
 from src.filter import filter_and_rank, save_seen
 from src.models import Digest
 from src.notifiers.email import send_email
-from src.notifiers.feishu import send_feishu
+from src.notifiers.wechat import send_wechat
 from src.summarizer import summarize_items
 
 logging.basicConfig(
@@ -35,13 +35,13 @@ def run() -> int:
 
     digest = Digest(date_label=date_label, items=items)
 
-    feishu_ok = send_feishu(digest)
+    wechat_ok = send_wechat(digest)
     email_ok = send_email(digest)
 
     if items:
         save_seen([item.link for item in items])
 
-    if not feishu_ok and not email_ok:
+    if not wechat_ok and not email_ok:
         logger.error("No notification channel configured or all channels failed")
         return 1
 
@@ -50,9 +50,9 @@ def run() -> int:
         logger.info("No new items today; empty digest sent")
 
     logger.info(
-        "Digest complete: %d items, feishu=%s, email=%s",
+        "Digest complete: %d items, wechat=%s, email=%s",
         len(items),
-        feishu_ok,
+        wechat_ok,
         email_ok,
     )
     return 0

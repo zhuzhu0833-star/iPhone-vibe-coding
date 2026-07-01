@@ -1,6 +1,6 @@
 # Global Study Policy Daily Digest
 
-每日早上 **8:30（北京时间）** 自动抓取全球英语系国家及地区的**留学、高校政策、移民签证、毕业后工作权利**相关新闻，生成**中英双语摘要**并推送到 **飞书 + 邮件**。
+每日早上 **8:30（北京时间）** 自动抓取全球英语系国家及地区的**留学、高校政策、移民签证、毕业后工作权利**相关新闻，生成**中英双语摘要**并推送到 **企业微信群 + 邮件**。
 
 覆盖地区：美国、英国、澳大利亚、加拿大、新西兰、爱尔兰、香港、新加坡、马来西亚、荷兰（英语授课）、挪威、瑞典、丹麦、芬兰。
 
@@ -10,7 +10,7 @@
 - **各大高校官网**新闻 RSS（可在 `config/sources.yaml` 增删）
 - 关键词过滤：高校政策、移民配套政策、毕业后有偿工作权利（PSW / OPT / PGWP 等）
 - 中英双语摘要（Gemini 或 Groq 免费 API）
-- 飞书卡片 + HTML 邮件每日推送
+- 企业微信群机器人 + HTML 邮件每日推送
 - URL 去重（`data/seen_urls.json`）
 
 ## 快速开始
@@ -25,7 +25,7 @@
 
 | Secret | 必填 | 说明 |
 |--------|------|------|
-| `FEISHU_WEBHOOK_URL` | 是* | 飞书群机器人 Webhook |
+| `WECHAT_WORK_WEBHOOK_URL` | 是* | 企业微信群机器人 Webhook |
 | `SMTP_HOST` | 是* | 如 `smtp.gmail.com` |
 | `SMTP_PORT` | 否 | 默认 `587` |
 | `SMTP_USER` | 是* | SMTP 用户名 |
@@ -36,13 +36,24 @@
 | `LLM_PROVIDER` | 否 | `gemini`（默认）或 `groq` |
 | `LLM_API_KEY` | 推荐 | Gemini 或 Groq API Key |
 
-\* 飞书和邮件至少配置一种；按你的需求建议**两种都配**。
+\* 企业微信和邮件至少配置一种；按你的需求建议**两种都配**。
 
-### 3. 飞书机器人
+### 3. 企业微信群机器人
 
-1. 飞书群 → **设置** → **群机器人** → **添加机器人** → **自定义机器人**
-2. 复制 Webhook URL，填入 `FEISHU_WEBHOOK_URL`
-3. 安全设置可选「自定义关键词」，关键词填 `留学` 或 `Study`
+1. 在企业微信中创建或打开顾问团队群聊
+2. 群聊右上角 **「…」** → **群机器人** → **添加机器人**
+3. 给机器人起名，例如：`留学政策日报`
+4. 复制 Webhook 地址，形如：
+
+```text
+https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+```
+
+5. 在 GitHub Secrets 中添加：
+   - Name：`WECHAT_WORK_WEBHOOK_URL`
+   - Secret：粘贴上面的完整 Webhook 地址
+
+> 注意：Webhook 地址包含密钥，不要公开分享。若泄露，在企业微信机器人设置里重置。
 
 ### 4. 邮件（Gmail 示例）
 
@@ -54,6 +65,8 @@
    - `SMTP_USER` = 你的 Gmail
    - `SMTP_PASSWORD` = 应用专用密码
    - `EMAIL_RECIPIENTS` = `you@example.com,advisor1@example.com`
+
+**QQ 邮箱**：`SMTP_HOST=smtp.qq.com`，`SMTP_PASSWORD` 填 QQ 邮箱授权码（非 QQ 密码）。
 
 ### 5. 免费 LLM API
 
@@ -80,7 +93,7 @@ Actions 页 → **Daily Study Policy Digest** → **Run workflow**。
 ```bash
 pip install -r requirements.txt
 
-export FEISHU_WEBHOOK_URL="https://open.feishu.cn/open-apis/bot/v2/hook/..."
+export WECHAT_WORK_WEBHOOK_URL="https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=..."
 export SMTP_HOST="smtp.gmail.com"
 export SMTP_USER="you@gmail.com"
 export SMTP_PASSWORD="your-app-password"
@@ -92,12 +105,12 @@ python -m src.main
 
 ## 自定义信源
 
-编辑 `config/sources.yaml`：
+编辑 `config/sources.yaml`。高校与政府机构优先使用 `site:大学官网域名` 的 Google News RSS（免费、稳定），格式示例：
 
 ```yaml
-- name: Imperial College London News
+- name: Imperial College London
   type: university
-  url: https://www.imperial.ac.uk/news/rss.xml
+  url: "https://news.google.com/rss/search?q=site:imperial.ac.uk+international+student&hl=en-GB&gl=GB&ceid=GB:en"
 ```
 
 `type` 可选：
@@ -119,6 +132,6 @@ GitHub Actions cron：`30 0 * * *`（UTC）= **每天北京时间 08:30**。
 ## 费用
 
 - GitHub Actions：公开仓库免费额度内通常 $0
-- 飞书 Webhook：免费
+- 企业微信群机器人：免费
 - Gmail SMTP：免费
 - Gemini / Groq 免费档：小团队日报通常够用
