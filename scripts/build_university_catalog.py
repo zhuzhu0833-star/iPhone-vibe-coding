@@ -214,9 +214,11 @@ def main() -> None:
     out.write_text(json.dumps(catalog, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     us_rss = sum(1 for _, n, d in US_TOP_20 if d in verified)
     uk_rss = sum(1 for _, n, d in UK_QS_TOP_200 if d in verified)
+    au_rss = sum(1 for _, n, d in AU_TOP_UNIVERSITIES if d in verified)
+    ca_rss = sum(1 for _, n, d in CA_TOP_UNIVERSITIES if d in verified)
     print(f"Updated {out}")
     print(f"US: {us_rss}/20 official RSS, UK: {uk_rss}/{len(UK_QS_TOP_200)} official RSS")
-    print(f"AU: {len(AU_TOP_UNIVERSITIES)} universities, CA: {len(CA_TOP_UNIVERSITIES)} universities")
+    print(f"AU: {au_rss}/{len(AU_TOP_UNIVERSITIES)} official RSS, CA: {ca_rss}/{len(CA_TOP_UNIVERSITIES)} official RSS")
 
 
 if __name__ == "__main__":

@@ -64,6 +64,20 @@
       "status": "ok"
     },
     {
+      "name": "McGill",
+      "domain": "mcgill.ca",
+      "rss": "https://www.mcgill.ca/newsroom/articles/rss",
+      "entries": 10,
+      "status": "ok"
+    },
+    {
+      "name": "McMaster",
+      "domain": "mcmaster.ca",
+      "rss": "https://news.mcmaster.ca/rss",
+      "entries": 10,
+      "status": "ok"
+    },
+    {
       "name": "Princeton",
       "domain": "princeton.edu",
       "rss": "https://www.princeton.edu/news/feed/all",
@@ -75,6 +89,13 @@
       "domain": "st-andrews.ac.uk",
       "rss": "https://news.st-andrews.ac.uk/feed/",
       "entries": 10,
+      "status": "ok"
+    },
+    {
+      "name": "UBC",
+      "domain": "ubc.ca",
+      "rss": "https://news.ubc.ca/feed/",
+      "entries": 21,
       "status": "ok"
     },
     {
@@ -97,9 +118,28 @@
       "rss": "https://news.vanderbilt.edu/feed/",
       "entries": 20,
       "status": "ok"
+    },
+    {
+      "name": "Western",
+      "domain": "uwo.ca",
+      "rss": "https://news.westernu.ca/feed/",
+      "entries": 25,
+      "status": "ok"
     }
   ],
   "fallback": [
+    {
+      "name": "ANU",
+      "domain": "anu.edu.au",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.anu.edu.au/news/all-news/rss.xml",
+        "https://www.anu.edu.au/news/rss",
+        "https://services.anu.edu.au/news/rss"
+      ]
+    },
     {
       "name": "Aberdeen",
       "domain": "abdn.ac.uk",
@@ -109,6 +149,30 @@
       "tried": [
         "https://www.abdn.ac.uk/news/rss/",
         "https://www.abdn.ac.uk/news/feed/"
+      ]
+    },
+    {
+      "name": "Adelaide",
+      "domain": "adelaide.edu.au",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.adelaide.edu.au/news/rss",
+        "https://www.adelaide.edu.au/news/feed",
+        "https://www.adelaide.edu.au/news/list/rss"
+      ]
+    },
+    {
+      "name": "Alberta",
+      "domain": "ualberta.ca",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.ualberta.ca/folio/rss.xml",
+        "https://www.ualberta.ca/news/rss",
+        "https://www.ualberta.ca/news/feed"
       ]
     },
     {
@@ -190,6 +254,18 @@
       "tried": [
         "https://www.brunel.ac.uk/news/rss",
         "https://www.brunel.ac.uk/news/feed"
+      ]
+    },
+    {
+      "name": "Calgary",
+      "domain": "ucalgary.ca",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.ucalgary.ca/news/rss",
+        "https://news.ucalgary.ca/rss",
+        "https://news.ucalgary.ca/feed"
       ]
     },
     {
@@ -423,6 +499,55 @@
       ]
     },
     {
+      "name": "Macquarie",
+      "domain": "mq.edu.au",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.mq.edu.au/news/rss",
+        "https://www.mq.edu.au/news/feed",
+        "https://lighthouse.mq.edu.au/rss"
+      ]
+    },
+    {
+      "name": "Melbourne",
+      "domain": "unimelb.edu.au",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://about.unimelb.edu.au/news-and-events/rss",
+        "https://newsroom.unimelb.edu.au/rss",
+        "https://newsroom.unimelb.edu.au/feed",
+        "https://about.unimelb.edu.au/news/rss"
+      ]
+    },
+    {
+      "name": "Monash",
+      "domain": "monash.edu",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.monash.edu/news/articles/rss",
+        "https://www.monash.edu/news/rss",
+        "https://www.monash.edu/news/feed"
+      ]
+    },
+    {
+      "name": "Montreal",
+      "domain": "umontreal.ca",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://nouvelles.umontreal.ca/rss",
+        "https://www.umontreal.ca/english/news/rss",
+        "https://www.umontreal.ca/en/news/rss"
+      ]
+    },
+    {
       "name": "Newcastle",
       "domain": "ncl.ac.uk",
       "rss": null,
@@ -471,6 +596,18 @@
       ]
     },
     {
+      "name": "Ottawa",
+      "domain": "uottawa.ca",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.uottawa.ca/about-us/news/rss",
+        "https://www.uottawa.ca/about-us/administration-services/communications/news/rss",
+        "https://www.uottawa.ca/news/rss"
+      ]
+    },
+    {
       "name": "Oxford",
       "domain": "ox.ac.uk",
       "rss": null,
@@ -495,6 +632,30 @@
       ]
     },
     {
+      "name": "QUT",
+      "domain": "qut.edu.au",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.qut.edu.au/news/rss",
+        "https://www.qut.edu.au/news/latest-news/rss",
+        "https://www.qut.edu.au/news/feed"
+      ]
+    },
+    {
+      "name": "Queen's",
+      "domain": "queensu.ca",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.queensu.ca/gazette/rss",
+        "https://www.queensu.ca/news/rss",
+        "https://www.queensu.ca/news/feed"
+      ]
+    },
+    {
       "name": "Queen's Belfast",
       "domain": "qub.ac.uk",
       "rss": null,
@@ -503,6 +664,18 @@
       "tried": [
         "https://www.qub.ac.uk/News/AllNews/RSS/",
         "https://www.qub.ac.uk/news/rss"
+      ]
+    },
+    {
+      "name": "RMIT",
+      "domain": "rmit.edu.au",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.rmit.edu.au/news/rss",
+        "https://www.rmit.edu.au/news/all-news/rss",
+        "https://www.rmit.edu.au/news/feed"
       ]
     },
     {
@@ -538,6 +711,18 @@
       "tried": [
         "https://www.royalholloway.ac.uk/about-us/news/rss/",
         "https://www.royalholloway.ac.uk/news/rss"
+      ]
+    },
+    {
+      "name": "SFU",
+      "domain": "sfu.ca",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.sfu.ca/sfunews/rss",
+        "https://www.sfu.ca/sfunews/feed",
+        "https://www.sfu.ca/sfunews.html/rss"
       ]
     },
     {
@@ -643,6 +828,31 @@
       ]
     },
     {
+      "name": "Sydney",
+      "domain": "sydney.edu.au",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.sydney.edu.au/news-opinion/news/rss.xml",
+        "https://www.sydney.edu.au/news-opinion/news/feed",
+        "https://sydney.edu.au/news/rss.xml"
+      ]
+    },
+    {
+      "name": "Toronto",
+      "domain": "utoronto.ca",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.utoronto.ca/news/rss.xml",
+        "https://www.utoronto.ca/news/feed",
+        "https://news.utoronto.ca/rss",
+        "https://news.utoronto.ca/feed"
+      ]
+    },
+    {
       "name": "UCL",
       "domain": "ucl.ac.uk",
       "rss": null,
@@ -677,6 +887,18 @@
       ]
     },
     {
+      "name": "UNSW",
+      "domain": "unsw.edu.au",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.unsw.edu.au/news/rss",
+        "https://newsroom.unsw.edu.au/rss",
+        "https://newsroom.unsw.edu.au/feed"
+      ]
+    },
+    {
       "name": "UPenn",
       "domain": "upenn.edu",
       "rss": null,
@@ -689,6 +911,42 @@
       ]
     },
     {
+      "name": "UQ",
+      "domain": "uq.edu.au",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.uq.edu.au/news/rss",
+        "https://www.uq.edu.au/news/feed",
+        "https://communication.uq.edu.au/article-feed/rss"
+      ]
+    },
+    {
+      "name": "UTS",
+      "domain": "uts.edu.au",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.uts.edu.au/about/faculty-staff/news/rss",
+        "https://www.uts.edu.au/about/news-events/news/rss",
+        "https://www.uts.edu.au/news/rss"
+      ]
+    },
+    {
+      "name": "UWA",
+      "domain": "uwa.edu.au",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.uwa.edu.au/news/rss",
+        "https://www.uwa.edu.au/news/feed",
+        "https://news.uwa.edu.au/rss"
+      ]
+    },
+    {
       "name": "Warwick",
       "domain": "warwick.ac.uk",
       "rss": null,
@@ -698,6 +956,18 @@
         "https://warwick.ac.uk/news/rss/",
         "https://warwick.ac.uk/news/feed/",
         "https://news.warwick.ac.uk/feed/"
+      ]
+    },
+    {
+      "name": "Waterloo",
+      "domain": "uwaterloo.ca",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://uwaterloo.ca/news/rss",
+        "https://uwaterloo.ca/news/feed",
+        "https://uwaterloo.ca/news/news/rss"
       ]
     },
     {

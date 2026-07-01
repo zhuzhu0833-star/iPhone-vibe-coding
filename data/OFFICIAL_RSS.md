@@ -58,6 +58,49 @@
 
 ---
 
+## 澳洲 Top 12 — 已验证官方 RSS（0/12）
+
+在 CI 环境对八大及热门院校尝试了多个 RSS 路径（含 `newsroom.*`、`/news/rss` 等），**均未返回可用 feed**（多为 403/404 或空 feed）。
+
+| 院校 | 域名 | 当前方案 |
+|------|------|----------|
+| University of Melbourne | unimelb.edu.au | Google News |
+| University of Sydney | sydney.edu.au | Google News |
+| Australian National University | anu.edu.au | Google News |
+| UNSW Sydney | unsw.edu.au | Google News |
+| Monash University | monash.edu | Google News |
+| University of Queensland | uq.edu.au | Google News |
+| University of Western Australia | uwa.edu.au | Google News |
+| University of Adelaide | adelaide.edu.au | Google News |
+| University of Technology Sydney | uts.edu.au | Google News |
+| Macquarie University | mq.edu.au | Google News |
+| RMIT University | rmit.edu.au | Google News |
+| Queensland University of Technology | qut.edu.au | Google News |
+
+## 加拿大 Top 12 — 已验证官方 RSS（4/12）
+
+| 院校 | 官方 RSS |
+|------|----------|
+| UBC | https://news.ubc.ca/feed/ |
+| McGill University | https://www.mcgill.ca/newsroom/articles/rss |
+| McMaster University | https://news.mcmaster.ca/rss |
+| Western University | https://news.westernu.ca/feed/ |
+
+## 加拿大 Top 12 — 无可用官方 RSS，使用 Google News（8/12）
+
+| 院校 | 域名 |
+|------|------|
+| University of Toronto | utoronto.ca |
+| University of Waterloo | uwaterloo.ca |
+| University of Alberta | ualberta.ca |
+| Université de Montréal | umontreal.ca |
+| Queen's University | queensu.ca |
+| University of Ottawa | uottawa.ca |
+| University of Calgary | ucalgary.ca |
+| Simon Fraser University | sfu.ca |
+
+---
+
 ## 如何重新探测
 
 ```bash

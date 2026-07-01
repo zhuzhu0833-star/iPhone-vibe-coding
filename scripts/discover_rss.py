@@ -327,6 +327,131 @@ UNIVERSITIES: list[tuple[str, str, list[str]]] = [
         "https://www.bbk.ac.uk/news/rss",
         "https://www.bbk.ac.uk/news/feed",
     ]),
+    # Australia top universities
+    ("Melbourne", "unimelb.edu.au", [
+        "https://about.unimelb.edu.au/news-and-events/rss",
+        "https://newsroom.unimelb.edu.au/rss",
+        "https://newsroom.unimelb.edu.au/feed",
+        "https://about.unimelb.edu.au/news/rss",
+    ]),
+    ("Sydney", "sydney.edu.au", [
+        "https://www.sydney.edu.au/news-opinion/news/rss.xml",
+        "https://www.sydney.edu.au/news-opinion/news/feed",
+        "https://sydney.edu.au/news/rss.xml",
+    ]),
+    ("ANU", "anu.edu.au", [
+        "https://www.anu.edu.au/news/all-news/rss.xml",
+        "https://www.anu.edu.au/news/rss",
+        "https://services.anu.edu.au/news/rss",
+    ]),
+    ("UNSW", "unsw.edu.au", [
+        "https://www.unsw.edu.au/news/rss",
+        "https://newsroom.unsw.edu.au/rss",
+        "https://newsroom.unsw.edu.au/feed",
+    ]),
+    ("Monash", "monash.edu", [
+        "https://www.monash.edu/news/articles/rss",
+        "https://www.monash.edu/news/rss",
+        "https://www.monash.edu/news/feed",
+    ]),
+    ("UQ", "uq.edu.au", [
+        "https://www.uq.edu.au/news/rss",
+        "https://www.uq.edu.au/news/feed",
+        "https://communication.uq.edu.au/article-feed/rss",
+    ]),
+    ("UWA", "uwa.edu.au", [
+        "https://www.uwa.edu.au/news/rss",
+        "https://www.uwa.edu.au/news/feed",
+        "https://news.uwa.edu.au/rss",
+    ]),
+    ("Adelaide", "adelaide.edu.au", [
+        "https://www.adelaide.edu.au/news/rss",
+        "https://www.adelaide.edu.au/news/feed",
+        "https://www.adelaide.edu.au/news/list/rss",
+    ]),
+    ("UTS", "uts.edu.au", [
+        "https://www.uts.edu.au/about/faculty-staff/news/rss",
+        "https://www.uts.edu.au/about/news-events/news/rss",
+        "https://www.uts.edu.au/news/rss",
+    ]),
+    ("Macquarie", "mq.edu.au", [
+        "https://www.mq.edu.au/news/rss",
+        "https://www.mq.edu.au/news/feed",
+        "https://lighthouse.mq.edu.au/rss",
+    ]),
+    ("RMIT", "rmit.edu.au", [
+        "https://www.rmit.edu.au/news/rss",
+        "https://www.rmit.edu.au/news/all-news/rss",
+        "https://www.rmit.edu.au/news/feed",
+    ]),
+    ("QUT", "qut.edu.au", [
+        "https://www.qut.edu.au/news/rss",
+        "https://www.qut.edu.au/news/latest-news/rss",
+        "https://www.qut.edu.au/news/feed",
+    ]),
+    # Canada top universities
+    ("Toronto", "utoronto.ca", [
+        "https://www.utoronto.ca/news/rss.xml",
+        "https://www.utoronto.ca/news/feed",
+        "https://news.utoronto.ca/rss",
+        "https://news.utoronto.ca/feed",
+    ]),
+    ("UBC", "ubc.ca", [
+        "https://news.ubc.ca/feed/",
+        "https://news.ubc.ca/feed",
+        "https://www.ubc.ca/news/rss.xml",
+    ]),
+    ("McGill", "mcgill.ca", [
+        "https://www.mcgill.ca/newsroom/articles/rss",
+        "https://www.mcgill.ca/newsroom/rss",
+        "https://www.mcgill.ca/newsroom/feed",
+        "https://www.mcgill.ca/news/rss",
+    ]),
+    ("Waterloo", "uwaterloo.ca", [
+        "https://uwaterloo.ca/news/rss",
+        "https://uwaterloo.ca/news/feed",
+        "https://uwaterloo.ca/news/news/rss",
+    ]),
+    ("Alberta", "ualberta.ca", [
+        "https://www.ualberta.ca/folio/rss.xml",
+        "https://www.ualberta.ca/news/rss",
+        "https://www.ualberta.ca/news/feed",
+    ]),
+    ("McMaster", "mcmaster.ca", [
+        "https://news.mcmaster.ca/rss",
+        "https://news.mcmaster.ca/feed",
+        "https://dailynews.mcmaster.ca/rss",
+    ]),
+    ("Montreal", "umontreal.ca", [
+        "https://nouvelles.umontreal.ca/rss",
+        "https://www.umontreal.ca/english/news/rss",
+        "https://www.umontreal.ca/en/news/rss",
+    ]),
+    ("Queen's", "queensu.ca", [
+        "https://www.queensu.ca/gazette/rss",
+        "https://www.queensu.ca/news/rss",
+        "https://www.queensu.ca/news/feed",
+    ]),
+    ("Western", "uwo.ca", [
+        "https://news.westernu.ca/feed/",
+        "https://news.westernu.ca/feed",
+        "https://www.uwo.ca/news/rss",
+    ]),
+    ("Ottawa", "uottawa.ca", [
+        "https://www.uottawa.ca/about-us/news/rss",
+        "https://www.uottawa.ca/about-us/administration-services/communications/news/rss",
+        "https://www.uottawa.ca/news/rss",
+    ]),
+    ("Calgary", "ucalgary.ca", [
+        "https://www.ucalgary.ca/news/rss",
+        "https://news.ucalgary.ca/rss",
+        "https://news.ucalgary.ca/feed",
+    ]),
+    ("SFU", "sfu.ca", [
+        "https://www.sfu.ca/sfunews/rss",
+        "https://www.sfu.ca/sfunews/feed",
+        "https://www.sfu.ca/sfunews.html/rss",
+    ]),
 ]
 
 

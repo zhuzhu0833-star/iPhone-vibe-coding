@@ -741,16 +741,18 @@
           "name": "UBC",
           "type": "university",
           "domain": "ubc.ca",
-          "feed_type": "google_news",
-          "url": "https://news.google.com/rss/search?q=site:ubc.ca+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-CA&gl=CA&ceid=CA:en"
+          "feed_type": "official_rss",
+          "url": "https://news.ubc.ca/feed/",
+          "fallback_url": "https://news.google.com/rss/search?q=site:ubc.ca+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-CA&gl=CA&ceid=CA:en"
         },
         {
           "id": "ca-mcgill-university",
           "name": "McGill University",
           "type": "university",
           "domain": "mcgill.ca",
-          "feed_type": "google_news",
-          "url": "https://news.google.com/rss/search?q=site:mcgill.ca+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-CA&gl=CA&ceid=CA:en"
+          "feed_type": "official_rss",
+          "url": "https://www.mcgill.ca/newsroom/articles/rss",
+          "fallback_url": "https://news.google.com/rss/search?q=site:mcgill.ca+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-CA&gl=CA&ceid=CA:en"
         },
         {
           "id": "ca-university-of-waterloo",
@@ -773,8 +775,9 @@
           "name": "McMaster University",
           "type": "university",
           "domain": "mcmaster.ca",
-          "feed_type": "google_news",
-          "url": "https://news.google.com/rss/search?q=site:mcmaster.ca+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-CA&gl=CA&ceid=CA:en"
+          "feed_type": "official_rss",
+          "url": "https://news.mcmaster.ca/rss",
+          "fallback_url": "https://news.google.com/rss/search?q=site:mcmaster.ca+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-CA&gl=CA&ceid=CA:en"
         },
         {
           "id": "ca-universite-de-montreal",
@@ -797,8 +800,9 @@
           "name": "Western University",
           "type": "university",
           "domain": "uwo.ca",
-          "feed_type": "google_news",
-          "url": "https://news.google.com/rss/search?q=site:uwo.ca+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-CA&gl=CA&ceid=CA:en"
+          "feed_type": "official_rss",
+          "url": "https://news.westernu.ca/feed/",
+          "fallback_url": "https://news.google.com/rss/search?q=site:uwo.ca+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-CA&gl=CA&ceid=CA:en"
         },
         {
           "id": "ca-university-of-ottawa",
