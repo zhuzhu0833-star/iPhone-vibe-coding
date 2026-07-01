@@ -1,0 +1,728 @@
+{
+  "verified": [
+    {
+      "name": "Caltech",
+      "domain": "caltech.edu",
+      "rss": "https://www.caltech.edu/about/news/rss",
+      "entries": 12,
+      "status": "ok"
+    },
+    {
+      "name": "Cambridge",
+      "domain": "cam.ac.uk",
+      "rss": "https://www.cam.ac.uk/news/feed",
+      "entries": 15,
+      "status": "ok"
+    },
+    {
+      "name": "Dartmouth",
+      "domain": "dartmouth.edu",
+      "rss": "https://home.dartmouth.edu/rss.xml",
+      "entries": 10,
+      "status": "ok"
+    },
+    {
+      "name": "Exeter",
+      "domain": "exeter.ac.uk",
+      "rss": "https://news.exeter.ac.uk/feed/",
+      "entries": 10,
+      "status": "ok"
+    },
+    {
+      "name": "Harvard",
+      "domain": "harvard.edu",
+      "rss": "https://news.harvard.edu/gazette/feed/",
+      "entries": 50,
+      "status": "ok"
+    },
+    {
+      "name": "Johns Hopkins",
+      "domain": "jhu.edu",
+      "rss": "https://hub.jhu.edu/feed/",
+      "entries": 20,
+      "status": "ok"
+    },
+    {
+      "name": "Liverpool",
+      "domain": "liverpool.ac.uk",
+      "rss": "https://news.liverpool.ac.uk/feed/",
+      "entries": 25,
+      "status": "ok"
+    },
+    {
+      "name": "MIT",
+      "domain": "mit.edu",
+      "rss": "https://news.mit.edu/rss/topic/admissions",
+      "entries": 50,
+      "status": "ok"
+    },
+    {
+      "name": "Manchester",
+      "domain": "manchester.ac.uk",
+      "rss": "https://www.manchester.ac.uk/discover/news/feed/",
+      "entries": 25,
+      "status": "ok"
+    },
+    {
+      "name": "Princeton",
+      "domain": "princeton.edu",
+      "rss": "https://www.princeton.edu/news/feed/all",
+      "entries": 30,
+      "status": "ok"
+    },
+    {
+      "name": "St Andrews",
+      "domain": "st-andrews.ac.uk",
+      "rss": "https://news.st-andrews.ac.uk/feed/",
+      "entries": 10,
+      "status": "ok"
+    },
+    {
+      "name": "UC Berkeley",
+      "domain": "berkeley.edu",
+      "rss": "https://news.berkeley.edu/feed/",
+      "entries": 10,
+      "status": "ok"
+    },
+    {
+      "name": "UCLA",
+      "domain": "ucla.edu",
+      "rss": "https://newsroom.ucla.edu/rss.xml",
+      "entries": 20,
+      "status": "ok"
+    },
+    {
+      "name": "Vanderbilt",
+      "domain": "vanderbilt.edu",
+      "rss": "https://news.vanderbilt.edu/feed/",
+      "entries": 20,
+      "status": "ok"
+    }
+  ],
+  "fallback": [
+    {
+      "name": "Aberdeen",
+      "domain": "abdn.ac.uk",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.abdn.ac.uk/news/rss/",
+        "https://www.abdn.ac.uk/news/feed/"
+      ]
+    },
+    {
+      "name": "Aston",
+      "domain": "aston.ac.uk",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.aston.ac.uk/latest-news/rss",
+        "https://www.aston.ac.uk/news/rss"
+      ]
+    },
+    {
+      "name": "Bath",
+      "domain": "bath.ac.uk",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.bath.ac.uk/announcements/rss/",
+        "https://www.bath.ac.uk/news/rss/",
+        "https://www.bath.ac.uk/news/feed/"
+      ]
+    },
+    {
+      "name": "Birkbeck",
+      "domain": "bbk.ac.uk",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.bbk.ac.uk/news/rss",
+        "https://www.bbk.ac.uk/news/feed"
+      ]
+    },
+    {
+      "name": "Birmingham",
+      "domain": "birmingham.ac.uk",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.birmingham.ac.uk/news/rss",
+        "https://www.birmingham.ac.uk/news/feed",
+        "https://www.birmingham.ac.uk/news/rss.xml"
+      ]
+    },
+    {
+      "name": "Bristol",
+      "domain": "bristol.ac.uk",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.bristol.ac.uk/news/rss/",
+        "https://www.bristol.ac.uk/news/feed/",
+        "https://www.bristol.ac.uk/news/rss.xml"
+      ]
+    },
+    {
+      "name": "Brown",
+      "domain": "brown.edu",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.brown.edu/news/feed",
+        "https://www.brown.edu/news/rss",
+        "https://news.brown.edu/feed"
+      ]
+    },
+    {
+      "name": "Brunel",
+      "domain": "brunel.ac.uk",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.brunel.ac.uk/news/rss",
+        "https://www.brunel.ac.uk/news/feed"
+      ]
+    },
+    {
+      "name": "Cardiff",
+      "domain": "cardiff.ac.uk",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.cardiff.ac.uk/news/rss",
+        "https://www.cardiff.ac.uk/news/feed"
+      ]
+    },
+    {
+      "name": "City St George's",
+      "domain": "city.ac.uk",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.city.ac.uk/news-and-events/news/rss",
+        "https://www.city.ac.uk/news/rss"
+      ]
+    },
+    {
+      "name": "Columbia",
+      "domain": "columbia.edu",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://news.columbia.edu/rss",
+        "https://news.columbia.edu/feed",
+        "https://news.columbia.edu/rss.xml"
+      ]
+    },
+    {
+      "name": "Cornell",
+      "domain": "cornell.edu",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://news.cornell.edu/rss/",
+        "https://news.cornell.edu/feed/",
+        "https://news.cornell.edu/rss.xml"
+      ]
+    },
+    {
+      "name": "Duke",
+      "domain": "duke.edu",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://today.duke.edu/rss.xml",
+        "https://today.duke.edu/feed",
+        "https://today.duke.edu/rss"
+      ]
+    },
+    {
+      "name": "Dundee",
+      "domain": "dundee.ac.uk",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.dundee.ac.uk/press-office/rss",
+        "https://www.dundee.ac.uk/news/rss"
+      ]
+    },
+    {
+      "name": "Durham",
+      "domain": "durham.ac.uk",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.durham.ac.uk/news/rss/",
+        "https://www.durham.ac.uk/news/feed/",
+        "https://www.durham.ac.uk/news-events/news/rss/"
+      ]
+    },
+    {
+      "name": "Edinburgh",
+      "domain": "ed.ac.uk",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.ed.ac.uk/news/rss",
+        "https://www.ed.ac.uk/news/feed",
+        "https://www.ed.ac.uk/news/rss.xml"
+      ]
+    },
+    {
+      "name": "Essex",
+      "domain": "essex.ac.uk",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.essex.ac.uk/news/rss",
+        "https://www.essex.ac.uk/news/feed"
+      ]
+    },
+    {
+      "name": "Glasgow",
+      "domain": "gla.ac.uk",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.gla.ac.uk/news/headline/news_rss/",
+        "https://www.gla.ac.uk/news/rss/",
+        "https://www.gla.ac.uk/news/feed/"
+      ]
+    },
+    {
+      "name": "Goldsmiths",
+      "domain": "gold.ac.uk",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.gold.ac.uk/news/rss/",
+        "https://www.gold.ac.uk/news/feed/"
+      ]
+    },
+    {
+      "name": "Heriot-Watt",
+      "domain": "hw.ac.uk",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.hw.ac.uk/news/rss",
+        "https://www.hw.ac.uk/news/feed"
+      ]
+    },
+    {
+      "name": "Imperial",
+      "domain": "imperial.ac.uk",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.imperial.ac.uk/news/rss.xml",
+        "https://www.imperial.ac.uk/news/feed/",
+        "https://www.imperial.ac.uk/news-events/news/rss/"
+      ]
+    },
+    {
+      "name": "KCL",
+      "domain": "kcl.ac.uk",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.kcl.ac.uk/news/rss",
+        "https://www.kcl.ac.uk/news/feed",
+        "https://www.kcl.ac.uk/news/rss.xml"
+      ]
+    },
+    {
+      "name": "Kent",
+      "domain": "kent.ac.uk",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.kent.ac.uk/news/rss",
+        "https://www.kent.ac.uk/news/feed"
+      ]
+    },
+    {
+      "name": "LSE",
+      "domain": "lse.ac.uk",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.lse.ac.uk/News/Latest-news-from-LSE/RSS",
+        "https://www.lse.ac.uk/news/rss",
+        "https://www.lse.ac.uk/news/feed"
+      ]
+    },
+    {
+      "name": "Lancaster",
+      "domain": "lancaster.ac.uk",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.lancaster.ac.uk/news/rss/",
+        "https://www.lancaster.ac.uk/news/feed/"
+      ]
+    },
+    {
+      "name": "Leeds",
+      "domain": "leeds.ac.uk",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.leeds.ac.uk/news/rss/",
+        "https://www.leeds.ac.uk/news/feed/",
+        "https://www.leeds.ac.uk/news/article/feed"
+      ]
+    },
+    {
+      "name": "Leicester",
+      "domain": "le.ac.uk",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://le.ac.uk/news/rss",
+        "https://le.ac.uk/news/feed"
+      ]
+    },
+    {
+      "name": "Loughborough",
+      "domain": "lboro.ac.uk",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.lboro.ac.uk/media-centre/rss/",
+        "https://www.lboro.ac.uk/news/rss"
+      ]
+    },
+    {
+      "name": "Newcastle",
+      "domain": "ncl.ac.uk",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.ncl.ac.uk/press/rss",
+        "https://www.ncl.ac.uk/press/office/pressreleases/rss",
+        "https://www.ncl.ac.uk/news/rss"
+      ]
+    },
+    {
+      "name": "Northwestern",
+      "domain": "northwestern.edu",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://news.northwestern.edu/rss/",
+        "https://news.northwestern.edu/feed/",
+        "https://news.northwestern.edu/rss.xml"
+      ]
+    },
+    {
+      "name": "Notre Dame",
+      "domain": "nd.edu",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://news.nd.edu/feed/",
+        "https://news.nd.edu/feed",
+        "https://news.nd.edu/rss"
+      ]
+    },
+    {
+      "name": "Nottingham",
+      "domain": "nottingham.ac.uk",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.nottingham.ac.uk/news/rss",
+        "https://www.nottingham.ac.uk/news/feed",
+        "https://www.nottingham.ac.uk/news/rss.xml"
+      ]
+    },
+    {
+      "name": "Oxford",
+      "domain": "ox.ac.uk",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.ox.ac.uk/news-and-events/rss",
+        "https://www.ox.ac.uk/news/feed",
+        "https://www.ox.ac.uk/news/rss"
+      ]
+    },
+    {
+      "name": "QMUL",
+      "domain": "qmul.ac.uk",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.qmul.ac.uk/media/news/rss/",
+        "https://www.qmul.ac.uk/news/rss",
+        "https://www.qmul.ac.uk/news/feed"
+      ]
+    },
+    {
+      "name": "Queen's Belfast",
+      "domain": "qub.ac.uk",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.qub.ac.uk/News/AllNews/RSS/",
+        "https://www.qub.ac.uk/news/rss"
+      ]
+    },
+    {
+      "name": "Reading",
+      "domain": "reading.ac.uk",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.reading.ac.uk/news-and-events/rss",
+        "https://www.reading.ac.uk/news/rss",
+        "https://www.reading.ac.uk/news/feed"
+      ]
+    },
+    {
+      "name": "Rice",
+      "domain": "rice.edu",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://news.rice.edu/rss.xml",
+        "https://news.rice.edu/feed/",
+        "https://news.rice.edu/feed"
+      ]
+    },
+    {
+      "name": "Royal Holloway",
+      "domain": "royalholloway.ac.uk",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.royalholloway.ac.uk/about-us/news/rss/",
+        "https://www.royalholloway.ac.uk/news/rss"
+      ]
+    },
+    {
+      "name": "SOAS",
+      "domain": "soas.ac.uk",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.soas.ac.uk/news/rss",
+        "https://www.soas.ac.uk/news/feed"
+      ]
+    },
+    {
+      "name": "Sheffield",
+      "domain": "sheffield.ac.uk",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.sheffield.ac.uk/news/rss",
+        "https://www.sheffield.ac.uk/news/feed",
+        "https://www.sheffield.ac.uk/news/rss.xml"
+      ]
+    },
+    {
+      "name": "Southampton",
+      "domain": "southampton.ac.uk",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.southampton.ac.uk/news/rss.page",
+        "https://www.southampton.ac.uk/news/rss",
+        "https://www.southampton.ac.uk/news/feed"
+      ]
+    },
+    {
+      "name": "Stanford",
+      "domain": "stanford.edu",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://news.stanford.edu/feed/",
+        "https://news.stanford.edu/feed",
+        "https://news.stanford.edu/rss"
+      ]
+    },
+    {
+      "name": "Stirling",
+      "domain": "stir.ac.uk",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.stir.ac.uk/news/rss/",
+        "https://www.stir.ac.uk/news/feed/"
+      ]
+    },
+    {
+      "name": "Strathclyde",
+      "domain": "strath.ac.uk",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.strath.ac.uk/whystrathclyde/news/rss/",
+        "https://www.strath.ac.uk/pressoffice/news/rss/"
+      ]
+    },
+    {
+      "name": "Surrey",
+      "domain": "surrey.ac.uk",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.surrey.ac.uk/news/rss",
+        "https://www.surrey.ac.uk/news/feed"
+      ]
+    },
+    {
+      "name": "Sussex",
+      "domain": "sussex.ac.uk",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.sussex.ac.uk/news/rss",
+        "https://www.sussex.ac.uk/news/feed"
+      ]
+    },
+    {
+      "name": "Swansea",
+      "domain": "swansea.ac.uk",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.swansea.ac.uk/press-office/news-events/rss/",
+        "https://www.swansea.ac.uk/news/rss"
+      ]
+    },
+    {
+      "name": "UCL",
+      "domain": "ucl.ac.uk",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.ucl.ac.uk/news/rss.xml",
+        "https://www.ucl.ac.uk/news/feed"
+      ]
+    },
+    {
+      "name": "UChicago",
+      "domain": "uchicago.edu",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://news.uchicago.edu/rss/",
+        "https://news.uchicago.edu/feed/",
+        "https://news.uchicago.edu/rss.xml"
+      ]
+    },
+    {
+      "name": "UEA",
+      "domain": "uea.ac.uk",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.uea.ac.uk/about/-/media/uea/about/news/rss.xml",
+        "https://www.uea.ac.uk/news/rss"
+      ]
+    },
+    {
+      "name": "UPenn",
+      "domain": "upenn.edu",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://penntoday.upenn.edu/feed/",
+        "https://penntoday.upenn.edu/feed",
+        "https://penntoday.upenn.edu/rss"
+      ]
+    },
+    {
+      "name": "Warwick",
+      "domain": "warwick.ac.uk",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://warwick.ac.uk/news/rss/",
+        "https://warwick.ac.uk/news/feed/",
+        "https://news.warwick.ac.uk/feed/"
+      ]
+    },
+    {
+      "name": "Yale",
+      "domain": "yale.edu",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://news.yale.edu/rss.xml",
+        "https://news.yale.edu/feed",
+        "https://news.yale.edu/rss"
+      ]
+    },
+    {
+      "name": "York",
+      "domain": "york.ac.uk",
+      "rss": null,
+      "entries": 0,
+      "status": "no_rss",
+      "tried": [
+        "https://www.york.ac.uk/news-and-events/news/rss/",
+        "https://www.york.ac.uk/news/rss/",
+        "https://www.york.ac.uk/news/feed/"
+      ]
+    }
+  ]
+}

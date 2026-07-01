@@ -18,28 +18,173 @@
           "url": "https://news.google.com/rss/search?q=site:studyinthestates.dhs.gov+international+student&hl=en-US&gl=US&ceid=US:en"
         },
         {
-          "id": "us-harvard-university",
-          "name": "Harvard University",
+          "id": "us-princeton-university",
+          "name": "Princeton University",
           "type": "university",
-          "url": "https://news.google.com/rss/search?q=site:harvard.edu+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-US&gl=US&ceid=US:en"
+          "domain": "princeton.edu",
+          "feed_type": "official_rss",
+          "url": "https://www.princeton.edu/news/feed/all",
+          "fallback_url": "https://news.google.com/rss/search?q=site:princeton.edu+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-US&gl=US&ceid=US:en"
         },
         {
           "id": "us-mit",
           "name": "MIT",
           "type": "university",
-          "url": "https://news.google.com/rss/search?q=site:mit.edu+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-US&gl=US&ceid=US:en"
+          "domain": "mit.edu",
+          "feed_type": "official_rss",
+          "url": "https://news.mit.edu/rss/topic/admissions",
+          "fallback_url": "https://news.google.com/rss/search?q=site:mit.edu+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-US&gl=US&ceid=US:en"
+        },
+        {
+          "id": "us-harvard-university",
+          "name": "Harvard University",
+          "type": "university",
+          "domain": "harvard.edu",
+          "feed_type": "official_rss",
+          "url": "https://news.harvard.edu/gazette/feed/",
+          "fallback_url": "https://news.google.com/rss/search?q=site:harvard.edu+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-US&gl=US&ceid=US:en"
         },
         {
           "id": "us-stanford-university",
           "name": "Stanford University",
           "type": "university",
+          "domain": "stanford.edu",
+          "feed_type": "google_news",
           "url": "https://news.google.com/rss/search?q=site:stanford.edu+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-US&gl=US&ceid=US:en"
+        },
+        {
+          "id": "us-yale-university",
+          "name": "Yale University",
+          "type": "university",
+          "domain": "yale.edu",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:yale.edu+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-US&gl=US&ceid=US:en"
+        },
+        {
+          "id": "us-caltech",
+          "name": "Caltech",
+          "type": "university",
+          "domain": "caltech.edu",
+          "feed_type": "official_rss",
+          "url": "https://www.caltech.edu/about/news/rss",
+          "fallback_url": "https://news.google.com/rss/search?q=site:caltech.edu+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-US&gl=US&ceid=US:en"
+        },
+        {
+          "id": "us-duke-university",
+          "name": "Duke University",
+          "type": "university",
+          "domain": "duke.edu",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:duke.edu+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-US&gl=US&ceid=US:en"
+        },
+        {
+          "id": "us-johns-hopkins-university",
+          "name": "Johns Hopkins University",
+          "type": "university",
+          "domain": "jhu.edu",
+          "feed_type": "official_rss",
+          "url": "https://hub.jhu.edu/feed/",
+          "fallback_url": "https://news.google.com/rss/search?q=site:jhu.edu+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-US&gl=US&ceid=US:en"
+        },
+        {
+          "id": "us-northwestern-university",
+          "name": "Northwestern University",
+          "type": "university",
+          "domain": "northwestern.edu",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:northwestern.edu+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-US&gl=US&ceid=US:en"
+        },
+        {
+          "id": "us-upenn",
+          "name": "University of Pennsylvania",
+          "type": "university",
+          "domain": "upenn.edu",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:upenn.edu+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-US&gl=US&ceid=US:en"
+        },
+        {
+          "id": "us-cornell-university",
+          "name": "Cornell University",
+          "type": "university",
+          "domain": "cornell.edu",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:cornell.edu+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-US&gl=US&ceid=US:en"
+        },
+        {
+          "id": "us-uchicago",
+          "name": "University of Chicago",
+          "type": "university",
+          "domain": "uchicago.edu",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:uchicago.edu+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-US&gl=US&ceid=US:en"
+        },
+        {
+          "id": "us-brown-university",
+          "name": "Brown University",
+          "type": "university",
+          "domain": "brown.edu",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:brown.edu+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-US&gl=US&ceid=US:en"
+        },
+        {
+          "id": "us-columbia-university",
+          "name": "Columbia University",
+          "type": "university",
+          "domain": "columbia.edu",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:columbia.edu+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-US&gl=US&ceid=US:en"
+        },
+        {
+          "id": "us-dartmouth-college",
+          "name": "Dartmouth College",
+          "type": "university",
+          "domain": "dartmouth.edu",
+          "feed_type": "official_rss",
+          "url": "https://home.dartmouth.edu/rss.xml",
+          "fallback_url": "https://news.google.com/rss/search?q=site:dartmouth.edu+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-US&gl=US&ceid=US:en"
         },
         {
           "id": "us-ucla",
           "name": "UCLA",
           "type": "university",
-          "url": "https://news.google.com/rss/search?q=site:ucla.edu+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-US&gl=US&ceid=US:en"
+          "domain": "ucla.edu",
+          "feed_type": "official_rss",
+          "url": "https://newsroom.ucla.edu/rss.xml",
+          "fallback_url": "https://news.google.com/rss/search?q=site:ucla.edu+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-US&gl=US&ceid=US:en"
+        },
+        {
+          "id": "us-uc-berkeley",
+          "name": "UC Berkeley",
+          "type": "university",
+          "domain": "berkeley.edu",
+          "feed_type": "official_rss",
+          "url": "https://news.berkeley.edu/feed/",
+          "fallback_url": "https://news.google.com/rss/search?q=site:berkeley.edu+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-US&gl=US&ceid=US:en"
+        },
+        {
+          "id": "us-rice-university",
+          "name": "Rice University",
+          "type": "university",
+          "domain": "rice.edu",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:rice.edu+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-US&gl=US&ceid=US:en"
+        },
+        {
+          "id": "us-notre-dame",
+          "name": "University of Notre Dame",
+          "type": "university",
+          "domain": "nd.edu",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:nd.edu+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-US&gl=US&ceid=US:en"
+        },
+        {
+          "id": "us-vanderbilt-university",
+          "name": "Vanderbilt University",
+          "type": "university",
+          "domain": "vanderbilt.edu",
+          "feed_type": "official_rss",
+          "url": "https://news.vanderbilt.edu/feed/",
+          "fallback_url": "https://news.google.com/rss/search?q=site:vanderbilt.edu+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-US&gl=US&ceid=US:en"
         }
       ]
     },
@@ -61,28 +206,393 @@
           "url": "https://news.google.com/rss/search?q=site:ukcisa.org.uk+policy+OR+visa&hl=en-GB&gl=GB&ceid=GB:en"
         },
         {
+          "id": "uk-imperial-college-london",
+          "name": "Imperial College London",
+          "type": "university",
+          "domain": "imperial.ac.uk",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:imperial.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
           "id": "uk-university-of-oxford",
           "name": "University of Oxford",
           "type": "university",
+          "domain": "ox.ac.uk",
+          "feed_type": "google_news",
           "url": "https://news.google.com/rss/search?q=site:ox.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
         },
         {
           "id": "uk-university-of-cambridge",
           "name": "University of Cambridge",
           "type": "university",
-          "url": "https://news.google.com/rss/search?q=site:cam.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+          "domain": "cam.ac.uk",
+          "feed_type": "official_rss",
+          "url": "https://www.cam.ac.uk/news/feed",
+          "fallback_url": "https://news.google.com/rss/search?q=site:cam.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
         },
         {
           "id": "uk-ucl",
           "name": "UCL",
           "type": "university",
+          "domain": "ucl.ac.uk",
+          "feed_type": "google_news",
           "url": "https://news.google.com/rss/search?q=site:ucl.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
         },
         {
-          "id": "uk-imperial-college-london",
-          "name": "Imperial College London",
+          "id": "uk-university-of-edinburgh",
+          "name": "University of Edinburgh",
           "type": "university",
-          "url": "https://news.google.com/rss/search?q=site:imperial.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+          "domain": "ed.ac.uk",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:ed.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-university-of-manchester",
+          "name": "University of Manchester",
+          "type": "university",
+          "domain": "manchester.ac.uk",
+          "feed_type": "official_rss",
+          "url": "https://www.manchester.ac.uk/discover/news/feed/",
+          "fallback_url": "https://news.google.com/rss/search?q=site:manchester.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-kings-college-london",
+          "name": "King's College London",
+          "type": "university",
+          "domain": "kcl.ac.uk",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:kcl.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-lse",
+          "name": "London School of Economics",
+          "type": "university",
+          "domain": "lse.ac.uk",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:lse.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-university-of-bristol",
+          "name": "University of Bristol",
+          "type": "university",
+          "domain": "bristol.ac.uk",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:bristol.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-university-of-warwick",
+          "name": "University of Warwick",
+          "type": "university",
+          "domain": "warwick.ac.uk",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:warwick.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-university-of-glasgow",
+          "name": "University of Glasgow",
+          "type": "university",
+          "domain": "gla.ac.uk",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:gla.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-university-of-birmingham",
+          "name": "University of Birmingham",
+          "type": "university",
+          "domain": "birmingham.ac.uk",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:birmingham.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-university-of-southampton",
+          "name": "University of Southampton",
+          "type": "university",
+          "domain": "southampton.ac.uk",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:southampton.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-university-of-leeds",
+          "name": "University of Leeds",
+          "type": "university",
+          "domain": "leeds.ac.uk",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:leeds.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-university-of-sheffield",
+          "name": "University of Sheffield",
+          "type": "university",
+          "domain": "sheffield.ac.uk",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:sheffield.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-durham-university",
+          "name": "Durham University",
+          "type": "university",
+          "domain": "durham.ac.uk",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:durham.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-university-of-nottingham",
+          "name": "University of Nottingham",
+          "type": "university",
+          "domain": "nottingham.ac.uk",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:nottingham.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-qmul",
+          "name": "Queen Mary University of London",
+          "type": "university",
+          "domain": "qmul.ac.uk",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:qmul.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-university-of-st-andrews",
+          "name": "University of St Andrews",
+          "type": "university",
+          "domain": "st-andrews.ac.uk",
+          "feed_type": "official_rss",
+          "url": "https://news.st-andrews.ac.uk/feed/",
+          "fallback_url": "https://news.google.com/rss/search?q=site:st-andrews.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-university-of-bath",
+          "name": "University of Bath",
+          "type": "university",
+          "domain": "bath.ac.uk",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:bath.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-university-of-liverpool",
+          "name": "University of Liverpool",
+          "type": "university",
+          "domain": "liverpool.ac.uk",
+          "feed_type": "official_rss",
+          "url": "https://news.liverpool.ac.uk/feed/",
+          "fallback_url": "https://news.google.com/rss/search?q=site:liverpool.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-university-of-exeter",
+          "name": "University of Exeter",
+          "type": "university",
+          "domain": "exeter.ac.uk",
+          "feed_type": "official_rss",
+          "url": "https://news.exeter.ac.uk/feed/",
+          "fallback_url": "https://news.google.com/rss/search?q=site:exeter.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-university-of-york",
+          "name": "University of York",
+          "type": "university",
+          "domain": "york.ac.uk",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:york.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-newcastle-university",
+          "name": "Newcastle University",
+          "type": "university",
+          "domain": "ncl.ac.uk",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:ncl.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-cardiff-university",
+          "name": "Cardiff University",
+          "type": "university",
+          "domain": "cardiff.ac.uk",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:cardiff.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-queens-university-belfast",
+          "name": "Queen's University Belfast",
+          "type": "university",
+          "domain": "qub.ac.uk",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:qub.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-loughborough-university",
+          "name": "Loughborough University",
+          "type": "university",
+          "domain": "lboro.ac.uk",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:lboro.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-university-of-reading",
+          "name": "University of Reading",
+          "type": "university",
+          "domain": "reading.ac.uk",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:reading.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-university-of-sussex",
+          "name": "University of Sussex",
+          "type": "university",
+          "domain": "sussex.ac.uk",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:sussex.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-university-of-surrey",
+          "name": "University of Surrey",
+          "type": "university",
+          "domain": "surrey.ac.uk",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:surrey.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-university-of-leicester",
+          "name": "University of Leicester",
+          "type": "university",
+          "domain": "le.ac.uk",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:le.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-university-of-aberdeen",
+          "name": "University of Aberdeen",
+          "type": "university",
+          "domain": "abdn.ac.uk",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:abdn.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-lancaster-university",
+          "name": "Lancaster University",
+          "type": "university",
+          "domain": "lancaster.ac.uk",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:lancaster.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-heriot-watt-university",
+          "name": "Heriot-Watt University",
+          "type": "university",
+          "domain": "hw.ac.uk",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:hw.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-university-of-strathclyde",
+          "name": "University of Strathclyde",
+          "type": "university",
+          "domain": "strath.ac.uk",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:strath.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-university-of-kent",
+          "name": "University of Kent",
+          "type": "university",
+          "domain": "kent.ac.uk",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:kent.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-royal-holloway",
+          "name": "Royal Holloway, University of London",
+          "type": "university",
+          "domain": "royalholloway.ac.uk",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:royalholloway.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-uea",
+          "name": "University of East Anglia",
+          "type": "university",
+          "domain": "uea.ac.uk",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:uea.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-university-of-dundee",
+          "name": "University of Dundee",
+          "type": "university",
+          "domain": "dundee.ac.uk",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:dundee.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-university-of-essex",
+          "name": "University of Essex",
+          "type": "university",
+          "domain": "essex.ac.uk",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:essex.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-university-of-stirling",
+          "name": "University of Stirling",
+          "type": "university",
+          "domain": "stir.ac.uk",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:stir.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-swansea-university",
+          "name": "Swansea University",
+          "type": "university",
+          "domain": "swansea.ac.uk",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:swansea.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-city-st-georges",
+          "name": "City St George's, University of London",
+          "type": "university",
+          "domain": "city.ac.uk",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:city.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-brunel-university",
+          "name": "Brunel University London",
+          "type": "university",
+          "domain": "brunel.ac.uk",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:brunel.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-aston-university",
+          "name": "Aston University",
+          "type": "university",
+          "domain": "aston.ac.uk",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:aston.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-soas",
+          "name": "SOAS University of London",
+          "type": "university",
+          "domain": "soas.ac.uk",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:soas.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-goldsmiths",
+          "name": "Goldsmiths, University of London",
+          "type": "university",
+          "domain": "gold.ac.uk",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:gold.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-birkbeck",
+          "name": "Birkbeck, University of London",
+          "type": "university",
+          "domain": "bbk.ac.uk",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:bbk.ac.uk+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-GB&gl=GB&ceid=GB:en"
         }
       ]
     },

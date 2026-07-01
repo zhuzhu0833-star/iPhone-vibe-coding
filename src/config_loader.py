@@ -35,6 +35,8 @@ def load_sources() -> dict:
                 "name": source["name"],
                 "type": source["type"],
                 "url": source["url"],
+                "fallback_url": source.get("fallback_url"),
+                "feed_type": source.get("feed_type", "google_news"),
             }
             for source in country.get("sources", [])
             if source["id"] in enabled_ids
@@ -48,6 +50,8 @@ def load_sources() -> dict:
                     "name": custom["name"],
                     "type": custom.get("type", "university"),
                     "url": custom["url"],
+                    "fallback_url": custom.get("fallback_url"),
+                    "feed_type": custom.get("feed_type", "google_news"),
                 }
             )
 

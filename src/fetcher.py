@@ -64,21 +64,43 @@ def fetch_all() -> list[RawArticle]:
 
     for country in config.get("countries", []):
         for source in country.get("sources", []):
-            url = source.get("url")
-            if not url:
+            urls = [source.get("url")]
+            fallback = source.get("fallback_url")
+            if fallback and fallback not in urls:
+                urls.append(fallback)
+
+            feed = None
+            used_url = None
+            for url in urls:
+                if not url:
+                    continue
+                try:
+                    response = session.get(url, timeout=REQUEST_TIMEOUT)
+                    response.raise_for_status()
+                    parsed = feedparser.parse(response.content)
+                    if parsed.entries:
+                        feed = parsed
+                        used_url = url
+                        break
+                    logger.warning(
+                        "Empty feed for %s (%s), trying fallback",
+                        source.get("name"),
+                        url,
+                    )
+                except Exception as exc:
+                    logger.warning(
+                        "Failed to fetch %s (%s): %s",
+                        source.get("name"),
+                        url,
+                        exc,
+                    )
+            if feed is None:
                 continue
-            try:
-                response = session.get(url, timeout=REQUEST_TIMEOUT)
-                response.raise_for_status()
-                feed = feedparser.parse(response.content)
-            except Exception as exc:
-                logger.warning(
-                    "Failed to fetch %s (%s): %s",
+            if used_url == fallback and source.get("feed_type") == "official_rss":
+                logger.info(
+                    "Using Google News fallback for %s",
                     source.get("name"),
-                    url,
-                    exc,
                 )
-                continue
 
             count = 0
             for entry in feed.entries:
