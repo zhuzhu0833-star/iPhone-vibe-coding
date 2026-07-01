@@ -97,6 +97,7 @@ function setStatus(message, type = "") {
 function sourcesForCountry(country) {
   const catalogSources = country.sources.map((source) => ({
     ...source,
+    feedType: source.feed_type || "google_news",
     isCustom: false,
   }));
   const custom = state.customSources
@@ -302,7 +303,9 @@ function renderCountryCard(country) {
             ? source.feedType === "official_rss"
               ? '<span class="source-type official">官方 RSS</span>'
               : '<span class="source-type custom">Google News</span>'
-            : `<span class="source-type ${source.type}">${TYPE_LABELS[type]}</span>`;
+            : source.feedType === "official_rss"
+              ? '<span class="source-type official">官方 RSS</span>'
+              : `<span class="source-type ${source.type}">${TYPE_LABELS[type]}</span>`;
           const customActions = source.isCustom
             ? `<button type="button" class="btn ghost sm source-remove" data-remove-source="${source.id}">删除</button>`
             : "";
