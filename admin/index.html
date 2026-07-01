@@ -84,7 +84,7 @@
             <h2>添加自定义院校</h2>
             <span class="badge">可选</span>
           </div>
-          <p class="hint">填写院校英文名和官网域名，系统自动生成 Google News 抓取源。</p>
+          <p class="hint">优先填写学校官网 RSS；没有 RSS 时再填域名，系统会用 Google News 抓取。</p>
           <div class="form-grid">
             <label>
               国家
@@ -94,8 +94,12 @@
               院校名称
               <input id="custom-name" type="text" placeholder="London School of Economics" />
             </label>
-            <label>
-              官网域名
+            <label class="span-2">
+              官方 RSS 地址（推荐）
+              <input id="custom-rss" type="url" placeholder="https://www.lse.ac.uk/news/rss-feed.aspx" />
+            </label>
+            <label class="span-2">
+              官网域名（无 RSS 时填写）
               <input id="custom-domain" type="text" placeholder="lse.ac.uk" />
             </label>
             <button type="button" id="btn-add-custom" class="btn primary">添加院校</button>
