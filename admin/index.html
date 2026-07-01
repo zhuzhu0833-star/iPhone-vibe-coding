@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>留学政策日报 · 来源管理</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div>
+        <h1>留学政策日报 · 来源管理</h1>
+        <p class="subtitle">勾选国家、院校与机构，保存后下次日报自动生效</p>
+      </div>
+      <div class="stats" id="stats">加载中…</div>
+    </header>
+
+    <section class="toolbar card">
+      <input type="search" id="search" placeholder="搜索国家或院校…" />
+      <div class="toolbar-actions">
+        <button type="button" id="btn-universities" class="btn secondary">仅选高校</button>
+        <button type="button" id="btn-all" class="btn secondary">全选</button>
+        <button type="button" id="btn-none" class="btn secondary">全不选</button>
+      </div>
+    </section>
+
+    <main id="countries" class="countries"></main>
+
+    <section class="card custom-form">
+      <h2>添加自定义院校</h2>
+      <p class="hint">填写院校英文名和官网域名，系统自动生成 Google News 抓取源</p>
+      <div class="form-grid">
+        <label>
+          国家
+          <select id="custom-country"></select>
+        </label>
+        <label>
+          院校名称
+          <input id="custom-name" type="text" placeholder="e.g. London School of Economics" />
+        </label>
+        <label>
+          官网域名
+          <input id="custom-domain" type="text" placeholder="e.g. lse.ac.uk" />
+        </label>
+        <button type="button" id="btn-add-custom" class="btn primary">添加</button>
+      </div>
+      <ul id="custom-list" class="custom-list"></ul>
+    </section>
+
+    <section class="card save-panel">
+      <h2>保存配置</h2>
+      <div class="form-grid">
+        <label>
+          GitHub 仓库
+          <input id="github-repo" type="text" value="zhuzhu0833-star/iPhone-vibe-coding" />
+        </label>
+        <label>
+          Personal Access Token
+          <input id="github-token" type="password" placeholder="github_pat_... 仅需 repo 权限" />
+        </label>
+      </div>
+      <p class="hint">
+        Token 仅保存在浏览器本地，用于提交 <code>data/selections.json</code>。
+        也可 <a href="https://github.com/settings/tokens" target="_blank" rel="noopener">在此创建</a>。
+      </p>
+      <div class="toolbar-actions">
+        <button type="button" id="btn-save-github" class="btn primary">保存到 GitHub</button>
+        <button type="button" id="btn-download" class="btn secondary">下载 JSON</button>
+      </div>
+      <p id="status" class="status" role="status"></p>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
