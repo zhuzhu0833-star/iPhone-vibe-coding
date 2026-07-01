@@ -29,6 +29,7 @@ const state = {
   savedSnapshot: "",
   typeFilter: "all",
   activeCountry: null,
+  highlightSourceId: null,
 };
 
 const els = {
@@ -92,19 +93,41 @@ function setStatus(message, type = "") {
   els.status.className = `status ${type}`;
 }
 
+function sourcesForCountry(country) {
+  const catalogSources = country.sources.map((source) => ({
+    ...source,
+    isCustom: false,
+  }));
+  const custom = state.customSources
+    .filter((item) => item.country_id === country.id)
+    .map((item) => ({
+      id: item.id,
+      name: item.name,
+      type: item.type || "university",
+      url: item.url,
+      domain: item.domain,
+      isCustom: true,
+    }));
+  return [...catalogSources, ...custom];
+}
+
 function countryById(id) {
   return state.catalog.countries.find((c) => c.id === id);
 }
 
+function isSourceEnabled(source) {
+  return source.isCustom || state.enabled.has(source.id);
+}
+
 function countryEnabledCount(country) {
-  return country.sources.filter((s) => state.enabled.has(s.id)).length;
+  return sourcesForCountry(country).filter(isSourceEnabled).length;
 }
 
 function matchesSearch(country, query) {
   if (!query) return true;
   const q = query.toLowerCase();
   if (country.name.toLowerCase().includes(q)) return true;
-  return country.sources.some((s) => s.name.toLowerCase().includes(q));
+  return sourcesForCountry(country).some((s) => s.name.toLowerCase().includes(q));
 }
 
 function sourceVisible(source) {
@@ -112,7 +135,7 @@ function sourceVisible(source) {
 }
 
 function visibleSources(country) {
-  return country.sources.filter(sourceVisible);
+  return sourcesForCountry(country).filter(sourceVisible);
 }
 
 function buildGoogleNewsUrl(domain, countryId) {
@@ -172,7 +195,8 @@ function populateCustomCountrySelect() {
 function setCountrySources(countryId, checked, type = null) {
   const country = countryById(countryId);
   if (!country) return;
-  for (const source of country.sources) {
+  for (const source of sourcesForCountry(country)) {
+    if (source.isCustom) continue;
     if (type && source.type !== type) continue;
     if (checked) state.enabled.add(source.id);
     else state.enabled.delete(source.id);
@@ -183,19 +207,27 @@ function setCountrySources(countryId, checked, type = null) {
 function updateStats() {
   const countries = state.catalog.countries;
   const countryCount = countries.filter((c) =>
-    c.sources.some((s) => state.enabled.has(s.id))
+    sourcesForCountry(c).some(isSourceEnabled)
   ).length;
 
-  const universityCount = countries.reduce(
-    (sum, c) =>
+  const universityCount = countries.reduce((sum, country) => {
+    return (
       sum +
-      c.sources.filter((s) => s.type === "university" && state.enabled.has(s.id)).length,
+      sourcesForCountry(country).filter(
+        (s) => s.type === "university" && isSourceEnabled(s)
+      ).length
+    );
+  }, 0);
+
+  const totalCatalog = countries.reduce(
+    (sum, c) => sum + sourcesForCountry(c).length,
     0
   );
-
-  const totalCatalog = countries.reduce((sum, c) => sum + c.sources.length, 0);
-  const selected = state.enabled.size + state.customSources.length;
-  const total = totalCatalog + state.customSources.length;
+  const selected = countries.reduce(
+    (sum, c) => sum + sourcesForCountry(c).filter(isSourceEnabled).length,
+    0
+  );
+  const total = totalCatalog;
   const pct = total ? Math.round((selected / total) * 100) : 0;
 
   els.statCountries.textContent = String(countryCount);
@@ -218,8 +250,12 @@ function renderNav() {
   els.countryNav.innerHTML = state.catalog.countries
     .filter((country) => matchesSearch(country, query))
     .map((country) => {
+      const sources = sourcesForCountry(country);
       const selected = countryEnabledCount(country);
-      const total = country.sources.length;
+      const total = sources.length;
+      const customCount = sources.filter((s) => s.isCustom).length;
+      const customBadge =
+        customCount > 0 ? ` · +${customCount}自定义` : "";
       return `
         <button
           type="button"
@@ -227,7 +263,7 @@ function renderNav() {
           data-nav-country="${country.id}"
         >
           <span>${country.flag} ${country.name}</span>
-          <span class="nav-count">${selected}/${total}</span>
+          <span class="nav-count">${selected}/${total}${customBadge}</span>
         </button>`;
     })
     .join("");
@@ -237,36 +273,54 @@ function renderCountryCard(country) {
   const query = els.search.value.trim();
   if (!matchesSearch(country, query)) return "";
 
+  const sources = sourcesForCountry(country);
   const visible = visibleSources(country);
   if (visible.length === 0) return "";
 
-  const total = country.sources.length;
+  const total = sources.length;
   const selected = countryEnabledCount(country);
   const isExpanded = state.expanded.has(country.id);
-  const allChecked = selected === total && total > 0;
-  const indeterminate = selected > 0 && selected < total;
+  const catalogSources = sources.filter((s) => !s.isCustom);
+  const allCatalogChecked =
+    catalogSources.length > 0 &&
+    catalogSources.every((s) => state.enabled.has(s.id));
+  const indeterminate = selected > 0 && !allCatalogChecked;
   const dimmed = state.activeCountry && state.activeCountry !== country.id;
 
   const groups = ["university", "education", "immigration"]
     .map((type) => {
-      const sources = country.sources.filter((s) => s.type === type && sourceVisible(s));
-      if (sources.length === 0) return "";
+      const groupSources = sources.filter((s) => s.type === type && sourceVisible(s));
+      if (groupSources.length === 0) return "";
 
-      const rows = sources
+      const rows = groupSources
         .map((source) => {
-          const checked = state.enabled.has(source.id);
+          const checked = isSourceEnabled(source);
+          const highlight = source.id === state.highlightSourceId ? " source-new" : "";
+          const customBadge = source.isCustom
+            ? '<span class="source-type custom">自定义</span>'
+            : `<span class="source-type ${source.type}">${TYPE_LABELS[type]}</span>`;
+          const customActions = source.isCustom
+            ? `<button type="button" class="btn ghost sm source-remove" data-remove-source="${source.id}">删除</button>`
+            : "";
+
           return `
-            <label class="source-card ${checked ? "checked" : ""}" data-source-card="${source.id}">
-              <input
-                type="checkbox"
-                data-source-id="${source.id}"
-                ${checked ? "checked" : ""}
-              />
-              <span>
-                <span class="source-name">${source.name}</span>
-                <span class="source-type ${source.type}">${TYPE_LABELS[type]}</span>
-              </span>
-            </label>`;
+            <div class="source-card ${checked ? "checked" : ""}${highlight}" data-source-card="${source.id}">
+              <label class="source-card-main">
+                <input
+                  type="checkbox"
+                  data-source-id="${source.id}"
+                  data-is-custom="${source.isCustom ? "1" : "0"}"
+                  ${checked ? "checked" : ""}
+                  ${source.isCustom ? "disabled" : ""}
+                />
+                <span>
+                  <span class="source-name">${source.name}</span>
+                  ${customBadge}
+                  ${source.isCustom && source.domain ? `<span class="source-domain">${source.domain}</span>` : ""}
+                </span>
+              </label>
+              ${customActions}
+            </div>`;
         })
         .join("");
 
@@ -289,7 +343,7 @@ function renderCountryCard(country) {
         <input
           type="checkbox"
           data-country-checkbox="${country.id}"
-          ${allChecked ? "checked" : ""}
+          ${allCatalogChecked && selected === total ? "checked" : ""}
           ${indeterminate ? 'data-indeterminate="true"' : ""}
           aria-label="选择 ${country.name} 全部来源"
         />
@@ -319,18 +373,25 @@ function renderCountries() {
 
 function renderCustomList() {
   if (state.customSources.length === 0) {
-    els.customList.innerHTML = `<li class="hint">暂无自定义院校</li>`;
+    els.customList.innerHTML = `<li class="hint">暂无自定义院校，添加后会显示在对应国家的高校列表中</li>`;
     return;
   }
 
   els.customList.innerHTML = state.customSources
-    .map(
-      (item, index) => `
+    .map((item) => {
+      const country = countryById(item.country_id);
+      return `
       <li>
-        <span>${item.name} <code>${item.domain || ""}</code></span>
-        <button type="button" class="btn ghost sm" data-remove-custom="${index}">删除</button>
-      </li>`
-    )
+        <span>
+          ${country ? `${country.flag} ` : ""}${item.name}
+          <code>${item.domain || ""}</code>
+        </span>
+        <span class="custom-list-actions">
+          <button type="button" class="btn ghost sm" data-jump-source="${item.id}">查看</button>
+          <button type="button" class="btn ghost sm" data-remove-custom-id="${item.id}">删除</button>
+        </span>
+      </li>`;
+    })
     .join("");
 }
 
@@ -342,12 +403,23 @@ function renderAll() {
   updateDock();
 }
 
-function scrollToCountry(countryId) {
+function scrollToCountry(countryId, sourceId = null) {
   state.activeCountry = countryId;
   state.expanded.add(countryId);
+  if (sourceId) state.highlightSourceId = sourceId;
   renderAll();
   const node = document.getElementById(`country-${countryId}`);
   if (node) node.scrollIntoView({ behavior: "smooth", block: "start" });
+  if (sourceId) {
+    setTimeout(() => {
+      const sourceNode = document.querySelector(`[data-source-card="${sourceId}"]`);
+      if (sourceNode) sourceNode.scrollIntoView({ behavior: "smooth", block: "center" });
+    }, 120);
+    setTimeout(() => {
+      state.highlightSourceId = null;
+      renderCountries();
+    }, 2400);
+  }
 }
 
 function selectUniversitiesOnly() {
@@ -402,8 +474,19 @@ function addCustomSource() {
     return;
   }
 
+  const id = `custom-${countryId}-${slugify(name)}`;
+  if (
+    state.customSources.some((item) => item.id === id) ||
+    state.catalog.countries.some((country) =>
+      country.sources.some((source) => source.id === id)
+    )
+  ) {
+    showToast("该院校来源已存在", "err");
+    return;
+  }
+
   state.customSources.push({
-    id: `custom-${countryId}-${slugify(name)}`,
+    id,
     country_id: countryId,
     name,
     domain,
@@ -413,7 +496,34 @@ function addCustomSource() {
 
   els.customName.value = "";
   els.customDomain.value = "";
-  showToast(`已添加 ${name}`, "ok");
+  state.highlightSourceId = id;
+  state.activeCountry = countryId;
+  state.expanded.add(countryId);
+  state.typeFilter = "all";
+  document.querySelectorAll(".filter-chips .chip").forEach((chip) => {
+    chip.classList.toggle("active", chip.dataset.filter === "all");
+  });
+
+  showToast(`已添加 ${name}，已显示在 ${countryById(countryId)?.name || "对应国家"}`, "ok");
+  renderAll();
+
+  setTimeout(() => {
+    const node = document.querySelector(`[data-source-card="${id}"]`);
+    if (node) node.scrollIntoView({ behavior: "smooth", block: "center" });
+  }, 50);
+
+  setTimeout(() => {
+    state.highlightSourceId = null;
+    renderCountries();
+  }, 2400);
+}
+
+function removeCustomSource(sourceId) {
+  const index = state.customSources.findIndex((item) => item.id === sourceId);
+  if (index === -1) return;
+  const name = state.customSources[index].name;
+  state.customSources.splice(index, 1);
+  showToast(`已删除 ${name}`);
   renderAll();
 }
 
@@ -505,7 +615,7 @@ els.countries.addEventListener("change", (event) => {
   const target = event.target;
   if (!(target instanceof HTMLInputElement)) return;
 
-  if (target.dataset.sourceId) {
+  if (target.dataset.sourceId && target.dataset.isCustom !== "1") {
     if (target.checked) state.enabled.add(target.dataset.sourceId);
     else state.enabled.delete(target.dataset.sourceId);
     target.closest(".source-card")?.classList.toggle("checked", target.checked);
@@ -537,9 +647,17 @@ els.countries.addEventListener("click", (event) => {
   if (typeToggle) {
     const [countryId, type] = typeToggle.getAttribute("data-type-toggle").split(":");
     const country = countryById(countryId);
-    const sources = country.sources.filter((s) => s.type === type);
+    const sources = sourcesForCountry(country).filter(
+      (s) => s.type === type && !s.isCustom
+    );
     const allOn = sources.every((s) => state.enabled.has(s.id));
     setCountrySources(countryId, !allOn, type);
+    return;
+  }
+
+  const removeBtn = target.closest("[data-remove-source]");
+  if (removeBtn) {
+    removeCustomSource(removeBtn.getAttribute("data-remove-source"));
   }
 });
 
@@ -583,11 +701,15 @@ document.getElementById("btn-toggle-token").addEventListener("click", () => {
 });
 
 els.customList.addEventListener("click", (event) => {
-  const btn = event.target.closest("[data-remove-custom]");
-  if (!btn) return;
-  state.customSources.splice(Number(btn.dataset.removeCustom), 1);
-  showToast("已删除自定义院校");
-  renderAll();
+  const jumpBtn = event.target.closest("[data-jump-source]");
+  if (jumpBtn) {
+    const item = state.customSources.find((s) => s.id === jumpBtn.dataset.jumpSource);
+    if (item) scrollToCountry(item.country_id);
+    return;
+  }
+
+  const removeBtn = event.target.closest("[data-remove-custom-id]");
+  if (removeBtn) removeCustomSource(removeBtn.dataset.removeCustomId);
 });
 
 els.search.addEventListener("input", renderAll);
