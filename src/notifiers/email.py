@@ -89,11 +89,20 @@ def send_email(digest: Digest) -> bool:
     msg["To"] = ", ".join(recipients)
     msg.attach(MIMEText(build_html(digest), "html", "utf-8"))
 
-    with smtplib.SMTP(smtp_host, smtp_port, timeout=30) as server:
-        if use_tls:
-            server.starttls()
-        server.login(smtp_user, smtp_password)
-        server.sendmail(email_from, recipients, msg.as_string())
+    try:
+        with smtplib.SMTP(smtp_host, smtp_port, timeout=30) as server:
+            if use_tls:
+                server.starttls()
+            server.login(smtp_user, smtp_password)
+            server.sendmail(email_from, recipients, msg.as_string())
+    except smtplib.SMTPAuthenticationError:
+        logger.error(
+            "Gmail/SMTP login failed. Use an app-specific password, not your login password."
+        )
+        return False
+    except Exception as exc:
+        logger.error("Email send failed: %s", exc)
+        return False
 
     logger.info("Email sent to %s", recipients)
     return True

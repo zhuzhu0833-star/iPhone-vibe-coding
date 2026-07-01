@@ -91,7 +91,9 @@ def fetch_all() -> list[RawArticle]:
                     continue
 
                 published = _parse_published(entry)
-                if published and published < cutoff:
+                if not published:
+                    continue
+                if published < cutoff:
                     continue
 
                 articles.append(

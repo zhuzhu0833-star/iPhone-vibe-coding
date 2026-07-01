@@ -123,7 +123,13 @@ def summarize_items(items: list[DigestItem]) -> list[DigestItem]:
                 _chat_summarize(item, api_key, config["url"], config["model"])
             )
         except Exception as exc:
-            logger.warning("LLM summarize failed for %s: %s", item.link, exc)
+            err = str(exc)
+            if "402" in err or "Payment Required" in err:
+                logger.warning(
+                    "LLM API balance exhausted (402). Recharge DeepSeek or switch LLM_PROVIDER to qwen."
+                )
+            else:
+                logger.warning("LLM summarize failed for %s: %s", item.link, exc)
             if not item.summary_zh:
                 item.summary_zh = _fallback_zh(item.title_en)
             summarized.append(item)

@@ -90,9 +90,12 @@ def send_wechat(digest: Digest) -> bool:
         logger.warning("WECHAT_WORK_WEBHOOK_URL not set; skipping WeChat Work")
         return False
 
-    messages = build_markdown_messages(digest)
-    for i, content in enumerate(messages, start=1):
-        _send_markdown(webhook, content)
-        logger.info("WeChat Work message %d/%d sent", i, len(messages))
-
-    return True
+    try:
+        messages = build_markdown_messages(digest)
+        for i, content in enumerate(messages, start=1):
+            _send_markdown(webhook, content)
+            logger.info("WeChat Work message %d/%d sent", i, len(messages))
+        return True
+    except Exception as exc:
+        logger.error("WeChat Work send failed: %s", exc)
+        return False

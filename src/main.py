@@ -45,6 +45,18 @@ def run() -> int:
         logger.error("No notification channel configured or all channels failed")
         return 1
 
+    if not email_ok and wechat_ok:
+        logger.warning("Email failed but WeChat succeeded; job marked successful")
+    if not wechat_ok and email_ok:
+        logger.warning("WeChat failed but email succeeded; job marked successful")
+
+    if len(items) < 3:
+        logger.warning(
+            "Only %d item(s) in today's digest. Consider enabling more sources "
+            "or adding education/immigration feeds in the admin panel.",
+            len(items),
+        )
+
     # Still send an empty digest when no items matched (team sees "no updates today").
     if not items:
         logger.info("No new items today; empty digest sent")
