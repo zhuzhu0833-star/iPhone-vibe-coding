@@ -47,6 +47,7 @@ const els = {
   customCountry: document.getElementById("custom-country"),
   customName: document.getElementById("custom-name"),
   customDomain: document.getElementById("custom-domain"),
+  customRss: document.getElementById("custom-rss"),
   customList: document.getElementById("custom-list"),
   githubRepo: document.getElementById("github-repo"),
   githubToken: document.getElementById("github-token"),
@@ -106,6 +107,7 @@ function sourcesForCountry(country) {
       type: item.type || "university",
       url: item.url,
       domain: item.domain,
+      feedType: item.feed_type || "google_news",
       isCustom: true,
     }));
   return [...catalogSources, ...custom];
@@ -297,7 +299,9 @@ function renderCountryCard(country) {
           const checked = isSourceEnabled(source);
           const highlight = source.id === state.highlightSourceId ? " source-new" : "";
           const customBadge = source.isCustom
-            ? '<span class="source-type custom">自定义</span>'
+            ? source.feedType === "official_rss"
+              ? '<span class="source-type official">官方 RSS</span>'
+              : '<span class="source-type custom">Google News</span>'
             : `<span class="source-type ${source.type}">${TYPE_LABELS[type]}</span>`;
           const customActions = source.isCustom
             ? `<button type="button" class="btn ghost sm source-remove" data-remove-source="${source.id}">删除</button>`
@@ -380,11 +384,14 @@ function renderCustomList() {
   els.customList.innerHTML = state.customSources
     .map((item) => {
       const country = countryById(item.country_id);
+      const feedLabel = item.feed_type === "official_rss" ? "官方 RSS" : "Google News";
+      const detail = item.feed_type === "official_rss" ? item.url : item.domain || "";
       return `
       <li>
         <span>
           ${country ? `${country.flag} ` : ""}${item.name}
-          <code>${item.domain || ""}</code>
+          <code>${feedLabel}</code>
+          <code>${detail}</code>
         </span>
         <span class="custom-list-actions">
           <button type="button" class="btn ghost sm" data-jump-source="${item.id}">查看</button>
@@ -464,13 +471,19 @@ function selectNone() {
 function addCustomSource() {
   const countryId = els.customCountry.value;
   const name = els.customName.value.trim();
+  const rssUrl = els.customRss.value.trim();
   const domain = els.customDomain.value
     .trim()
     .replace(/^https?:\/\//, "")
     .replace(/\/.*$/, "");
 
-  if (!name || !domain) {
-    showToast("请填写院校名称和官网域名", "err");
+  if (!name) {
+    showToast("请填写院校名称", "err");
+    return;
+  }
+
+  if (!rssUrl && !domain) {
+    showToast("请填写官方 RSS 地址，或填写官网域名", "err");
     return;
   }
 
@@ -485,17 +498,22 @@ function addCustomSource() {
     return;
   }
 
+  const feedType = rssUrl ? "official_rss" : "google_news";
+  const url = rssUrl || buildGoogleNewsUrl(domain, countryId);
+
   state.customSources.push({
     id,
     country_id: countryId,
     name,
-    domain,
+    domain: domain || null,
+    feed_type: feedType,
     type: "university",
-    url: buildGoogleNewsUrl(domain, countryId),
+    url,
   });
 
   els.customName.value = "";
   els.customDomain.value = "";
+  els.customRss.value = "";
   state.highlightSourceId = id;
   state.activeCountry = countryId;
   state.expanded.add(countryId);
@@ -504,7 +522,10 @@ function addCustomSource() {
     chip.classList.toggle("active", chip.dataset.filter === "all");
   });
 
-  showToast(`已添加 ${name}，已显示在 ${countryById(countryId)?.name || "对应国家"}`, "ok");
+  showToast(
+    `已添加 ${name}（${feedType === "official_rss" ? "官方 RSS" : "Google News"}）`,
+    "ok"
+  );
   renderAll();
 
   setTimeout(() => {
@@ -718,6 +739,9 @@ els.customName.addEventListener("keydown", (event) => {
   if (event.key === "Enter") addCustomSource();
 });
 els.customDomain.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") addCustomSource();
+});
+els.customRss.addEventListener("keydown", (event) => {
   if (event.key === "Enter") addCustomSource();
 });
 

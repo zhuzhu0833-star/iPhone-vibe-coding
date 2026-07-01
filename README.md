@@ -225,6 +225,48 @@ export LLM_PROVIDER="deepseek"
 python -m src.main
 ```
 
+## 新闻来源：Google News 还是学校官网 RSS？
+
+### 为什么默认用 Google News？
+
+| 方式 | 优点 | 缺点 |
+|------|------|------|
+| **Google News** (`site:学校域名`) | 免费、稳定、不用维护 RSS 地址 | 可能混入非招生新闻、偶尔有旧闻 |
+| **学校官网 RSS** | 最权威、直接来自学校 | 很多学校没有 RSS，或地址经常变 |
+
+所以系统**默认用 Google News 作为保底**，保证能抓到内容；但**完全支持学校官网自己的 RSS**。
+
+### 怎么用学校官网官方 Updates（RSS）
+
+**方式 1：管理后台添加（推荐）**
+
+1. 打开管理后台 → **添加自定义院校**
+2. 填写院校名称
+3. 在 **官方 RSS 地址** 填学校新闻页的 RSS，例如：
+   ```text
+   https://www.imperial.ac.uk/news/rss.xml
+   ```
+4. 保存到 GitHub
+
+**如何找学校 RSS？** 在学校官网 News / Media 页面：
+- 找 RSS / Feed 图标或链接
+- 或试常见路径：`/news/rss.xml`、`/feed`、`/rss`
+
+**方式 2：直接编辑 `data/catalog.json`**
+
+把某个院校的 `url` 改成官方 RSS 地址即可，例如：
+
+```json
+{
+  "id": "uk-imperial-college-london",
+  "name": "Imperial College London",
+  "type": "university",
+  "url": "https://www.imperial.ac.uk/news/rss.xml"
+}
+```
+
+抓取器对 **任何 RSS/Atom 地址** 都通用，不限于 Google News。
+
 ## 网页后台管理来源（推荐）
 
 在浏览器里勾选国家、院校和机构，无需手改 YAML。
