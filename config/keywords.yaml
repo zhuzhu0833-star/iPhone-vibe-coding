@@ -1,7 +1,26 @@
-# Content filter: university policy, immigration policy, post-graduation work rights.
+# Content filter and ranking weights.
+# Priority order: university admissions > post-graduation work rights > immigration policy.
 
-# At least one required match (case-insensitive).
+# At least one required match (case-insensitive) for non-immigration sources.
 required_any:
+  - admission
+  - admissions
+  - enrolment
+  - enrollment
+  - intake
+  - tuition
+  - scholarship
+  - entry requirement
+  - application deadline
+  - offer
+  - international student
+  - international students
+  - overseas student
+  - foreign student
+  - english-taught
+  - english taught
+  - english programme
+  - english program
   - visa
   - permit
   - student visa
@@ -9,71 +28,93 @@ required_any:
   - student permit
   - immigration
   - visa policy
-  - visa change
-  - visa rule
   - work permit
   - work right
   - post-study
   - post study
   - post-graduation
-  - post graduation
   - graduate route
   - graduate visa
   - opt
-  - optional practical training
-  - stem opt
   - psw
   - pgwp
   - post-study work
-  - post study work
-  - temporary graduate
-  - 485 visa
-  - open work permit
-  - residence permit
-  - tuition fee
-  - tuition policy
-  - international student
-  - international students
-  - overseas student
-  - foreign student
-  - admission policy
-  - admissions policy
-  - enrolment policy
-  - enrollment policy
-  - english-taught
-  - english taught
-  - english programme
-  - english program
-  - scholarship
-  - bno
-  - iang
-  - dependent visa
-  - spouse visa
   - right to work
   - working rights
   - employment after graduation
-  - stay back
-  - bridging visa
 
-# Boost score when matched (used for ranking).
+# High-priority: university admissions and enrollment policy.
+admissions_priority:
+  - admission policy
+  - admissions policy
+  - admission requirement
+  - admissions requirement
+  - entry requirement
+  - application deadline
+  - application open
+  - enrolment policy
+  - enrollment policy
+  - tuition fee
+  - tuition increase
+  - tuition reduction
+  - scholarship
+  - bursary
+  - financial aid
+  - intake
+  - places available
+  - offer holder
+  - conditional offer
+  - clearing
+  - international student
+  - international students
+  - overseas applicant
+  - english-taught
+  - english taught
+
+# Lower-priority immigration-only signals (still included, ranked lower).
+immigration_only:
+  - visa processing time
+  - visa fee
+  - visa application
+  - immigration raid
+  - detained
+  - sentenced
+  - charged
+  - form i-
+  - case status
+  - biometrics
+
+# Source-type base bonus (higher = more likely to appear in digest).
+source_type_bonus:
+  university: 35
+  education: 20
+  immigration: 5
+
+# Extra score per matched term.
 priority_boost:
   - policy change
   - new rule
   - updated guidance
   - announced
   - effective
-  - graduate route
-  - post-study work
-  - work rights
   - tuition
   - admission
-  - visa extension
-  - visa restriction
-  - cap
-  - quota
+  - admissions
+  - scholarship
+  - intake
   - english-taught
 
-# Netherlands-only extra requirement: must match at least one when country is nl.
+# Penalty per matched term for immigration-heavy noise.
+immigration_penalty:
+  - processing time
+  - case status
+  - form i-
+  - biometrics appointment
+  - fraud
+  - sentenced
+  - charged
+
+# Netherlands-only extra requirement.
 netherlands_extra_any:
   - international student
   - international students
@@ -85,7 +126,6 @@ netherlands_extra_any:
   - non-eu student
   - non-eu students
 
-# Exclude obvious noise.
 exclude_any:
   - sports
   - football
