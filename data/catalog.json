@@ -617,19 +617,97 @@
           "id": "au-university-of-melbourne",
           "name": "University of Melbourne",
           "type": "university",
+          "domain": "unimelb.edu.au",
+          "feed_type": "google_news",
           "url": "https://news.google.com/rss/search?q=site:unimelb.edu.au+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-AU&gl=AU&ceid=AU:en"
         },
         {
           "id": "au-university-of-sydney",
           "name": "University of Sydney",
           "type": "university",
+          "domain": "sydney.edu.au",
+          "feed_type": "google_news",
           "url": "https://news.google.com/rss/search?q=site:sydney.edu.au+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-AU&gl=AU&ceid=AU:en"
         },
         {
           "id": "au-australian-national-university",
           "name": "Australian National University",
           "type": "university",
+          "domain": "anu.edu.au",
+          "feed_type": "google_news",
           "url": "https://news.google.com/rss/search?q=site:anu.edu.au+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-AU&gl=AU&ceid=AU:en"
+        },
+        {
+          "id": "au-unsw-sydney",
+          "name": "UNSW Sydney",
+          "type": "university",
+          "domain": "unsw.edu.au",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:unsw.edu.au+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-AU&gl=AU&ceid=AU:en"
+        },
+        {
+          "id": "au-monash-university",
+          "name": "Monash University",
+          "type": "university",
+          "domain": "monash.edu",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:monash.edu+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-AU&gl=AU&ceid=AU:en"
+        },
+        {
+          "id": "au-university-of-queensland",
+          "name": "University of Queensland",
+          "type": "university",
+          "domain": "uq.edu.au",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:uq.edu.au+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-AU&gl=AU&ceid=AU:en"
+        },
+        {
+          "id": "au-university-of-western-australia",
+          "name": "University of Western Australia",
+          "type": "university",
+          "domain": "uwa.edu.au",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:uwa.edu.au+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-AU&gl=AU&ceid=AU:en"
+        },
+        {
+          "id": "au-university-of-adelaide",
+          "name": "University of Adelaide",
+          "type": "university",
+          "domain": "adelaide.edu.au",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:adelaide.edu.au+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-AU&gl=AU&ceid=AU:en"
+        },
+        {
+          "id": "au-uts",
+          "name": "University of Technology Sydney",
+          "type": "university",
+          "domain": "uts.edu.au",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:uts.edu.au+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-AU&gl=AU&ceid=AU:en"
+        },
+        {
+          "id": "au-macquarie-university",
+          "name": "Macquarie University",
+          "type": "university",
+          "domain": "mq.edu.au",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:mq.edu.au+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-AU&gl=AU&ceid=AU:en"
+        },
+        {
+          "id": "au-rmit-university",
+          "name": "RMIT University",
+          "type": "university",
+          "domain": "rmit.edu.au",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:rmit.edu.au+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-AU&gl=AU&ceid=AU:en"
+        },
+        {
+          "id": "au-qut",
+          "name": "Queensland University of Technology",
+          "type": "university",
+          "domain": "qut.edu.au",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:qut.edu.au+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-AU&gl=AU&ceid=AU:en"
         }
       ]
     },
@@ -654,19 +732,97 @@
           "id": "ca-university-of-toronto",
           "name": "University of Toronto",
           "type": "university",
+          "domain": "utoronto.ca",
+          "feed_type": "google_news",
           "url": "https://news.google.com/rss/search?q=site:utoronto.ca+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-CA&gl=CA&ceid=CA:en"
         },
         {
           "id": "ca-ubc",
           "name": "UBC",
           "type": "university",
+          "domain": "ubc.ca",
+          "feed_type": "google_news",
           "url": "https://news.google.com/rss/search?q=site:ubc.ca+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-CA&gl=CA&ceid=CA:en"
         },
         {
           "id": "ca-mcgill-university",
           "name": "McGill University",
           "type": "university",
+          "domain": "mcgill.ca",
+          "feed_type": "google_news",
           "url": "https://news.google.com/rss/search?q=site:mcgill.ca+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-CA&gl=CA&ceid=CA:en"
+        },
+        {
+          "id": "ca-university-of-waterloo",
+          "name": "University of Waterloo",
+          "type": "university",
+          "domain": "uwaterloo.ca",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:uwaterloo.ca+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-CA&gl=CA&ceid=CA:en"
+        },
+        {
+          "id": "ca-university-of-alberta",
+          "name": "University of Alberta",
+          "type": "university",
+          "domain": "ualberta.ca",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:ualberta.ca+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-CA&gl=CA&ceid=CA:en"
+        },
+        {
+          "id": "ca-mcmaster-university",
+          "name": "McMaster University",
+          "type": "university",
+          "domain": "mcmaster.ca",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:mcmaster.ca+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-CA&gl=CA&ceid=CA:en"
+        },
+        {
+          "id": "ca-universite-de-montreal",
+          "name": "Université de Montréal",
+          "type": "university",
+          "domain": "umontreal.ca",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:umontreal.ca+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-CA&gl=CA&ceid=CA:en"
+        },
+        {
+          "id": "ca-queens-university",
+          "name": "Queen's University",
+          "type": "university",
+          "domain": "queensu.ca",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:queensu.ca+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-CA&gl=CA&ceid=CA:en"
+        },
+        {
+          "id": "ca-western-university",
+          "name": "Western University",
+          "type": "university",
+          "domain": "uwo.ca",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:uwo.ca+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-CA&gl=CA&ceid=CA:en"
+        },
+        {
+          "id": "ca-university-of-ottawa",
+          "name": "University of Ottawa",
+          "type": "university",
+          "domain": "uottawa.ca",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:uottawa.ca+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-CA&gl=CA&ceid=CA:en"
+        },
+        {
+          "id": "ca-university-of-calgary",
+          "name": "University of Calgary",
+          "type": "university",
+          "domain": "ucalgary.ca",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:ucalgary.ca+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-CA&gl=CA&ceid=CA:en"
+        },
+        {
+          "id": "ca-simon-fraser-university",
+          "name": "Simon Fraser University",
+          "type": "university",
+          "domain": "sfu.ca",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:sfu.ca+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-CA&gl=CA&ceid=CA:en"
         }
       ]
     },

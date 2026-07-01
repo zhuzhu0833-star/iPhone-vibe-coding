@@ -38,6 +38,36 @@ US_TOP_20 = [
     ("us-vanderbilt-university", "Vanderbilt University", "vanderbilt.edu"),
 ]
 
+AU_TOP_UNIVERSITIES = [
+    ("au-university-of-melbourne", "University of Melbourne", "unimelb.edu.au"),
+    ("au-university-of-sydney", "University of Sydney", "sydney.edu.au"),
+    ("au-australian-national-university", "Australian National University", "anu.edu.au"),
+    ("au-unsw-sydney", "UNSW Sydney", "unsw.edu.au"),
+    ("au-monash-university", "Monash University", "monash.edu"),
+    ("au-university-of-queensland", "University of Queensland", "uq.edu.au"),
+    ("au-university-of-western-australia", "University of Western Australia", "uwa.edu.au"),
+    ("au-university-of-adelaide", "University of Adelaide", "adelaide.edu.au"),
+    ("au-uts", "University of Technology Sydney", "uts.edu.au"),
+    ("au-macquarie-university", "Macquarie University", "mq.edu.au"),
+    ("au-rmit-university", "RMIT University", "rmit.edu.au"),
+    ("au-qut", "Queensland University of Technology", "qut.edu.au"),
+]
+
+CA_TOP_UNIVERSITIES = [
+    ("ca-university-of-toronto", "University of Toronto", "utoronto.ca"),
+    ("ca-ubc", "UBC", "ubc.ca"),
+    ("ca-mcgill-university", "McGill University", "mcgill.ca"),
+    ("ca-university-of-waterloo", "University of Waterloo", "uwaterloo.ca"),
+    ("ca-university-of-alberta", "University of Alberta", "ualberta.ca"),
+    ("ca-mcmaster-university", "McMaster University", "mcmaster.ca"),
+    ("ca-universite-de-montreal", "Université de Montréal", "umontreal.ca"),
+    ("ca-queens-university", "Queen's University", "queensu.ca"),
+    ("ca-western-university", "Western University", "uwo.ca"),
+    ("ca-university-of-ottawa", "University of Ottawa", "uottawa.ca"),
+    ("ca-university-of-calgary", "University of Calgary", "ucalgary.ca"),
+    ("ca-simon-fraser-university", "Simon Fraser University", "sfu.ca"),
+]
+
 UK_QS_TOP_200 = [
     ("uk-imperial-college-london", "Imperial College London", "imperial.ac.uk"),
     ("uk-university-of-oxford", "University of Oxford", "ox.ac.uk"),
@@ -91,21 +121,23 @@ UK_QS_TOP_200 = [
 
 # Map display names from discovery to domains
 NAME_TO_DOMAIN: dict[str, str] = {}
-for _id, name, domain in US_TOP_20 + UK_QS_TOP_200:
+for _id, name, domain in US_TOP_20 + UK_QS_TOP_200 + AU_TOP_UNIVERSITIES + CA_TOP_UNIVERSITIES:
     short = re.sub(r"^University of ", "", name)
     NAME_TO_DOMAIN[name] = domain
     NAME_TO_DOMAIN[short] = domain
 
 
-def google_news_url(domain: str, *, uk: bool = False) -> str:
-    if uk:
-        return (
-            f"https://news.google.com/rss/search?q=site:{domain}+{ADMISSION_QUERY}"
-            f"&hl=en-GB&gl=GB&ceid=GB:en"
-        )
+def google_news_url(domain: str, *, locale: str = "us") -> str:
+    locales = {
+        "us": ("en-US", "US", "US:en"),
+        "uk": ("en-GB", "GB", "GB:en"),
+        "au": ("en-AU", "AU", "AU:en"),
+        "ca": ("en-CA", "CA", "CA:en"),
+    }
+    hl, gl, ceid = locales[locale]
     return (
         f"https://news.google.com/rss/search?q=site:{domain}+{ADMISSION_QUERY}"
-        f"&hl=en-US&gl=US&ceid=US:en"
+        f"&hl={hl}&gl={gl}&ceid={ceid}"
     )
 
 
@@ -120,9 +152,14 @@ def load_verified() -> dict[str, str]:
 
 
 def make_entry(
-    source_id: str, name: str, domain: str, verified: dict[str, str], *, uk: bool = False
+    source_id: str,
+    name: str,
+    domain: str,
+    verified: dict[str, str],
+    *,
+    locale: str = "us",
 ) -> dict:
-    fallback = google_news_url(domain, uk=uk)
+    fallback = google_news_url(domain, locale=locale)
     rss = verified.get(domain)
     if rss:
         return {
@@ -157,8 +194,20 @@ def main() -> None:
         elif country["id"] == "uk":
             non_uni = [s for s in country["sources"] if s["type"] != "university"]
             country["sources"] = non_uni + [
-                make_entry(sid, name, domain, verified, uk=True)
+                make_entry(sid, name, domain, verified, locale="uk")
                 for sid, name, domain in UK_QS_TOP_200
+            ]
+        elif country["id"] == "au":
+            non_uni = [s for s in country["sources"] if s["type"] != "university"]
+            country["sources"] = non_uni + [
+                make_entry(sid, name, domain, verified, locale="au")
+                for sid, name, domain in AU_TOP_UNIVERSITIES
+            ]
+        elif country["id"] == "ca":
+            non_uni = [s for s in country["sources"] if s["type"] != "university"]
+            country["sources"] = non_uni + [
+                make_entry(sid, name, domain, verified, locale="ca")
+                for sid, name, domain in CA_TOP_UNIVERSITIES
             ]
 
     out = ROOT / "data" / "catalog.json"
@@ -167,6 +216,7 @@ def main() -> None:
     uk_rss = sum(1 for _, n, d in UK_QS_TOP_200 if d in verified)
     print(f"Updated {out}")
     print(f"US: {us_rss}/20 official RSS, UK: {uk_rss}/{len(UK_QS_TOP_200)} official RSS")
+    print(f"AU: {len(AU_TOP_UNIVERSITIES)} universities, CA: {len(CA_TOP_UNIVERSITIES)} universities")
 
 
 if __name__ == "__main__":
