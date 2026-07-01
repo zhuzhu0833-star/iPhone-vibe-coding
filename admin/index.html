@@ -8,69 +8,149 @@
 </head>
 <body>
   <div class="app">
-    <header class="header">
-      <div>
-        <h1>留学政策日报 · 来源管理</h1>
-        <p class="subtitle">勾选国家、院校与机构，保存后下次日报自动生效</p>
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-icon" aria-hidden="true">🎓</div>
+        <div>
+          <h1>留学政策日报 · 来源管理</h1>
+          <p class="subtitle">勾选国家、院校与机构，保存后下次日报自动生效</p>
+        </div>
       </div>
-      <div class="stats" id="stats">加载中…</div>
+      <div class="stat-cards">
+        <div class="stat-card">
+          <span class="stat-label">国家</span>
+          <strong id="stat-countries">—</strong>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">来源</span>
+          <strong id="stat-sources">—</strong>
+        </div>
+        <div class="stat-card accent">
+          <span class="stat-label">高校</span>
+          <strong id="stat-universities">—</strong>
+        </div>
+      </div>
     </header>
 
-    <section class="toolbar card">
-      <input type="search" id="search" placeholder="搜索国家或院校…" />
-      <div class="toolbar-actions">
-        <button type="button" id="btn-universities" class="btn secondary">仅选高校</button>
-        <button type="button" id="btn-all" class="btn secondary">全选</button>
-        <button type="button" id="btn-none" class="btn secondary">全不选</button>
-      </div>
-    </section>
+    <div class="layout">
+      <aside class="sidebar card">
+        <h2 class="section-title">快速导航</h2>
+        <div class="search-wrap">
+          <span class="search-icon" aria-hidden="true">🔍</span>
+          <input type="search" id="search" placeholder="搜索国家或院校…" autocomplete="off" />
+        </div>
 
-    <main id="countries" class="countries"></main>
+        <div class="filter-chips" role="group" aria-label="类型筛选">
+          <button type="button" class="chip active" data-filter="all">全部</button>
+          <button type="button" class="chip" data-filter="university">高校</button>
+          <button type="button" class="chip" data-filter="education">教育部门</button>
+          <button type="button" class="chip" data-filter="immigration">移民机构</button>
+        </div>
 
-    <section class="card custom-form">
-      <h2>添加自定义院校</h2>
-      <p class="hint">填写院校英文名和官网域名，系统自动生成 Google News 抓取源</p>
-      <div class="form-grid">
-        <label>
-          国家
-          <select id="custom-country"></select>
-        </label>
-        <label>
-          院校名称
-          <input id="custom-name" type="text" placeholder="e.g. London School of Economics" />
-        </label>
-        <label>
-          官网域名
-          <input id="custom-domain" type="text" placeholder="e.g. lse.ac.uk" />
-        </label>
-        <button type="button" id="btn-add-custom" class="btn primary">添加</button>
-      </div>
-      <ul id="custom-list" class="custom-list"></ul>
-    </section>
+        <div class="preset-actions">
+          <button type="button" id="btn-universities" class="btn btn-block">仅选高校</button>
+          <button type="button" id="btn-uni-edu" class="btn btn-block">高校 + 教育部门</button>
+          <button type="button" id="btn-all" class="btn btn-block ghost">全选</button>
+          <button type="button" id="btn-none" class="btn btn-block ghost">全不选</button>
+        </div>
 
-    <section class="card save-panel">
-      <h2>保存配置</h2>
-      <div class="form-grid">
-        <label>
-          GitHub 仓库
-          <input id="github-repo" type="text" value="zhuzhu0833-star/iPhone-vibe-coding" />
-        </label>
-        <label>
-          Personal Access Token
-          <input id="github-token" type="password" placeholder="github_pat_... 仅需 repo 权限" />
-        </label>
+        <div class="sidebar-actions">
+          <button type="button" id="btn-expand-all" class="btn ghost sm">全部展开</button>
+          <button type="button" id="btn-collapse-all" class="btn ghost sm">全部收起</button>
+        </div>
+
+        <nav id="country-nav" class="country-nav" aria-label="国家列表"></nav>
+      </aside>
+
+      <div class="main">
+        <div class="main-toolbar card">
+          <div class="progress-wrap">
+            <div class="progress-label">
+              <span>已选来源</span>
+              <strong id="progress-text">0 / 0</strong>
+            </div>
+            <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+              <div id="progress-fill" class="progress-fill"></div>
+            </div>
+          </div>
+          <p class="toolbar-tip">建议优先勾选 <strong>高校</strong> 与 <strong>教育部门</strong>，移民机构可按需保留。</p>
+        </div>
+
+        <main id="countries" class="countries" aria-live="polite"></main>
+        <p id="empty-state" class="empty-state hidden">没有匹配的来源，请调整搜索或筛选条件。</p>
+
+        <section class="card panel">
+          <div class="panel-header">
+            <h2>添加自定义院校</h2>
+            <span class="badge">可选</span>
+          </div>
+          <p class="hint">填写院校英文名和官网域名，系统自动生成 Google News 抓取源。</p>
+          <div class="form-grid">
+            <label>
+              国家
+              <select id="custom-country"></select>
+            </label>
+            <label>
+              院校名称
+              <input id="custom-name" type="text" placeholder="London School of Economics" />
+            </label>
+            <label>
+              官网域名
+              <input id="custom-domain" type="text" placeholder="lse.ac.uk" />
+            </label>
+            <button type="button" id="btn-add-custom" class="btn primary">添加院校</button>
+          </div>
+          <ul id="custom-list" class="custom-list"></ul>
+        </section>
       </div>
-      <p class="hint">
-        Token 仅保存在浏览器本地，用于提交 <code>data/selections.json</code>。
-        也可 <a href="https://github.com/settings/tokens" target="_blank" rel="noopener">在此创建</a>。
-      </p>
-      <div class="toolbar-actions">
+    </div>
+  </div>
+
+  <footer class="save-dock" id="save-dock">
+    <div class="save-dock-inner">
+      <div class="save-dock-info">
+        <span id="dirty-badge" class="dirty-badge hidden">有未保存的更改</span>
+        <p id="dock-summary">准备就绪</p>
+      </div>
+      <div class="save-dock-actions">
+        <button type="button" id="btn-open-save" class="btn ghost">保存设置</button>
         <button type="button" id="btn-save-github" class="btn primary">保存到 GitHub</button>
         <button type="button" id="btn-download" class="btn secondary">下载 JSON</button>
       </div>
+    </div>
+  </footer>
+
+  <dialog id="save-dialog" class="save-dialog">
+    <form method="dialog" class="dialog-body">
+      <div class="dialog-header">
+        <h2>保存到 GitHub</h2>
+        <button type="button" id="btn-close-dialog" class="icon-btn" aria-label="关闭">✕</button>
+      </div>
+      <p class="hint">Token 仅用于提交 <code>data/selections.json</code>，不会写入仓库代码。</p>
+      <label>
+        GitHub 仓库
+        <input id="github-repo" type="text" value="zhuzhu0833-star/iPhone-vibe-coding" />
+      </label>
+      <label>
+        Personal Access Token
+        <div class="token-row">
+          <input id="github-token" type="password" placeholder="github_pat_...（需 repo 权限）" autocomplete="off" />
+          <button type="button" id="btn-toggle-token" class="btn ghost sm">显示</button>
+        </div>
+      </label>
+      <p class="hint small">
+        <a href="https://github.com/settings/tokens" target="_blank" rel="noopener">创建 Token</a>
+        · 勾选 <strong>repo</strong> 权限即可
+      </p>
+      <div class="dialog-actions">
+        <button type="button" id="btn-save-dialog" class="btn primary">确认保存</button>
+        <button type="button" id="btn-close-dialog-2" class="btn ghost">取消</button>
+      </div>
       <p id="status" class="status" role="status"></p>
-    </section>
-  </div>
+    </form>
+  </dialog>
+
+  <div id="toast" class="toast hidden" role="alert"></div>
 
   <script src="app.js"></script>
 </body>
