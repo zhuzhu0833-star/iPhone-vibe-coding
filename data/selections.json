@@ -144,7 +144,13 @@
     "us-ucla",
     "us-upenn",
     "us-vanderbilt-university",
-    "us-yale-university"
+    "us-yale-university",
+    "cn-cscse",
+    "cn-cscse-service",
+    "cn-moe-study-warning",
+    "global-pte",
+    "us-sevp-ice",
+    "uk-home-office-student-visa"
   ],
   "custom_sources": [
     {

@@ -8,6 +8,7 @@ import sys
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
+from src.digest_slot import resolve_digest_slot
 from src.digest_store import load_digest_json, save_digest_json
 from src.fetcher import fetch_all
 from src.filter import filter_and_rank, save_seen
@@ -35,14 +36,15 @@ def generate_digest() -> Digest:
     items = filter_and_rank(articles)
     items = summarize_items(items)
 
-    digest = Digest(date_label=date_label, items=items)
+    slot = resolve_digest_slot()
+    digest = Digest(date_label=date_label, items=items, slot=slot)
     write_digest_html(digest)
     save_digest_json(digest)
 
     if items:
         save_seen([item.link for item in items])
 
-    logger.info("Digest generated: %d items", len(items))
+    logger.info("Digest generated: %d items (slot=%s)", len(items), slot)
     return digest
 
 

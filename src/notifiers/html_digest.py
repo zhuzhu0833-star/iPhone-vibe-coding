@@ -28,6 +28,11 @@ def _item_block(item: DigestItem, index: int) -> str:
     country = html.escape(item.country_name)
     link = html.escape(item.link, quote=True)
     label = _type_label(item.source_type)
+    advice_block = ""
+    if item.action_advice:
+        advice_block = (
+            f'<p class="item-advice">{html.escape(item.action_advice)}</p>'
+        )
 
     return f"""
     <article class="item">
@@ -40,6 +45,7 @@ def _item_block(item: DigestItem, index: int) -> str:
       <h2 class="item-title">{title}</h2>
       <p class="item-source">{source}</p>
       <p class="item-summary">{summary}</p>
+      {advice_block}
       <a class="item-link" href="{link}" target="_blank" rel="noopener">阅读原文 →</a>
     </article>
     """
@@ -54,6 +60,8 @@ def build_digest_html(digest: Digest) -> str:
         count_text = "今日无更新"
 
     date_label = html.escape(digest.date_label)
+    slot_label = html.escape(digest.slot_label_zh)
+    slot_focus = html.escape(digest.slot_focus_zh)
     disclaimer = html.escape(digest.disclaimer_zh)
 
     return f"""<!DOCTYPE html>
@@ -61,7 +69,7 @@ def build_digest_html(digest: Digest) -> str:
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>全球留学政策日报 {date_label}</title>
+  <title>全球留学政策日报 {slot_label} {date_label}</title>
   <style>
     * {{ box-sizing: border-box; }}
     body {{
@@ -147,6 +155,15 @@ def build_digest_html(digest: Digest) -> str:
       margin: 0 0 12px;
       font-size: 0.98rem;
     }}
+    .item-advice {{
+      margin: 0 0 12px;
+      padding: 10px 12px;
+      background: #fffbeb;
+      border-left: 3px solid #f59e0b;
+      border-radius: 6px;
+      font-size: 0.92rem;
+      color: #92400e;
+    }}
     .item-link {{
       color: #2563eb;
       text-decoration: none;
@@ -171,8 +188,8 @@ def build_digest_html(digest: Digest) -> str:
 <body>
   <div class="page">
     <header class="header">
-      <h1>🎓 全球留学政策日报</h1>
-      <p>{date_label} · {count_text}</p>
+      <h1>🎓 全球留学政策日报 · {slot_label}</h1>
+      <p>{date_label} · {count_text} · {slot_focus}</p>
     </header>
     <main>
       {items_html}
@@ -189,7 +206,9 @@ def write_digest_html(digest: Digest, directory: Path | str = "digests") -> Path
     out_dir.mkdir(parents=True, exist_ok=True)
     content = build_digest_html(digest)
     latest = out_dir / "latest.html"
-    dated = out_dir / f"{digest.date_label}.html"
+    slot_latest = out_dir / f"latest-{digest.slot}.html"
+    dated = out_dir / f"{digest.date_label}-{digest.slot}.html"
     latest.write_text(content, encoding="utf-8")
+    slot_latest.write_text(content, encoding="utf-8")
     dated.write_text(content, encoding="utf-8")
-    return latest
+    return slot_latest

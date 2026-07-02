@@ -9,6 +9,7 @@ from html import unescape
 from pathlib import Path
 
 from src.config_loader import load_keywords, load_sources
+from src.digest_slot import resolve_digest_slot
 from src.models import DigestItem, RawArticle
 
 logger = logging.getLogger(__name__)
@@ -35,7 +36,7 @@ def _count_matches(text: str, patterns: list[str]) -> int:
     return sum(1 for p in patterns if p.lower() in lower)
 
 
-def _score_article(article: RawArticle, text: str, keywords: dict) -> float:
+def _score_article(article: RawArticle, text: str, keywords: dict, *, slot: str) -> float:
     score = 0.0
 
     source_bonus = keywords.get("source_type_bonus", {})
@@ -47,6 +48,11 @@ def _score_article(article: RawArticle, text: str, keywords: dict) -> float:
     score += 5.0 * _count_matches(text, keywords.get("admissions_priority", []))
     score += 2.0 * _count_matches(text, keywords.get("priority_boost", []))
     score -= 4.0 * _count_matches(text, keywords.get("immigration_penalty", []))
+
+    if slot == "morning":
+        score += 3.0 * _count_matches(text, keywords.get("morning_slot_boost", []))
+    else:
+        score += 3.0 * _count_matches(text, keywords.get("evening_slot_boost", []))
 
     # Immigration-only stories without admissions angle are ranked lower.
     if article.source_type in ("immigration", "policy"):
@@ -139,6 +145,7 @@ def filter_and_rank(articles: list[RawArticle]) -> list[DigestItem]:
     settings = load_sources().get("settings", {})
     max_per_country = settings.get("max_items_per_country", 2)
     max_total = settings.get("max_total_items", 12)
+    slot = resolve_digest_slot()
 
     seen = _load_seen()
     candidates: list[DigestItem] = []
@@ -167,7 +174,7 @@ def filter_and_rank(articles: list[RawArticle]) -> list[DigestItem]:
         ):
             continue
 
-        score = _score_article(article, text, keywords)
+        score = _score_article(article, text, keywords, slot=slot)
         if score <= 0:
             continue
 
@@ -205,5 +212,5 @@ def filter_and_rank(articles: list[RawArticle]) -> list[DigestItem]:
         selected.append(item)
         country_counts[item.country_id] = count + 1
 
-    logger.info("Selected %d articles after filtering", len(selected))
+    logger.info("Selected %d articles after filtering (slot=%s)", len(selected), slot)
     return selected

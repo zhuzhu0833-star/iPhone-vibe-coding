@@ -80,13 +80,14 @@ def send_wechat(digest: Digest, *, html_path: Path | None = None) -> bool:
 
         count = len(digest.items)
         intro = (
-            f"🎓 全球留学政策日报 {digest.date_label}\n"
-            f"共 {count} 条 · 中文摘要见下方 HTML 文件，点击即可打开阅读。"
+            f"🎓 全球留学政策日报 · {digest.slot_label_zh} {digest.date_label}\n"
+            f"共 {count} 条 · {digest.slot_focus_zh}\n"
+            f"中文摘要见下方 HTML 文件，点击即可打开阅读。"
         )
         _send_text(webhook, intro)
 
         upload_dir = Path(tempfile.mkdtemp(prefix="digest-upload-"))
-        upload_path = upload_dir / f"留学政策日报-{digest.date_label}.html"
+        upload_path = upload_dir / f"留学政策日报-{digest.date_label}-{digest.slot_label_zh}.html"
         shutil.copy(html_path, upload_path)
 
         media_id = _upload_file(webhook, upload_path)
@@ -95,7 +96,7 @@ def send_wechat(digest: Digest, *, html_path: Path | None = None) -> bool:
 
         public_base = os.environ.get("DIGEST_PUBLIC_URL", "").strip().rstrip("/")
         if public_base:
-            page_url = f"{public_base}/digest/latest.html"
+            page_url = f"{public_base}/digest/latest-{digest.slot}.html"
             _send_text(webhook, f"📎 在线阅读：{page_url}")
             logger.info("WeChat Work page link sent: %s", page_url)
 

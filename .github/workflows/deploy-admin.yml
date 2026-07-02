@@ -36,6 +36,8 @@ jobs:
           cp data/catalog.json data/selections.json _site/data/
           if [ -f digests/latest.html ]; then
             cp digests/latest.html _site/digest/
+            cp digests/latest-morning.html _site/digest/ 2>/dev/null || true
+            cp digests/latest-evening.html _site/digest/ 2>/dev/null || true
             cat > _site/digest/index.html <<'EOF'
           <!DOCTYPE html>
           <html lang="zh-CN">

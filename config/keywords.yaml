@@ -60,6 +60,11 @@ required_any:
   - standardized testing
   - offer rate
   - application round
+  - 留学
+  - 学历认证
+  - 留学预警
+  - 招生
+  - 签证
 
 # High-priority: university admissions and enrollment policy.
 admissions_priority:
@@ -143,6 +148,40 @@ priority_boost:
   - admission statistics
   - early decision
   - clearing
+
+# Morning digest (08:30 Beijing): policy data and admissions trends.
+morning_slot_boost:
+  - admission statistics
+  - application data
+  - enrollment data
+  - enrolment data
+  - open doors
+  - application cycle
+  - policy change
+  - tuition
+  - scholarship
+  - acceptance rate
+  - 学历认证
+  - 留学预警
+  - 招生
+
+# Evening digest (22:00 Beijing): deadlines and visa/work rights.
+evening_slot_boost:
+  - application deadline
+  - deadline
+  - student visa
+  - visa requirement
+  - visa processing
+  - graduate route
+  - pgwp
+  - opt
+  - post-study
+  - clearing
+  - early decision
+  - early action
+  - cas
+  - sevis
+  - 签证
 
 # Penalty per matched term for immigration-heavy noise.
 immigration_penalty:
