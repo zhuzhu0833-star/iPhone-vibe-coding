@@ -1,63 +1,19 @@
 name: Deploy Admin Panel
 
+# Admin saves trigger pages-deploy.yml via push to data/selections.json.
+# This workflow is kept for manual redeploy only.
+
 on:
-  push:
-    branches: [main]
-    paths:
-      - "admin/**"
-      - "data/catalog.json"
-      - "data/selections.json"
-      - ".github/workflows/deploy-admin.yml"
   workflow_dispatch:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: true
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Build site
-        run: |
-          mkdir -p _site/data _site/digest
-          cp admin/index.html admin/app.js admin/style.css _site/
-          cp data/catalog.json data/selections.json _site/data/
-          if [ -f digests/latest.html ]; then
-            cp digests/latest.html _site/digest/
-            cp digests/latest-morning.html _site/digest/ 2>/dev/null || true
-            cp digests/latest-evening.html _site/digest/ 2>/dev/null || true
-            cat > _site/digest/index.html <<'EOF'
-          <!DOCTYPE html>
-          <html lang="zh-CN">
-          <head>
-            <meta charset="utf-8" />
-            <meta http-equiv="refresh" content="0; url=latest.html" />
-            <title>留学政策日报</title>
-          </head>
-          <body>
-            <p><a href="latest.html">打开最新留学政策日报</a></p>
-          </body>
-          </html>
-          EOF
-          fi
-          touch _site/.nojekyll
-
-      - uses: actions/configure-pages@v4
-
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: _site
-
-      - id: deployment
-        uses: actions/deploy-pages@v4
+    uses: ./.github/workflows/pages-deploy.yml
+    permissions:
+      contents: read
+      actions: write
+      pages: write
+      id-token: write

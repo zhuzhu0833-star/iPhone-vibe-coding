@@ -1,0 +1,85 @@
+name: Deploy GitHub Pages
+
+on:
+  workflow_call:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "admin/**"
+      - "data/catalog.json"
+      - "data/selections.json"
+      - ".github/workflows/pages-deploy.yml"
+
+permissions:
+  contents: read
+  actions: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build site
+        run: |
+          mkdir -p _site/data _site/digest
+          cp admin/index.html admin/app.js admin/style.css _site/
+          cp data/catalog.json data/selections.json _site/data/
+          if [ -f digests/latest.html ]; then
+            cp digests/latest.html _site/digest/
+          fi
+          cp digests/latest-morning.html _site/digest/ 2>/dev/null || true
+          cp digests/latest-evening.html _site/digest/ 2>/dev/null || true
+          cat > _site/digest/index.html <<'EOF'
+          <!DOCTYPE html>
+          <html lang="zh-CN">
+          <head>
+            <meta charset="utf-8" />
+            <meta http-equiv="refresh" content="0; url=latest.html" />
+            <title>留学政策日报</title>
+          </head>
+          <body>
+            <p><a href="latest.html">打开最新留学政策日报</a></p>
+          </body>
+          </html>
+          EOF
+          touch _site/.nojekyll
+
+      - name: Remove stale github-pages artifacts
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const { data } = await github.rest.actions.listWorkflowRunArtifacts({
+              owner,
+              repo,
+              run_id: context.runId,
+            });
+            for (const artifact of data.artifacts) {
+              if (artifact.name !== "github-pages") continue;
+              core.info(`Deleting stale artifact ${artifact.id}`);
+              await github.rest.actions.deleteArtifact({
+                owner,
+                repo,
+                artifact_id: artifact.id,
+              });
+            }
+
+      - uses: actions/configure-pages@v4
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - id: deployment
+        uses: actions/deploy-pages@v4
