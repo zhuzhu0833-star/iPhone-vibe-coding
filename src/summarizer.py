@@ -9,13 +9,13 @@ import re
 
 import requests
 
+from src.digest_slot import resolve_digest_slot
 from src.models import DigestItem
 
 logger = logging.getLogger(__name__)
 
 REQUEST_TIMEOUT = 45
 
-# OpenAI-compatible chat endpoints usable from China.
 PROVIDERS: dict[str, dict[str, str]] = {
     "deepseek": {
         "url": "https://api.deepseek.com/chat/completions",
@@ -48,16 +48,27 @@ def _fallback_zh(title: str) -> str:
     return f"详情请参阅原文链接：{title}"
 
 
+def _fallback_advice() -> str:
+    return "请关注原文细则，并提醒在途学生核对材料与时间节点。"
+
+
 def _build_prompt(item: DigestItem) -> str:
-    return f"""你是留学顾问助手。请用 JSON 格式总结以下新闻，面向关注招生与签证政策的顾问团队。
+    slot = resolve_digest_slot()
+    slot_hint = (
+        "本期早报侧重：招生数据、政策动向、学费与录取趋势。"
+        if slot == "morning"
+        else "本期晚报侧重：申请截止日、签证与工签政策、材料与审理时效。"
+    )
+    return f"""你是中国留学顾问团队的日报助手。请用 JSON 总结以下英文新闻，输出简体中文。
 
 标题: {item.title_en}
 来源: {item.source_name}（{item.country_name}）
 类别: {item.category}
 原文摘要: {_strip_html(item.summary_en)[:800]}
+编辑提示: {slot_hint}
 
 只返回合法 JSON，不要其他文字：
-{{"summary_zh":"2-3句简体中文，说明对国际生或留学顾问的招生/政策影响，突出关键变化与行动建议"}}"""
+{{"summary_zh":"2-3句中文，说明政策/招生变化及对国际生的影响","action_advice":"1句可执行建议，以「顾问建议：」开头，说明顾问应提醒学生/家长做什么"}}"""
 
 
 def _parse_json_response(text: str) -> dict:
@@ -80,7 +91,7 @@ def _chat_summarize(
             "model": model,
             "messages": [{"role": "user", "content": _build_prompt(item)}],
             "temperature": 0.2,
-            "max_tokens": 512,
+            "max_tokens": 600,
         },
         timeout=REQUEST_TIMEOUT,
     )
@@ -88,6 +99,10 @@ def _chat_summarize(
     text = response.json()["choices"][0]["message"]["content"]
     data = _parse_json_response(text)
     item.summary_zh = data.get("summary_zh", _fallback_zh(item.title_en))[:500]
+    advice = data.get("action_advice", _fallback_advice())[:200]
+    if not advice.startswith("顾问建议"):
+        advice = f"顾问建议：{advice.lstrip('：:')}"
+    item.action_advice = advice
     return item
 
 
@@ -112,6 +127,8 @@ def summarize_items(items: list[DigestItem]) -> list[DigestItem]:
         for item in items:
             if not item.summary_zh:
                 item.summary_zh = _fallback_zh(item.title_en)
+            if not item.action_advice:
+                item.action_advice = _fallback_advice()
         return items
 
     config = PROVIDERS[provider]
@@ -131,6 +148,8 @@ def summarize_items(items: list[DigestItem]) -> list[DigestItem]:
                 logger.warning("LLM summarize failed for %s: %s", item.link, exc)
             if not item.summary_zh:
                 item.summary_zh = _fallback_zh(item.title_en)
+            if not item.action_advice:
+                item.action_advice = _fallback_advice()
             summarized.append(item)
 
     return summarized
