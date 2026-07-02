@@ -11,6 +11,7 @@ from src.fetcher import fetch_all
 from src.filter import filter_and_rank, save_seen
 from src.models import Digest
 from src.notifiers.email import send_email
+from src.notifiers.html_digest import write_digest_html
 from src.notifiers.wechat import send_wechat
 from src.summarizer import summarize_items
 
@@ -34,8 +35,9 @@ def run() -> int:
     items = summarize_items(items)
 
     digest = Digest(date_label=date_label, items=items)
+    html_path = write_digest_html(digest)
 
-    wechat_ok = send_wechat(digest)
+    wechat_ok = send_wechat(digest, html_path=html_path)
     email_ok = send_email(digest)
 
     if items:
