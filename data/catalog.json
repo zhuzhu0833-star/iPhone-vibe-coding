@@ -1,6 +1,53 @@
 {
   "countries": [
     {
+      "id": "global",
+      "name": "International",
+      "flag": "🌍",
+      "sources": [
+        {
+          "id": "global-pie-news",
+          "name": "The PIE News",
+          "type": "media",
+          "url": "https://news.google.com/rss/search?q=site:thepienews.com+international+student+OR+admission+OR+admissions+OR+visa+OR+policy+OR+enrollment+OR+enrolment+OR+tuition&hl=en&gl=US&ceid=US:en",
+          "domain": "thepienews.com",
+          "feed_type": "google_news"
+        },
+        {
+          "id": "global-icef-monitor",
+          "name": "ICEF Monitor",
+          "type": "media",
+          "url": "https://news.google.com/rss/search?q=site:monitor.icef.com+international+student+OR+admission+OR+admissions+OR+visa+OR+policy+OR+enrollment+OR+enrolment+OR+tuition&hl=en&gl=US&ceid=US:en",
+          "domain": "monitor.icef.com",
+          "feed_type": "google_news"
+        },
+        {
+          "id": "global-university-world-news",
+          "name": "University World News",
+          "type": "media",
+          "url": "https://news.google.com/rss/search?q=site:universityworldnews.com+international+student+OR+admission+OR+admissions+OR+visa+OR+policy+OR+enrollment+OR+enrolment+OR+tuition&hl=en&gl=US&ceid=US:en",
+          "domain": "universityworldnews.com",
+          "feed_type": "google_news"
+        },
+        {
+          "id": "global-ielts",
+          "name": "IELTS",
+          "type": "policy",
+          "url": "https://news.google.com/rss/search?q=site:ielts.org+admission+OR+admissions+OR+application+OR+policy+OR+visa+OR+international+student+OR+enrollment+OR+enrolment&hl=en&gl=US&ceid=US:en",
+          "domain": "ielts.org",
+          "feed_type": "google_news"
+        },
+        {
+          "id": "global-duolingo-english-test",
+          "name": "Duolingo English Test",
+          "type": "policy",
+          "url": "https://news.google.com/rss/search?q=site:englishtest.duolingo.com+admission+OR+admissions+OR+application+OR+policy+OR+visa+OR+international+student+OR+enrollment+OR+enrolment&hl=en&gl=US&ceid=US:en",
+          "domain": "englishtest.duolingo.com",
+          "feed_type": "google_news"
+        }
+      ]
+    },
+    {
       "id": "us",
       "name": "United States",
       "flag": "🇺🇸",
@@ -16,6 +63,70 @@
           "name": "Study in the States",
           "type": "education",
           "url": "https://news.google.com/rss/search?q=site:studyinthestates.dhs.gov+international+student&hl=en-US&gl=US&ceid=US:en"
+        },
+        {
+          "id": "us-college-board",
+          "name": "College Board",
+          "type": "policy",
+          "url": "https://news.google.com/rss/search?q=site:collegeboard.org+admission+OR+admissions+OR+application+OR+policy+OR+visa+OR+international+student+OR+enrollment+OR+enrolment&hl=en-US&gl=US&ceid=US:en",
+          "domain": "collegeboard.org",
+          "feed_type": "google_news"
+        },
+        {
+          "id": "us-common-app",
+          "name": "Common App",
+          "type": "policy",
+          "url": "https://news.google.com/rss/search?q=site:commonapp.org+admission+OR+admissions+OR+application+OR+policy+OR+visa+OR+international+student+OR+enrollment+OR+enrolment&hl=en-US&gl=US&ceid=US:en",
+          "domain": "commonapp.org",
+          "feed_type": "google_news"
+        },
+        {
+          "id": "us-iie",
+          "name": "IIE / Open Doors",
+          "type": "policy",
+          "url": "https://news.google.com/rss/search?q=site:iie.org+admission+OR+admissions+OR+application+OR+policy+OR+visa+OR+international+student+OR+enrollment+OR+enrolment&hl=en-US&gl=US&ceid=US:en",
+          "domain": "iie.org",
+          "feed_type": "google_news"
+        },
+        {
+          "id": "us-nafsa",
+          "name": "NAFSA",
+          "type": "education",
+          "url": "https://news.google.com/rss/search?q=site:nafsa.org+admission+OR+admissions+OR+application+OR+policy+OR+visa+OR+international+student+OR+enrollment+OR+enrolment&hl=en-US&gl=US&ceid=US:en",
+          "domain": "nafsa.org",
+          "feed_type": "google_news"
+        },
+        {
+          "id": "us-nacac",
+          "name": "NACAC",
+          "type": "policy",
+          "url": "https://news.google.com/rss/search?q=site:nacacnet.org+admission+OR+admissions+OR+application+OR+policy+OR+visa+OR+international+student+OR+enrollment+OR+enrolment&hl=en-US&gl=US&ceid=US:en",
+          "domain": "nacacnet.org",
+          "feed_type": "google_news"
+        },
+        {
+          "id": "us-ed-gov",
+          "name": "US Dept. of Education",
+          "type": "policy",
+          "url": "https://news.google.com/rss/search?q=site:ed.gov+admission+OR+admissions+OR+application+OR+policy+OR+visa+OR+international+student+OR+enrollment+OR+enrolment&hl=en-US&gl=US&ceid=US:en",
+          "domain": "ed.gov",
+          "feed_type": "google_news"
+        },
+        {
+          "id": "us-ets",
+          "name": "ETS / TOEFL",
+          "type": "policy",
+          "url": "https://news.google.com/rss/search?q=site:ets.org+admission+OR+admissions+OR+application+OR+policy+OR+visa+OR+international+student+OR+enrollment+OR+enrolment&hl=en-US&gl=US&ceid=US:en",
+          "domain": "ets.org",
+          "feed_type": "google_news"
+        },
+        {
+          "id": "us-inside-higher-ed",
+          "name": "Inside Higher Ed",
+          "type": "media",
+          "url": "https://news.google.com/rss/search?q=site:insidehighered.com+international+student+OR+admission+OR+admissions+OR+visa+OR+policy+OR+enrollment+OR+enrolment+OR+tuition&hl=en-US&gl=US&ceid=US:en",
+          "domain": "insidehighered.com",
+          "feed_type": "google_news"
         },
         {
           "id": "us-princeton-university",
@@ -196,7 +307,7 @@
         {
           "id": "uk-gov-uk-immigration",
           "name": "GOV.UK Immigration",
-          "type": "immigration",
+          "type": "policy",
           "url": "https://news.google.com/rss/search?q=site:gov.uk+student+visa+OR+graduate+route&hl=en-GB&gl=GB&ceid=GB:en"
         },
         {
@@ -204,6 +315,54 @@
           "name": "UKCISA",
           "type": "education",
           "url": "https://news.google.com/rss/search?q=site:ukcisa.org.uk+policy+OR+visa&hl=en-GB&gl=GB&ceid=GB:en"
+        },
+        {
+          "id": "uk-ucas",
+          "name": "UCAS",
+          "type": "policy",
+          "url": "https://news.google.com/rss/search?q=site:ucas.com+admission+OR+admissions+OR+application+OR+policy+OR+visa+OR+international+student+OR+enrollment+OR+enrolment&hl=en-GB&gl=GB&ceid=GB:en",
+          "domain": "ucas.com",
+          "feed_type": "google_news"
+        },
+        {
+          "id": "uk-ofs",
+          "name": "Office for Students",
+          "type": "policy",
+          "url": "https://news.google.com/rss/search?q=site:officeforstudents.org.uk+admission+OR+admissions+OR+application+OR+policy+OR+visa+OR+international+student+OR+enrollment+OR+enrolment&hl=en-GB&gl=GB&ceid=GB:en",
+          "domain": "officeforstudents.org.uk",
+          "feed_type": "google_news"
+        },
+        {
+          "id": "uk-hesa",
+          "name": "HESA",
+          "type": "policy",
+          "url": "https://news.google.com/rss/search?q=site:hesa.ac.uk+admission+OR+admissions+OR+application+OR+policy+OR+visa+OR+international+student+OR+enrollment+OR+enrolment&hl=en-GB&gl=GB&ceid=GB:en",
+          "domain": "hesa.ac.uk",
+          "feed_type": "google_news"
+        },
+        {
+          "id": "uk-british-council",
+          "name": "British Council Education",
+          "type": "education",
+          "url": "https://news.google.com/rss/search?q=site:britishcouncil.org+admission+OR+admissions+OR+application+OR+policy+OR+visa+OR+international+student+OR+enrollment+OR+enrolment&hl=en-GB&gl=GB&ceid=GB:en",
+          "domain": "britishcouncil.org",
+          "feed_type": "google_news"
+        },
+        {
+          "id": "uk-russell-group",
+          "name": "Russell Group",
+          "type": "policy",
+          "url": "https://news.google.com/rss/search?q=site:russellgroup.ac.uk+admission+OR+admissions+OR+application+OR+policy+OR+visa+OR+international+student+OR+enrollment+OR+enrolment&hl=en-GB&gl=GB&ceid=GB:en",
+          "domain": "russellgroup.ac.uk",
+          "feed_type": "google_news"
+        },
+        {
+          "id": "uk-times-higher-education",
+          "name": "Times Higher Education",
+          "type": "media",
+          "url": "https://news.google.com/rss/search?q=site:timeshighereducation.com+international+student+OR+admission+OR+admissions+OR+visa+OR+policy+OR+enrollment+OR+enrolment+OR+tuition&hl=en-GB&gl=GB&ceid=GB:en",
+          "domain": "timeshighereducation.com",
+          "feed_type": "google_news"
         },
         {
           "id": "uk-imperial-college-london",
@@ -614,22 +773,116 @@
           "url": "https://news.google.com/rss/search?q=site:studyaustralia.gov.au+international+student&hl=en-AU&gl=AU&ceid=AU:en"
         },
         {
+          "id": "au-teqsa",
+          "name": "TEQSA",
+          "type": "policy",
+          "url": "https://news.google.com/rss/search?q=site:teqsa.gov.au+admission+OR+admissions+OR+application+OR+policy+OR+visa+OR+international+student+OR+enrollment+OR+enrolment&hl=en-AU&gl=AU&ceid=AU:en",
+          "domain": "teqsa.gov.au",
+          "feed_type": "google_news"
+        },
+        {
+          "id": "au-education-gov",
+          "name": "Australian Dept. of Education",
+          "type": "policy",
+          "url": "https://news.google.com/rss/search?q=site:education.gov.au+admission+OR+admissions+OR+application+OR+policy+OR+visa+OR+international+student+OR+enrollment+OR+enrolment&hl=en-AU&gl=AU&ceid=AU:en",
+          "domain": "education.gov.au",
+          "feed_type": "google_news"
+        },
+        {
           "id": "au-university-of-melbourne",
           "name": "University of Melbourne",
           "type": "university",
+          "domain": "unimelb.edu.au",
+          "feed_type": "google_news",
           "url": "https://news.google.com/rss/search?q=site:unimelb.edu.au+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-AU&gl=AU&ceid=AU:en"
         },
         {
           "id": "au-university-of-sydney",
           "name": "University of Sydney",
           "type": "university",
+          "domain": "sydney.edu.au",
+          "feed_type": "google_news",
           "url": "https://news.google.com/rss/search?q=site:sydney.edu.au+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-AU&gl=AU&ceid=AU:en"
         },
         {
           "id": "au-australian-national-university",
           "name": "Australian National University",
           "type": "university",
+          "domain": "anu.edu.au",
+          "feed_type": "google_news",
           "url": "https://news.google.com/rss/search?q=site:anu.edu.au+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-AU&gl=AU&ceid=AU:en"
+        },
+        {
+          "id": "au-unsw-sydney",
+          "name": "UNSW Sydney",
+          "type": "university",
+          "domain": "unsw.edu.au",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:unsw.edu.au+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-AU&gl=AU&ceid=AU:en"
+        },
+        {
+          "id": "au-monash-university",
+          "name": "Monash University",
+          "type": "university",
+          "domain": "monash.edu",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:monash.edu+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-AU&gl=AU&ceid=AU:en"
+        },
+        {
+          "id": "au-university-of-queensland",
+          "name": "University of Queensland",
+          "type": "university",
+          "domain": "uq.edu.au",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:uq.edu.au+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-AU&gl=AU&ceid=AU:en"
+        },
+        {
+          "id": "au-university-of-western-australia",
+          "name": "University of Western Australia",
+          "type": "university",
+          "domain": "uwa.edu.au",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:uwa.edu.au+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-AU&gl=AU&ceid=AU:en"
+        },
+        {
+          "id": "au-university-of-adelaide",
+          "name": "University of Adelaide",
+          "type": "university",
+          "domain": "adelaide.edu.au",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:adelaide.edu.au+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-AU&gl=AU&ceid=AU:en"
+        },
+        {
+          "id": "au-uts",
+          "name": "University of Technology Sydney",
+          "type": "university",
+          "domain": "uts.edu.au",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:uts.edu.au+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-AU&gl=AU&ceid=AU:en"
+        },
+        {
+          "id": "au-macquarie-university",
+          "name": "Macquarie University",
+          "type": "university",
+          "domain": "mq.edu.au",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:mq.edu.au+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-AU&gl=AU&ceid=AU:en"
+        },
+        {
+          "id": "au-rmit-university",
+          "name": "RMIT University",
+          "type": "university",
+          "domain": "rmit.edu.au",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:rmit.edu.au+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-AU&gl=AU&ceid=AU:en"
+        },
+        {
+          "id": "au-qut",
+          "name": "Queensland University of Technology",
+          "type": "university",
+          "domain": "qut.edu.au",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:qut.edu.au+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-AU&gl=AU&ceid=AU:en"
         }
       ]
     },
@@ -641,32 +894,130 @@
         {
           "id": "ca-ircc-news",
           "name": "IRCC News",
-          "type": "immigration",
+          "type": "policy",
           "url": "https://www.canada.ca/en/immigration-refugees-citizenship/news/rss.xml"
         },
         {
           "id": "ca-ircc-google-news",
           "name": "IRCC (Google News)",
-          "type": "immigration",
+          "type": "policy",
           "url": "https://news.google.com/rss/search?q=site:canada.ca+student+permit+OR+PGWP&hl=en-CA&gl=CA&ceid=CA:en"
+        },
+        {
+          "id": "ca-cbie",
+          "name": "CBIE",
+          "type": "education",
+          "url": "https://news.google.com/rss/search?q=site:cbie.ca+admission+OR+admissions+OR+application+OR+policy+OR+visa+OR+international+student+OR+enrollment+OR+enrolment&hl=en-CA&gl=CA&ceid=CA:en",
+          "domain": "cbie.ca",
+          "feed_type": "google_news"
+        },
+        {
+          "id": "ca-universities-canada",
+          "name": "Universities Canada",
+          "type": "education",
+          "url": "https://news.google.com/rss/search?q=site:universitiescanada.ca+admission+OR+admissions+OR+application+OR+policy+OR+visa+OR+international+student+OR+enrollment+OR+enrolment&hl=en-CA&gl=CA&ceid=CA:en",
+          "domain": "universitiescanada.ca",
+          "feed_type": "google_news"
         },
         {
           "id": "ca-university-of-toronto",
           "name": "University of Toronto",
           "type": "university",
+          "domain": "utoronto.ca",
+          "feed_type": "google_news",
           "url": "https://news.google.com/rss/search?q=site:utoronto.ca+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-CA&gl=CA&ceid=CA:en"
         },
         {
           "id": "ca-ubc",
           "name": "UBC",
           "type": "university",
-          "url": "https://news.google.com/rss/search?q=site:ubc.ca+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-CA&gl=CA&ceid=CA:en"
+          "domain": "ubc.ca",
+          "feed_type": "official_rss",
+          "url": "https://news.ubc.ca/feed/",
+          "fallback_url": "https://news.google.com/rss/search?q=site:ubc.ca+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-CA&gl=CA&ceid=CA:en"
         },
         {
           "id": "ca-mcgill-university",
           "name": "McGill University",
           "type": "university",
-          "url": "https://news.google.com/rss/search?q=site:mcgill.ca+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-CA&gl=CA&ceid=CA:en"
+          "domain": "mcgill.ca",
+          "feed_type": "official_rss",
+          "url": "https://www.mcgill.ca/newsroom/articles/rss",
+          "fallback_url": "https://news.google.com/rss/search?q=site:mcgill.ca+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-CA&gl=CA&ceid=CA:en"
+        },
+        {
+          "id": "ca-university-of-waterloo",
+          "name": "University of Waterloo",
+          "type": "university",
+          "domain": "uwaterloo.ca",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:uwaterloo.ca+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-CA&gl=CA&ceid=CA:en"
+        },
+        {
+          "id": "ca-university-of-alberta",
+          "name": "University of Alberta",
+          "type": "university",
+          "domain": "ualberta.ca",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:ualberta.ca+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-CA&gl=CA&ceid=CA:en"
+        },
+        {
+          "id": "ca-mcmaster-university",
+          "name": "McMaster University",
+          "type": "university",
+          "domain": "mcmaster.ca",
+          "feed_type": "official_rss",
+          "url": "https://news.mcmaster.ca/rss",
+          "fallback_url": "https://news.google.com/rss/search?q=site:mcmaster.ca+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-CA&gl=CA&ceid=CA:en"
+        },
+        {
+          "id": "ca-universite-de-montreal",
+          "name": "Université de Montréal",
+          "type": "university",
+          "domain": "umontreal.ca",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:umontreal.ca+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-CA&gl=CA&ceid=CA:en"
+        },
+        {
+          "id": "ca-queens-university",
+          "name": "Queen's University",
+          "type": "university",
+          "domain": "queensu.ca",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:queensu.ca+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-CA&gl=CA&ceid=CA:en"
+        },
+        {
+          "id": "ca-western-university",
+          "name": "Western University",
+          "type": "university",
+          "domain": "uwo.ca",
+          "feed_type": "official_rss",
+          "url": "https://news.westernu.ca/feed/",
+          "fallback_url": "https://news.google.com/rss/search?q=site:uwo.ca+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-CA&gl=CA&ceid=CA:en"
+        },
+        {
+          "id": "ca-university-of-ottawa",
+          "name": "University of Ottawa",
+          "type": "university",
+          "domain": "uottawa.ca",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:uottawa.ca+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-CA&gl=CA&ceid=CA:en"
+        },
+        {
+          "id": "ca-university-of-calgary",
+          "name": "University of Calgary",
+          "type": "university",
+          "domain": "ucalgary.ca",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:ucalgary.ca+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-CA&gl=CA&ceid=CA:en"
+        },
+        {
+          "id": "ca-simon-fraser-university",
+          "name": "Simon Fraser University",
+          "type": "university",
+          "domain": "sfu.ca",
+          "feed_type": "google_news",
+          "url": "https://news.google.com/rss/search?q=site:sfu.ca+admission+OR+admissions+OR+tuition+OR+scholarship+OR+enrolment+OR+intake+OR+application+deadline&hl=en-CA&gl=CA&ceid=CA:en"
         }
       ]
     },

@@ -49,9 +49,12 @@ def _score_article(article: RawArticle, text: str, keywords: dict) -> float:
     score -= 4.0 * _count_matches(text, keywords.get("immigration_penalty", []))
 
     # Immigration-only stories without admissions angle are ranked lower.
-    if article.source_type == "immigration":
+    if article.source_type in ("immigration", "policy"):
         if not _matches_any(text, keywords.get("admissions_priority", [])):
-            score -= 10.0
+            if article.source_type == "immigration":
+                score -= 10.0
+            elif article.source_type == "policy":
+                score -= 3.0
 
     return score
 
@@ -88,11 +91,15 @@ def _category(source_type: str, text: str) -> str:
         return "Post-graduation work rights"
     if source_type == "university" and any(t in lower for t in admissions_terms):
         return "University admissions"
+    if source_type in ("policy", "education") and any(t in lower for t in admissions_terms):
+        return "Education admissions"
+    if source_type == "media" and any(t in lower for t in admissions_terms):
+        return "Education admissions"
     if source_type == "university":
         return "University policy"
     if any(t in lower for t in admissions_terms):
         return "Education admissions"
-    if source_type == "immigration" or "visa" in lower or "immigration" in lower:
+    if source_type in ("policy", "immigration") or "visa" in lower or "immigration" in lower:
         return "Immigration policy"
     return "Education policy"
 
