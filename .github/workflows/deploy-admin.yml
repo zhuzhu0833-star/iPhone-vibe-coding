@@ -36,6 +36,19 @@ jobs:
           cp data/catalog.json data/selections.json _site/data/
           if [ -f digests/latest.html ]; then
             cp digests/latest.html _site/digest/
+            cat > _site/digest/index.html <<'EOF'
+          <!DOCTYPE html>
+          <html lang="zh-CN">
+          <head>
+            <meta charset="utf-8" />
+            <meta http-equiv="refresh" content="0; url=latest.html" />
+            <title>留学政策日报</title>
+          </head>
+          <body>
+            <p><a href="latest.html">打开最新留学政策日报</a></p>
+          </body>
+          </html>
+          EOF
           fi
           touch _site/.nojekyll
 
