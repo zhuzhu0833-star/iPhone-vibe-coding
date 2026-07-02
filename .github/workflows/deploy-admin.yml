@@ -7,7 +7,6 @@ on:
       - "admin/**"
       - "data/catalog.json"
       - "data/selections.json"
-      - "digests/**"
       - ".github/workflows/deploy-admin.yml"
   workflow_dispatch:
 
@@ -18,7 +17,7 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   deploy:
