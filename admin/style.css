@@ -427,9 +427,19 @@ body {
   color: #1d4ed8;
 }
 
+.source-type.policy {
+  background: #e0e7ff;
+  color: #4338ca;
+}
+
 .source-type.education {
   background: #d1fae5;
   color: #047857;
+}
+
+.source-type.media {
+  background: #fce7f3;
+  color: #be185d;
 }
 
 .source-type.immigration {

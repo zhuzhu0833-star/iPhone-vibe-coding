@@ -1,6 +1,8 @@
 const TYPE_LABELS = {
   university: "高校",
+  policy: "招生政策",
   education: "教育部门",
+  media: "行业媒体",
   immigration: "移民机构",
 };
 
@@ -290,7 +292,7 @@ function renderCountryCard(country) {
   const indeterminate = selected > 0 && !allCatalogChecked;
   const dimmed = state.activeCountry && state.activeCountry !== country.id;
 
-  const groups = ["university", "education", "immigration"]
+  const groups = ["university", "policy", "education", "media", "immigration"]
     .map((type) => {
       const groupSources = sources.filter((s) => s.type === type && sourceVisible(s));
       if (groupSources.length === 0) return "";

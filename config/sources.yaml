@@ -4,6 +4,6 @@
 
 settings:
   max_items_per_source: 5
-  max_items_per_country: 2
-  max_total_items: 12
+  max_items_per_country: 4
+  max_total_items: 20
   lookback_hours: 168

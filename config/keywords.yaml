@@ -42,6 +42,24 @@ required_any:
   - right to work
   - working rights
   - employment after graduation
+  - application cycle
+  - enrollment data
+  - enrolment data
+  - admission statistics
+  - application data
+  - applicant numbers
+  - acceptance rate
+  - early decision
+  - early action
+  - regular decision
+  - open doors
+  - deferral
+  - waitlist
+  - test-optional
+  - test optional
+  - standardized testing
+  - offer rate
+  - application round
 
 # High-priority: university admissions and enrollment policy.
 admissions_priority:
@@ -70,6 +88,21 @@ admissions_priority:
   - overseas applicant
   - english-taught
   - english taught
+  - application cycle
+  - enrollment data
+  - enrolment data
+  - admission statistics
+  - application data
+  - applicant numbers
+  - acceptance rate
+  - early decision
+  - early action
+  - regular decision
+  - offer rate
+  - deferral
+  - waitlist
+  - test-optional
+  - test optional
 
 # Lower-priority immigration-only signals (still included, ranked lower).
 immigration_only:
@@ -87,6 +120,8 @@ immigration_only:
 # Source-type base bonus (higher = more likely to appear in digest).
 source_type_bonus:
   university: 35
+  policy: 30
+  media: 25
   education: 20
   immigration: 5
 
@@ -103,6 +138,11 @@ priority_boost:
   - scholarship
   - intake
   - english-taught
+  - application cycle
+  - enrollment data
+  - admission statistics
+  - early decision
+  - clearing
 
 # Penalty per matched term for immigration-heavy noise.
 immigration_penalty:
