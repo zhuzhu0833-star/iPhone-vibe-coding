@@ -7,6 +7,7 @@ on:
       - "admin/**"
       - "data/catalog.json"
       - "data/selections.json"
+      - "digests/**"
       - ".github/workflows/deploy-admin.yml"
   workflow_dispatch:
 
@@ -30,9 +31,12 @@ jobs:
 
       - name: Build site
         run: |
-          mkdir -p _site/data
+          mkdir -p _site/data _site/digest
           cp admin/index.html admin/app.js admin/style.css _site/
           cp data/catalog.json data/selections.json _site/data/
+          if [ -f digests/latest.html ]; then
+            cp digests/latest.html _site/digest/
+          fi
           touch _site/.nojekyll
 
       - uses: actions/configure-pages@v4

@@ -49,7 +49,7 @@ def _fallback_zh(title: str) -> str:
 
 
 def _build_prompt(item: DigestItem) -> str:
-    return f"""你是留学顾问助手。请用 JSON 格式总结以下新闻，面向关注签证、移民、高校政策的国际学生家长与顾问。
+    return f"""你是留学顾问助手。请用 JSON 格式总结以下新闻，面向关注招生与签证政策的顾问团队。
 
 标题: {item.title_en}
 来源: {item.source_name}（{item.country_name}）
@@ -57,7 +57,7 @@ def _build_prompt(item: DigestItem) -> str:
 原文摘要: {_strip_html(item.summary_en)[:800]}
 
 只返回合法 JSON，不要其他文字：
-{{"summary_en":"1-2句英文，说明对国际学生的政策影响","summary_zh":"对应简体中文翻译"}}"""
+{{"summary_zh":"2-3句简体中文，说明对国际生或留学顾问的招生/政策影响，突出关键变化与行动建议"}}"""
 
 
 def _parse_json_response(text: str) -> dict:
@@ -87,7 +87,6 @@ def _chat_summarize(
     response.raise_for_status()
     text = response.json()["choices"][0]["message"]["content"]
     data = _parse_json_response(text)
-    item.summary_en = data.get("summary_en", item.summary_en)[:500]
     item.summary_zh = data.get("summary_zh", _fallback_zh(item.title_en))[:500]
     return item
 

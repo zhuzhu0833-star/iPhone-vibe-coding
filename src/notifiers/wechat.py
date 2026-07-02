@@ -1,81 +1,52 @@
-"""WeChat Work (企业微信) group bot notifications via webhook."""
+"""WeChat Work (企业微信) group bot — push single-page HTML digest file."""
 
 from __future__ import annotations
 
 import logging
 import os
+import shutil
+import tempfile
+from pathlib import Path
+from urllib.parse import parse_qs, urlparse
 
 import requests
 
-from src.models import Digest, DigestItem
+from src.models import Digest
+from src.notifiers.html_digest import write_digest_html
 
 logger = logging.getLogger(__name__)
 
-# WeChat Work markdown messages are limited to 4096 bytes.
-MAX_MARKDOWN_BYTES = 3800
+
+def _webhook_key(webhook: str) -> str:
+    key = parse_qs(urlparse(webhook).query).get("key", [""])[0]
+    if not key:
+        raise ValueError("Invalid WeChat Work webhook URL: missing key")
+    return key
 
 
-def _type_label(source_type: str) -> str:
-    return {
-        "immigration": "Immigration",
-        "university": "University",
-        "education": "Education",
-    }.get(source_type, "News")
-
-
-def _item_markdown(item: DigestItem, index: int) -> str:
-    label = _type_label(item.source_type)
-    return (
-        f"### {index}. {item.country_flag} {item.country_name} · {item.category}\n"
-        f"> {item.source_name} ({label})\n\n"
-        f"**EN** {item.summary_en}\n\n"
-        f"**中** {item.summary_zh}\n\n"
-        f"[阅读原文]({item.link})\n"
-    )
-
-
-def build_markdown_messages(digest: Digest) -> list[str]:
-    header = f"## 🎓 全球留学政策日报 | {digest.date_label}\n"
-
-    if not digest.items:
-        body = (
-            "今日暂无符合筛选条件的新政策动态。\n"
-            "No new policy updates matched today's filters."
+def _upload_file(webhook: str, file_path: Path) -> str:
+    key = _webhook_key(webhook)
+    upload_url = f"https://qyapi.weixin.qq.com/cgi-bin/webhook/upload_media?key={key}&type=file"
+    with open(file_path, "rb") as handle:
+        response = requests.post(
+            upload_url,
+            files={"media": (file_path.name, handle, "text/html")},
+            timeout=30,
         )
-        return [header + body]
-
-    footer = (
-        f"\n---\n"
-        f"共 **{len(digest.items)}** 条 · {digest.disclaimer_zh}\n"
-        f"{digest.disclaimer}"
-    )
-
-    messages: list[str] = []
-    current = header
-
-    for i, item in enumerate(digest.items, start=1):
-        block = _item_markdown(item, i)
-        candidate = current + block
-        if len(candidate.encode("utf-8")) > MAX_MARKDOWN_BYTES and current != header:
-            messages.append(current.rstrip())
-            current = f"## 🎓 全球留学政策日报（续）| {digest.date_label}\n" + block
-        else:
-            current = candidate
-
-    current += footer
-    if len(current.encode("utf-8")) > MAX_MARKDOWN_BYTES:
-        messages.append(current[: MAX_MARKDOWN_BYTES // 2])
-        messages.append(current[MAX_MARKDOWN_BYTES // 2 :])
-    else:
-        messages.append(current)
-
-    return messages
+    response.raise_for_status()
+    data = response.json()
+    if data.get("errcode") != 0:
+        raise RuntimeError(f"WeChat file upload failed: {data}")
+    media_id = data.get("media_id")
+    if not media_id:
+        raise RuntimeError(f"No media_id in upload response: {data}")
+    return media_id
 
 
-def _send_markdown(webhook: str, content: str) -> None:
+def _send_file(webhook: str, media_id: str) -> None:
     response = requests.post(
         webhook,
-        json={"msgtype": "markdown", "markdown": {"content": content}},
+        json={"msgtype": "file", "file": {"media_id": media_id}},
         timeout=20,
     )
     response.raise_for_status()
@@ -84,18 +55,54 @@ def _send_markdown(webhook: str, content: str) -> None:
         raise RuntimeError(f"WeChat Work API error: {data}")
 
 
-def send_wechat(digest: Digest) -> bool:
+def _send_text(webhook: str, content: str) -> None:
+    response = requests.post(
+        webhook,
+        json={"msgtype": "text", "text": {"content": content}},
+        timeout=20,
+    )
+    response.raise_for_status()
+    data = response.json()
+    if data.get("errcode") != 0:
+        raise RuntimeError(f"WeChat Work API error: {data}")
+
+
+def send_wechat(digest: Digest, *, html_path: Path | None = None) -> bool:
     webhook = os.environ.get("WECHAT_WORK_WEBHOOK_URL", "").strip()
     if not webhook:
         logger.warning("WECHAT_WORK_WEBHOOK_URL not set; skipping WeChat Work")
         return False
 
+    upload_path: Path | None = None
     try:
-        messages = build_markdown_messages(digest)
-        for i, content in enumerate(messages, start=1):
-            _send_markdown(webhook, content)
-            logger.info("WeChat Work message %d/%d sent", i, len(messages))
+        if html_path is None:
+            html_path = write_digest_html(digest)
+
+        count = len(digest.items)
+        intro = (
+            f"🎓 全球留学政策日报 {digest.date_label}\n"
+            f"共 {count} 条 · 中文摘要见下方 HTML 文件，点击即可打开阅读。"
+        )
+        _send_text(webhook, intro)
+
+        upload_dir = Path(tempfile.mkdtemp(prefix="digest-upload-"))
+        upload_path = upload_dir / f"留学政策日报-{digest.date_label}.html"
+        shutil.copy(html_path, upload_path)
+
+        media_id = _upload_file(webhook, upload_path)
+        _send_file(webhook, media_id)
+        logger.info("WeChat Work HTML digest sent (%d items)", count)
+
+        public_base = os.environ.get("DIGEST_PUBLIC_URL", "").strip().rstrip("/")
+        if public_base:
+            page_url = f"{public_base}/digest/latest.html"
+            _send_text(webhook, f"📎 在线阅读：{page_url}")
+            logger.info("WeChat Work page link sent: %s", page_url)
+
         return True
     except Exception as exc:
         logger.error("WeChat Work send failed: %s", exc)
         return False
+    finally:
+        if upload_path is not None:
+            shutil.rmtree(upload_path.parent, ignore_errors=True)
