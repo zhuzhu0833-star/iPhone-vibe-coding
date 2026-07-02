@@ -4,14 +4,25 @@ on:
   schedule:
     # 08:30 Beijing Time (UTC+8) = 00:30 UTC
     - cron: "30 0 * * *"
+    # 22:00 Beijing Time (UTC+8) = 14:00 UTC
+    - cron: "0 14 * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
   digest:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -24,7 +35,46 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run daily digest
+      - name: Generate digest
+        env:
+          LLM_PROVIDER: ${{ secrets.LLM_PROVIDER }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+        run: python -m src.main --phase generate
+
+      - name: Build GitHub Pages site
+        run: |
+          mkdir -p _site/data _site/digest
+          cp admin/index.html admin/app.js admin/style.css _site/
+          cp data/catalog.json data/selections.json _site/data/
+          cp digests/latest.html _site/digest/
+          cat > _site/digest/index.html <<'EOF'
+          <!DOCTYPE html>
+          <html lang="zh-CN">
+          <head>
+            <meta charset="utf-8" />
+            <meta http-equiv="refresh" content="0; url=latest.html" />
+            <title>留学政策日报</title>
+          </head>
+          <body>
+            <p><a href="latest.html">打开最新留学政策日报</a></p>
+          </body>
+          </html>
+          EOF
+          touch _site/.nojekyll
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Send notifications
         env:
           WECHAT_WORK_WEBHOOK_URL: ${{ secrets.WECHAT_WORK_WEBHOOK_URL }}
           DIGEST_PUBLIC_URL: https://zhuzhu0833-star.github.io/iPhone-vibe-coding
@@ -35,14 +85,12 @@ jobs:
           SMTP_USE_TLS: ${{ secrets.SMTP_USE_TLS }}
           EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
           EMAIL_RECIPIENTS: ${{ secrets.EMAIL_RECIPIENTS }}
-          LLM_PROVIDER: ${{ secrets.LLM_PROVIDER }}
-          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
-        run: python -m src.main
+        run: python -m src.main --phase notify
 
       - name: Commit digest output
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/seen_urls.json digests/
-          git diff --staged --quiet || git commit -m "chore: update digest and seen URLs [skip ci]"
+          git diff --staged --quiet || git commit -m "chore: update digest and seen URLs"
           git push
