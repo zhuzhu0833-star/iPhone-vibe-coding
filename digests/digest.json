@@ -1,5 +1,20 @@
 {
   "date_label": "2026-07-02",
   "slot": "evening",
-  "items": []
+  "items": [
+    {
+      "title_en": "The Thomas Connection Intelligence Scholarship - University of Surrey",
+      "summary_en": "The Thomas Connection Intelligence Scholarship University of Surrey",
+      "summary_zh": "萨里大学推出Thomas Connection Intelligence奖学金，为国际学生提供经济支持。该奖学金旨在吸引优秀人才，申请者需关注截止日期并提前准备材料。",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQRENyMG9yRlpobWZ1bXZSUWVIWWoxc0RTTmdfU3NoZ25ETndsaEtSS3lLUWphWGVXUTFGRldZa1M0OUI4SmJvVjNvNnBDRU9lcjZrX0lmUWJVNmJVN2FFSlBFYlQ2aWpGV0ljN2ltZmtvcmxpOG5Hell5NVRQMWg5QTA0Y1UwWS01cGQtNjMwT2dLSXBxM1pBVUNtNVJ5akNyc3ZYYThFT3BJa3FNazd5LQ?oc=5",
+      "source_name": "University of Surrey",
+      "source_type": "university",
+      "country_id": "uk",
+      "country_name": "United Kingdom",
+      "country_flag": "🇬🇧",
+      "category": "University admissions",
+      "score": 52.0,
+      "action_advice": "顾问建议：提醒有意申请的学生尽快核对奖学金要求并准备申请材料，避免错过截止日期。"
+    }
+  ]
 }
