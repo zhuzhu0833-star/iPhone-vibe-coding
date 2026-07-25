@@ -1,54 +1,12 @@
 {
   "date_label": "2026-07-25",
-  "slot": "morning",
+  "slot": "evening",
   "items": [
     {
-      "title_en": "Study in Italy for International Students 2026 | TOEFL Guide - ETS | Global education and talent solutions",
-      "summary_en": "Study in Italy for International Students 2026 | TOEFL Guide ETS | Global education and talent solutions",
-      "summary_zh": "详情请参阅原文链接：Study in Italy for International Students 2026 | TOEFL Guide - ETS | Global education and talent solutions",
-      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQRmdpbHVwckdQVWdwa3Zyc1NrOTVtTGRyMDVseXIwT0NGalNWVThWbjFpcDYxVVpiWTUtQ1dlOVhOMll3MXc0WXJMSVdYNzRocWtrUWU4MXFiZDRGQmJNTlhaNlQzWkNoZnlfNlhzT250QmVabW93SkN5WnlMTTcwb3JwRzQ5MXhqblFLQTYtLWJ1RUV6a3c4QldhcFpMVDFQNjZfMFR5dHpSN3FxOTRxbUJScXV5SDF4?oc=5",
-      "source_name": "ETS / TOEFL",
-      "source_type": "policy",
-      "country_id": "us",
-      "country_name": "United States",
-      "country_flag": "🇺🇸",
-      "category": "Immigration policy",
-      "score": 50.0,
-      "action_advice": "请关注原文细则，并提醒在途学生核对材料与时间节点。"
-    },
-    {
-      "title_en": "Entry Requirements - NUS - National University of Singapore",
-      "summary_en": "Entry Requirements NUS - National University of Singapore",
-      "summary_zh": "详情请参阅原文链接：Entry Requirements - NUS - National University of Singapore",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE93UEdMcHdqQ1V2bUFDUzFRMlJkZjFxSUZwYjFpVWxBalpXczF2cnc2YzBOZmtKQ3JocHR4NnJsSEY4OXdiZFo1c0I3MXllM3Y0ZEYwWQ?oc=5",
-      "source_name": "NUS",
-      "source_type": "university",
-      "country_id": "sg",
-      "country_name": "Singapore",
-      "country_flag": "🇸🇬",
-      "category": "University admissions",
-      "score": 50.0,
-      "action_advice": "请关注原文细则，并提醒在途学生核对材料与时间节点。"
-    },
-    {
-      "title_en": "News - PRISMS - Department of Education - Provider Registration and International Student Management System (PRISMS)",
-      "summary_en": "News - PRISMS - Department of Education Provider Registration and International Student Management System (PRISMS)",
-      "summary_zh": "详情请参阅原文链接：News - PRISMS - Department of Education - Provider Registration and International Student Management System (PRISMS)",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFA4cEZ6OU51RURBZWxKR3FsT1NrcjV0bVljdno1aEg3aEhESGppSEJnVmQxaDdVRU9kM3Y2NE5iYWZnMUI0VUl4RFBIREl5Ul9rT3Nhd0VocTdFTTVBLXFlZ3ZZMExEVjhTSktmT3RBTQ?oc=5",
-      "source_name": "Australian Dept. of Education",
-      "source_type": "policy",
-      "country_id": "au",
-      "country_name": "Australia",
-      "country_flag": "🇦🇺",
-      "category": "Immigration policy",
-      "score": 45.0,
-      "action_advice": "请关注原文细则，并提醒在途学生核对材料与时间节点。"
-    },
-    {
-      "title_en": "Digital Communications & Data Assistant Intern in Geneva, NY for Hobart and William Smith Colleges - National Association for College Admission Counseling (NACAC)",
-      "summary_en": "Digital Communications & Data Assistant Intern in Geneva, NY for Hobart and William Smith Colleges National Association for College Admission Counseling (NACAC)",
-      "summary_zh": "详情请参阅原文链接：Digital Communications & Data Assistant Intern in Geneva, NY for Hobart and William Smith Colleges - National Association for College Admission Counseling (NACAC)",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNakxwNEkyWmtrMGZtUlduUzAyeXRFX0FaVTRtRU55NDQxQzFWT1hJVTd5M0ltQzNaMUFVaFJLMVJERE9uWGstNWtJRV9hc1FNMjdaOS1vNWhWT3I5X29rZkpSdW16aWRWNW1lTXU2dFpwUkRBMHNodXQ5WUwwY3o4TWFxTV9BNFVtQUoyWEhhalc?oc=5",
+      "title_en": "Enrollment Specialist in Baltimore, MD for Morgan State University - National Association for College Admission Counseling (NACAC)",
+      "summary_en": "Enrollment Specialist in Baltimore, MD for Morgan State University National Association for College Admission Counseling (NACAC)",
+      "summary_zh": "详情请参阅原文链接：Enrollment Specialist in Baltimore, MD for Morgan State University - National Association for College Admission Counseling (NACAC)",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5mUzVWY28yUkNtVlNTQlRvdW94dlNkUW9zSDVoTXBTRzlPMlVTTVRPNi1FWFJMUFJaXzl5QW9oOTZlUG03STZweTJORThTbWlxa3ZYZjFmOUlMbkZnazBvRVN6SDl5Z1FGLTFYUHV5RTJGQQ?oc=5",
       "source_name": "NACAC",
       "source_type": "policy",
       "country_id": "us",
@@ -59,10 +17,10 @@
       "action_advice": "请关注原文细则，并提醒在途学生核对材料与时间节点。"
     },
     {
-      "title_en": "Director of Application Counseling in , for InGenius Prep - National Association for College Admission Counseling (NACAC)",
-      "summary_en": "Director of Application Counseling in , for InGenius Prep National Association for College Admission Counseling (NACAC)",
-      "summary_zh": "详情请参阅原文链接：Director of Application Counseling in , for InGenius Prep - National Association for College Admission Counseling (NACAC)",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNQkhqUnM3VW1ZRzlTU3BqUjlkazE3NFRrUTdjVkgwTEdjXzA3N2FCeDhBVEhMa3dOdVZQNDhaSXlKblE0cFZRX3pZR29IbVhYLTNSaF9DY2RtaURaaUR0d3ZtUGx6LVdpNXJkQUg2eE80LUVNLWRGWEhqUjFsT253aXlLTQ?oc=5",
+      "title_en": "Dean for Enrollment Management (Vice President) in Crawfordsville, IN for Wabash College - National Association for College Admission Counseling (NACAC)",
+      "summary_en": "Dean for Enrollment Management (Vice President) in Crawfordsville, IN for Wabash College National Association for College Admission Counseling (NACAC)",
+      "summary_zh": "详情请参阅原文链接：Dean for Enrollment Management (Vice President) in Crawfordsville, IN for Wabash College - National Association for College Admission Counseling (NACAC)",
+      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNVFlnUER4ck5GTGoxMHNhWmstd1ZkYXphcXNyQVZQcTFOX01qYy04bFFHbnlfcWN3LThWU2l4M1VWLXdxOGdEZl9tdlMxOS1yb2VWak0zQXJBQ0hVVXJ0SmxtMnNtYUx4eG1QOWtxVl9tekV4dUNpam9HQWR4QWlzS0FIMTdrUHBDME1qWVZjNnNVUQ?oc=5",
       "source_name": "NACAC",
       "source_type": "policy",
       "country_id": "us",
@@ -70,20 +28,6 @@
       "country_flag": "🇺🇸",
       "category": "Education admissions",
       "score": 39.0,
-      "action_advice": "请关注原文细则，并提醒在途学生核对材料与时间节点。"
-    },
-    {
-      "title_en": "Director of Admissions (On-site in Tempe) - Guadalupe, AZ job with Arizona College of Nursing | 193155 - NAFSA Careers",
-      "summary_en": "Director of Admissions (On-site in Tempe) - Guadalupe, AZ job with Arizona College of Nursing | 193155 NAFSA Careers",
-      "summary_zh": "详情请参阅原文链接：Director of Admissions (On-site in Tempe) - Guadalupe, AZ job with Arizona College of Nursing | 193155 - NAFSA Careers",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOTVVzTzRrc1FUMWhJVm5aN2V2TXQ5cFB4bUI4LW9CZHF4TmlwNFNqV2RoQTM5N1FvTGFkTkxjQmpiRVVwdHBkQzRFMFUwTS1SZ255Y2NGcDFoUW5LY1ltUWo5Mk9tUUR3TzJiX0gtSHpnTXNyMEx1TE5JbjlBTTlIaG5vTkU?oc=5",
-      "source_name": "NAFSA",
-      "source_type": "education",
-      "country_id": "us",
-      "country_name": "United States",
-      "country_flag": "🇺🇸",
-      "category": "Education admissions",
-      "score": 34.0,
       "action_advice": "请关注原文细则，并提醒在途学生核对材料与时间节点。"
     }
   ]
