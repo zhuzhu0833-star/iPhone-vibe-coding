@@ -1,20 +1,62 @@
 {
-  "date_label": "2026-07-27",
-  "slot": "morning",
+  "date_label": "2026-07-28",
+  "slot": "evening",
   "items": [
     {
-      "title_en": "Victims Of Immigration Crime Engagement (VOICE) Office - ICE | U.S. Immigration and Customs Enforcement (.gov)",
-      "summary_en": "Victims Of Immigration Crime Engagement (VOICE) Office ICE | U.S. Immigration and Customs Enforcement (.gov)",
-      "summary_zh": "美国移民与海关执法局（ICE）下属的“移民犯罪受害者参与（VOICE）办公室”持续运作，该机构旨在为受移民犯罪影响的受害者提供支持服务。这一政策动向表明美国政府在移民执法领域加强了对受害者权益的关注，可能对国际学生社区的安全感知产生间接影响。",
-      "link": "https://news.google.com/rss/articles/CBMiPkFVX3lxTE9RYVFzS2pQUWFUOEliTTNpNnZna2gyMl91V1VDeFhBOUNCUlBvYjMxUDFUdFAweDd1SDc0eUt3?oc=5",
-      "source_name": "SEVP / ICE",
-      "source_type": "policy",
+      "title_en": "Policy changes for international students, scholars threaten U.S. competitiveness",
+      "summary_en": "Garber offers assessment at D.C. event, says shifts will discourage global best, brightest from coming here for research, study",
+      "summary_zh": "哈佛大学校长加伯在华盛顿活动中指出，美国针对国际学生和学者的政策变化将削弱其全球竞争力，这些调整会阻碍全球最优秀的人才赴美从事研究和学习。当前政策变动主要涉及申请截止日、签证与工签政策以及材料审理时效，对国际生构成新的挑战。",
+      "link": "https://news.harvard.edu/gazette/story/2026/07/policy-changes-for-international-students-scholars-threaten-u-s-competitiveness/",
+      "source_name": "Harvard University",
+      "source_type": "university",
       "country_id": "us",
       "country_name": "United States",
       "country_flag": "🇺🇸",
-      "category": "Immigration policy",
-      "score": 37.0,
-      "action_advice": "顾问建议：提醒学生和家长关注ICE官方发布的VOICE办公室相关信息，了解自身权益保护措施，并在遇到安全问题时及时联系学校国际学生办公室寻求指导。"
+      "category": "University admissions",
+      "score": 57.0,
+      "action_advice": "顾问建议：提醒学生和家长密切关注美国签证及工签政策的最新动态，提前准备申请材料并预留充足的审理时间，同时考虑多国联申以降低政策变动风险。"
+    },
+    {
+      "title_en": "DHS Rule on Admission and Extension: Office of International Student and Scholar Services - Northwestern University",
+      "summary_en": "DHS Rule on Admission and Extension: Office of International Student and Scholar Services Northwestern University",
+      "summary_zh": "美国国土安全部（DHS）发布了关于国际学生录取与延期的规定，西北大学国际学生与学者服务办公室对此进行了说明。该规定可能影响国际学生的入学申请、身份维持及学业延期流程。",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPUXdhbGUxeHY0SGlzUTFaTjNCQlF3NUdReUhiTXBOcHdDYjlEalZSNkN1bXkyS3lFY1dFSVRXN05lR3N2Mk9QbDhKa3h3S09CVnRyNFEyMFdkUEtRM1Q5ejVxNEtDMjA3UVJmaTBvOWsyOGVnWnY1UTR1dDVoMWlRS20xaVJoeFdCLVpYSWF1NlN5Uy1HVHN0Rg?oc=5",
+      "source_name": "Northwestern University",
+      "source_type": "university",
+      "country_id": "us",
+      "country_name": "United States",
+      "country_flag": "🇺🇸",
+      "category": "University admissions",
+      "score": 52.0,
+      "action_advice": "顾问建议：提醒学生密切关注DHS最新政策变化，及时与学校国际学生办公室确认申请截止日期及签证材料要求。"
+    },
+    {
+      "title_en": "Do I have to pay tuition fees abroad? - Queen Mary University of London",
+      "summary_en": "Do I have to pay tuition fees abroad? Queen Mary University of London",
+      "summary_zh": "伦敦玛丽女王大学发布文章，明确国际学生需支付海外学费，并提醒学生注意学费标准及支付方式。该信息对计划申请该校的国际生具有直接参考意义，需提前规划资金。",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1zNnhRQ2tsTDViRDdmQ3Etalo3Zmgtc1ZjRVFCMzNMQkp2VmhNakRtOF95RUd6SjJQQmg0UnoySDVWZEptWkEtVWctQnpXc2dwVGFENmI4M0I0dEdrcmhzS3FWSkZ3UFFfV3hYaGY4cXFwQlJrbnJJQW5kdw?oc=5",
+      "source_name": "Queen Mary University of London",
+      "source_type": "university",
+      "country_id": "uk",
+      "country_name": "United Kingdom",
+      "country_flag": "🇬🇧",
+      "category": "University admissions",
+      "score": 52.0,
+      "action_advice": "顾问建议：提醒学生和家长在申请前仔细查阅目标院校的学费政策，并确认是否有分期付款或奖学金选项。"
+    },
+    {
+      "title_en": "The international student recruitment industry needs a reset - The PIE News",
+      "summary_en": "The international student recruitment industry needs a reset The PIE News",
+      "summary_zh": "国际学生招生行业亟需调整，当前模式面临可持续性挑战。政策变化可能影响招生流程和签证审理时效，国际生需关注申请截止日与工签政策动态。",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPSW9rbjdPM2FCeFNhX2R4MXprWXBMV0ZkU2s1T3k3WGhBdkw5eDVQLXRuckVDWFJMZkNNdUpVNFR0aFRmdk42LWRZNVNBWDFuMm5vcGhaQ3hqMVZCd0hGdGVxdXNLVVppTVJYSy1LcGNvcG1WV19UTF85UnBkaGtYWHlVZW1jVWoxU04wYg?oc=5",
+      "source_name": "The PIE News",
+      "source_type": "media",
+      "country_id": "global",
+      "country_name": "International",
+      "country_flag": "🌍",
+      "category": "Education policy",
+      "score": 40.0,
+      "action_advice": "顾问建议：提醒学生及家长密切关注目标院校的申请截止日期和签证政策更新，提前准备完整材料以应对审理时效变化。"
     }
   ]
 }
