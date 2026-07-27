@@ -1,5 +1,20 @@
 {
-  "date_label": "2026-07-26",
-  "slot": "evening",
-  "items": []
+  "date_label": "2026-07-27",
+  "slot": "morning",
+  "items": [
+    {
+      "title_en": "Victims Of Immigration Crime Engagement (VOICE) Office - ICE | U.S. Immigration and Customs Enforcement (.gov)",
+      "summary_en": "Victims Of Immigration Crime Engagement (VOICE) Office ICE | U.S. Immigration and Customs Enforcement (.gov)",
+      "summary_zh": "美国移民与海关执法局（ICE）下属的“移民犯罪受害者参与（VOICE）办公室”持续运作，该机构旨在为受移民犯罪影响的受害者提供支持服务。这一政策动向表明美国政府在移民执法领域加强了对受害者权益的关注，可能对国际学生社区的安全感知产生间接影响。",
+      "link": "https://news.google.com/rss/articles/CBMiPkFVX3lxTE9RYVFzS2pQUWFUOEliTTNpNnZna2gyMl91V1VDeFhBOUNCUlBvYjMxUDFUdFAweDd1SDc0eUt3?oc=5",
+      "source_name": "SEVP / ICE",
+      "source_type": "policy",
+      "country_id": "us",
+      "country_name": "United States",
+      "country_flag": "🇺🇸",
+      "category": "Immigration policy",
+      "score": 37.0,
+      "action_advice": "顾问建议：提醒学生和家长关注ICE官方发布的VOICE办公室相关信息，了解自身权益保护措施，并在遇到安全问题时及时联系学校国际学生办公室寻求指导。"
+    }
+  ]
 }
