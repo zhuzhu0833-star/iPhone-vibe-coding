@@ -1,76 +1,20 @@
 {
   "date_label": "2026-08-02",
-  "slot": "morning",
+  "slot": "evening",
   "items": [
     {
-      "title_en": "Sochon Foundation Scholarship - soas.ac.uk",
-      "summary_en": "Sochon Foundation Scholarship soas.ac.uk",
-      "summary_zh": "SOAS伦敦大学发布Sochon基金会奖学金信息，为国际学生提供经济资助机会。该奖学金旨在支持优秀学生完成学业，具体申请条件和金额需查阅官网。",
-      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOVTdBOE50YlVRdkJnbmtMM2kzWmtsblJ2RUNGRUw2SDV1bUdJWGU1aWNjd3QzYnlOZGk4V0ljdW1TQm5EejVFSmY1NmF6SzdkVW5Sb3ZkR1BJajh6ei10ai1jaFlfdlAta0p3VWJqVzdHaGdVTlhsRnJ6d21nXzU1Z3JCMGc0NE92cWZfYUw0Q2p5c0RrR3Fn?oc=5",
-      "source_name": "SOAS University of London",
-      "source_type": "university",
-      "country_id": "uk",
-      "country_name": "United Kingdom",
-      "country_flag": "🇬🇧",
-      "category": "University admissions",
-      "score": 55.0,
-      "action_advice": "顾问建议：提醒有意申请SOAS的学生尽快查看官网了解Sochon奖学金的具体申请资格和截止日期，并准备相关申请材料。"
-    },
-    {
-      "title_en": "关于邮寄办理派出手续的常见问题 - 教育部留学服务中心网上服务大厅",
-      "summary_en": "关于邮寄办理派出手续的常见问题 教育部留学服务中心网上服务大厅",
-      "summary_zh": "教育部留学服务中心发布了关于邮寄办理派出手续的常见问题说明，明确了相关流程和注意事项。该政策涉及留学人员派出手续的办理方式，对计划出国留学的学生有直接影响。",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOUjRfamotNGNHOGJIajJpWE9JU0llQVhWak5XVEdycFBZNGJuMFFlTGVuWFVfQnJ4MnFHU3ljNU9RRUNnSEdpSFotWHNKaUthRnNjc283SF9YYlZhdURxcTNySWF5RzFyNV9GVUhrX2tXdm5vai1wSEthYi1CUXozRW5XSnQybWJrOE92UWh5UHg2UFVPNkE?oc=5",
-      "source_name": "教育部留学服务中心 CSCSE",
-      "source_type": "policy",
-      "country_id": "cn",
-      "country_name": "China",
-      "country_flag": "🇨🇳",
+      "title_en": "Guide to waiting time for study permits - udi.no",
+      "summary_en": "Guide to waiting time for study permits udi.no",
+      "summary_zh": "挪威移民局（UDI）发布了学习许可等待时间的官方指南，明确了审理时效的相关信息。该指南有助于国际学生了解申请处理周期，合理规划入学时间。",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOMG5GRnJzMmNteG1QaURlVmhtcV9qNXI4LUlCalZvXzNMZ1Q4bDJGcGdCd1FzQk9ZZTc5ZzdKem9JaWRNNzJTcE9ZN09HUTY1NVRZR3RBcGI1bC1VV1pRV3J3X3lVNWp3WW5UNm9vOGRQMUdTRS0yZVN1UHYtTUJPUDZfLTFiWExDY2FFazJHUjN0dzBZYUg0N1NzRmk5aTg?oc=5",
+      "source_name": "UDI Norway",
+      "source_type": "immigration",
+      "country_id": "no",
+      "country_name": "Norway",
+      "country_flag": "🇳🇴",
       "category": "Immigration policy",
-      "score": 37.0,
-      "action_advice": "顾问建议：提醒需要办理派出手续的学生及家长，提前了解邮寄办理的具体要求和材料清单，确保手续顺利完成。"
-    },
-    {
-      "title_en": "关于邮寄办理派出手续的常见问题 - 教育部留学服务中心网上服务大厅",
-      "summary_en": "关于邮寄办理派出手续的常见问题 教育部留学服务中心网上服务大厅",
-      "summary_zh": "教育部留学服务中心发布了关于邮寄办理派出手续的常见问题说明，明确了相关流程和注意事项。该政策主要涉及留学人员派出环节的手续办理方式，对准备出国的学生有一定指导意义。",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOUjRfamotNGNHOGJIajJpWE9JU0llQVhWak5XVEdycFBZNGJuMFFlTGVuWFVfQnJ4MnFHU3ljNU9RRUNnSEdpSFotWHNKaUthRnNjc283SF9YYlZhdURxcTNySWF5RzFyNV9GVUhrX2tXdm5vai1wSEthYi1CUXozRW5XSnQybWJrOE92UWh5UHg2UFVPNkE?oc=5",
-      "source_name": "CSCSE 学历认证服务",
-      "source_type": "policy",
-      "country_id": "cn",
-      "country_name": "China",
-      "country_flag": "🇨🇳",
-      "category": "Immigration policy",
-      "score": 37.0,
-      "action_advice": "顾问建议：提醒即将办理派出手续的学生及家长，提前查阅教育部留学服务中心官网的邮寄办理指南，确保材料齐全并按要求操作，避免延误出国行程。"
-    },
-    {
-      "title_en": "学历学位认证--通知公告 - 教育部留学服务中心网上服务大厅",
-      "summary_en": "学历学位认证--通知公告 教育部留学服务中心网上服务大厅",
-      "summary_zh": "教育部留学服务中心发布学历学位认证相关通知公告，涉及留学人员学历认证服务的政策动态。该通知可能影响国际学生的学历认证流程和办理要求，需关注具体细则变化。",
-      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNOUpQLVdxMXBXVFg1dGtWT3I3akE4VFhyRjBnWTVRY2czbF95b3NTRXhMUm5CeUJYMHY3Qmc4R1pITzZpQnhBcnRXT2h1WVVXVGVxbjMzYU00b3FSXzJ3SzM1ZkpXdzBaX0pPRHgyMXNHQXlsaVBWbEZjUkdmVGswcC02SnN0UQ?oc=5",
-      "source_name": "CSCSE 学历认证服务",
-      "source_type": "policy",
-      "country_id": "cn",
-      "country_name": "China",
-      "country_flag": "🇨🇳",
-      "category": "Immigration policy",
-      "score": 37.0,
-      "action_advice": "顾问建议：提醒学生及家长密切关注教育部留学服务中心官网的最新认证通知，确保材料准备符合最新要求。"
-    },
-    {
-      "title_en": "Senior Regional Admissions Counselor - Missouri (Remote) job with High Point University | 193266 - NAFSA Careers",
-      "summary_en": "Senior Regional Admissions Counselor - Missouri (Remote) job with High Point University | 193266 NAFSA Careers",
-      "summary_zh": "高点大学正在招聘密苏里州高级区域招生顾问（远程岗位），表明美国高校仍在积极拓展区域招生网络，以吸引更多学生申请。该岗位为远程工作，反映出招生工作模式正趋向灵活化，可能有助于扩大国际生招募覆盖面。",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9JT29iSlJRanplODV1MEJKenJfdTlyV0lGN1pNQlJzdFhNRk9aRHVKSzNTendNMG13M3BuNmRVNlFKTXpyTU9ha0RVQjRYaktKcmFEWTZuZGdCZG5uRnFHYjYyNWNITEFhTXdtWXN3ejc2WkxKc0VuOUdWbG1GTzA?oc=5",
-      "source_name": "NAFSA",
-      "source_type": "education",
-      "country_id": "us",
-      "country_name": "United States",
-      "country_flag": "🇺🇸",
-      "category": "Education admissions",
-      "score": 34.0,
-      "action_advice": "顾问建议：提醒有意赴美留学的学生及家长，关注目标院校的区域招生动态，主动联系远程招生顾问获取最新录取信息与申请指导。"
+      "score": 5.0,
+      "action_advice": "顾问建议：提醒学生提前查阅UDI官网的等待时间指南，根据审理周期倒推申请提交时间，避免因等待时间过长而影响入学安排。"
     }
   ]
 }
