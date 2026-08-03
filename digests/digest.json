@@ -1,20 +1,34 @@
 {
-  "date_label": "2026-08-02",
-  "slot": "evening",
+  "date_label": "2026-08-03",
+  "slot": "morning",
   "items": [
     {
-      "title_en": "Guide to waiting time for study permits - udi.no",
-      "summary_en": "Guide to waiting time for study permits udi.no",
-      "summary_zh": "挪威移民局（UDI）发布了学习许可等待时间的官方指南，明确了审理时效的相关信息。该指南有助于国际学生了解申请处理周期，合理规划入学时间。",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOMG5GRnJzMmNteG1QaURlVmhtcV9qNXI4LUlCalZvXzNMZ1Q4bDJGcGdCd1FzQk9ZZTc5ZzdKem9JaWRNNzJTcE9ZN09HUTY1NVRZR3RBcGI1bC1VV1pRV3J3X3lVNWp3WW5UNm9vOGRQMUdTRS0yZVN1UHYtTUJPUDZfLTFiWExDY2FFazJHUjN0dzBZYUg0N1NzRmk5aTg?oc=5",
-      "source_name": "UDI Norway",
-      "source_type": "immigration",
-      "country_id": "no",
-      "country_name": "Norway",
-      "country_flag": "🇳🇴",
+      "title_en": "专业设置 - 教育部留学服务中心网上服务大厅",
+      "summary_en": "专业设置 教育部留学服务中心网上服务大厅",
+      "summary_zh": "教育部留学服务中心网上服务大厅发布了关于专业设置的相关信息，但原文内容较为简略，未提供具体的政策调整或招生数据细节。该信息可能涉及留学回国人员学历认证中的专业对应问题，对国际生回国后的学历认证流程有一定参考意义。",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5yRlFLNEthMnlKRzRFY1dWT1loVmRod3ZVbF9NWjVYejRxYzFUaTFVWC13NmZGWnc2U2pLcHZXTXdkTjNEQkJkcGpSMWVxXzVPbEg0TkFTM0ZLSzNCd0w1dy1ZNUVsc090Si12QXpWWnNoWlU?oc=5",
+      "source_name": "CSCSE 学历认证服务",
+      "source_type": "policy",
+      "country_id": "cn",
+      "country_name": "China",
+      "country_flag": "🇨🇳",
       "category": "Immigration policy",
-      "score": 5.0,
-      "action_advice": "顾问建议：提醒学生提前查阅UDI官网的等待时间指南，根据审理周期倒推申请提交时间，避免因等待时间过长而影响入学安排。"
+      "score": 37.0,
+      "action_advice": "顾问建议：提醒学生和家长关注教育部留学服务中心官网的最新专业设置公告，确保所选海外专业与国内认证目录匹配，避免学历认证时出现专业不符问题。"
+    },
+    {
+      "title_en": "Get a grip on Australian study visas: an open letter to Julian Hill - The PIE News",
+      "summary_en": "Get a grip on Australian study visas: an open letter to Julian Hill The PIE News",
+      "summary_zh": "澳大利亚学生签证政策引发关注，一封致议员Julian Hill的公开信呼吁政府加强对签证流程的管控，以应对当前签证处理中的问题。该政策动向可能影响国际学生的签证审批速度和成功率，需密切关注后续调整。",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNZUZBYW1XSjFzVXFYajQtQkM0NFF1UGV6OTgtQllZNDZ1SGtpVW95OHJVZVdQZl9uZEpXUGpFRFhqMmhKa0xnMFZNX01ha2ZnMkhvSmdDaWEwQ0NmOGNMdVk4WkJoeUpVOWZMZ1dSMnVSdDNzUmxveElnRVJSdXM4b0pJLW1xaHc4cXBtamlTMlRnRUFJ?oc=5",
+      "source_name": "The PIE News",
+      "source_type": "media",
+      "country_id": "global",
+      "country_name": "International",
+      "country_flag": "🌍",
+      "category": "Immigration policy",
+      "score": 35.0,
+      "action_advice": "顾问建议：提醒学生及家长关注澳大利亚签证政策变化，提前准备完整材料并预留充足的签证申请时间，以应对可能的审批延迟。"
     }
   ]
 }
