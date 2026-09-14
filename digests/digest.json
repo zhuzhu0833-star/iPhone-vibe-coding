@@ -1,20 +1,5 @@
 {
   "date_label": "2026-09-14",
-  "slot": "evening",
-  "items": [
-    {
-      "title_en": "Passes, permits and fees - Parks Canada",
-      "summary_en": "Passes, permits and fees Parks Canada",
-      "summary_zh": "加拿大公园管理局（Parks Canada）发布了关于通行证、许可证及费用的最新信息，涉及国家公园等场所的进入许可与收费标准。该信息与移民政策无直接关联，但可能影响在加国际学生的休闲出行安排与相关费用预算。目前未涉及申请截止日、签证或工签政策变化。",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5XRjJ6TmJFcGNDcTlFdER3am1sVDFPMzNMQmh0YU85dG5hSU5rZm9zQXY0cFlYVFRzZ0pvNE9sZkJrWUNfbkk5ZWg0QmVPdmc1cTAtSWlpNURZVHc?oc=5",
-      "source_name": "IRCC (Google News)",
-      "source_type": "policy",
-      "country_id": "ca",
-      "country_name": "Canada",
-      "country_flag": "🇨🇦",
-      "category": "Immigration policy",
-      "score": 37.0,
-      "action_advice": "顾问建议：提醒在加学生关注Parks Canada官方渠道，提前了解并购买所需通行证或许可证，避免因费用或规定不清影响出行计划。"
-    }
-  ]
+  "slot": "morning",
+  "items": []
 }
