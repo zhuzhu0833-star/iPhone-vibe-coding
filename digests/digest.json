@@ -1,34 +1,62 @@
 {
-  "date_label": "2026-09-15",
-  "slot": "morning",
+  "date_label": "2026-09-16",
+  "slot": "evening",
   "items": [
     {
-      "title_en": "Judge Blocks Controversial International Student Restrictions - Inside Higher Ed",
-      "summary_en": "Judge Blocks Controversial International Student Restrictions Inside Higher Ed",
-      "summary_zh": "美国联邦法官阻止了一项针对国际学生的争议性限制政策，该政策原本可能收紧签证或入学要求。此举暂时缓解了国际学生赴美留学的不确定性，但政策走向仍待观察。",
-      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPWGRMVW9GTlpuTFIxSmdHaHE3T2hPci1MRl83ZnZrVHBxd1pGNk1nS3lTaWs1M3VDbTk5ZWdoVnNQUGk3bFMydW1nQlBtZGQyRk94ZTZNVzRzVnl6dy16cG1VSEJPLUVoMXBGVGtNZENHRnlxUTJ6elFKdk9YR1Q2aEg4dFBtLXFwOXBNcG1ZamZPcFN6SGdLNUtBT3RDWmpCR2ZDQ2thUy04cG9UQno0VmUxbzFEZXdVUzNFNS00MTZkNGpZNWtZ?oc=5",
-      "source_name": "Inside Higher Ed",
-      "source_type": "media",
-      "country_id": "us",
-      "country_name": "United States",
-      "country_flag": "🇺🇸",
-      "category": "Education policy",
-      "score": 40.0,
-      "action_advice": "顾问建议：提醒学生和家长密切关注该政策后续法律进展，并准备备选留学方案以应对可能的政策变化。"
-    },
-    {
-      "title_en": "One Nation pledges net-negative migration and 750,000 cut to temporary visas - The PIE News",
-      "summary_en": "One Nation pledges net-negative migration and 750,000 cut to temporary visas The PIE News",
-      "summary_zh": "澳大利亚单一民族党（One Nation）承诺若执政将实现净负移民，并削减75万份临时签证，此举可能大幅收紧国际学生签证发放。该政策动向若落地，将直接影响中国学生赴澳留学签证的获批率和审理周期。",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNUmh1Mlp6STlZTzNDZ2QzZW1QSFdOMVp1UTdHaVFEeWNJRENnRDJZc2Y2TkVWTUtDbGNYMkxsVF9uZzRXTTNtWVFUVmN4V3cydEJ4bTN6SjlYMVJOUm9aUFRaZ2dtR01rSzAxREhaLVBNWGEtTDFWOHZtM2RhQjJUQ2hNOURJVVAzTXBTODU0QmtVTWViNGhCTDM5djZLdkE2?oc=5",
-      "source_name": "The PIE News",
+      "title_en": "US court grants preliminary injunction to block rule that would have ended Duration of Status admissions for international students - ICEF Monitor",
+      "summary_en": "US court grants preliminary injunction to block rule that would have ended Duration of Status admissions for international students ICEF Monitor",
+      "summary_zh": "美国法院已批准初步禁令，阻止了一项原本将终止国际学生“身份有效期”（Duration of Status）入境政策的规则生效。该规则若实施，将改变国际学生在美停留期限的计算方式，可能影响其合法身份与续签安排。目前该政策被暂时叫停，国际学生仍可按现行规定维持身份。",
+      "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQeXNJdWlKWUpBd19HZHRTWTk5cTNzN1RSenJmcUdZR1ZxWnJ4b0YyMzhwRFlBRlB4eGVRTDY4TmhRT2l3eUJMQ1BTUl9paVVRRlRNeFM0c0tudFlONnVGcjZQS3FndGJFWEFWbFNhaEk0QmJBZGUtZnJCUFRlYXlXU3ItQTZOcUxGa3hleHVVWTJFUDVTemdSMUN2Zk5WdzNiaENYS1l3QmtvM0xMdFRzWFhLdGJmQU83TFgwSnFkT0hZU3lQOFRfODg0U2hzOGJ0clNtaU0yMnBGNGFnQ1VMRjltd09qT0hqOU04S1hBZ0xiMms5eVBUTQ?oc=5",
+      "source_name": "ICEF Monitor",
       "source_type": "media",
       "country_id": "global",
       "country_name": "International",
       "country_flag": "🌍",
+      "category": "Education admissions",
+      "score": 49.0,
+      "action_advice": "顾问建议：提醒学生和家长密切关注该诉讼后续进展，当前仍按现有Duration of Status规则准备签证与入学材料，并预留充足时间应对可能的政策变动。"
+    },
+    {
+      "title_en": "Law Admissions Counselor in Chicago, IL for DePaul University - National Association for College Admission Counseling (NACAC)",
+      "summary_en": "Law Admissions Counselor in Chicago, IL for DePaul University National Association for College Admission Counseling (NACAC)",
+      "summary_zh": "德保罗大学（DePaul University）在芝加哥招聘法学院招生顾问，该职位由NACAC发布，属于美国法学院招生事务岗位。此招聘信息本身不涉及签证或工签政策变化，但反映出美国法学院持续进行招生工作，对计划申请美国法学院JD项目的国际生而言，可关注该校招生动态及申请截止日期。",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE80V29OaWRkT3dFX1FsSHZ6UlktZkZNT2lVSzhKMTU1ZGJvQ1hRcWtjTTdxSmpYSGdheTZPcVVRa2cxYXdTSkV6clhqeU9QVjdhWl9samx2UkpiRnBfTThwZ04xakJ3cHRCRmdJTGQwUDN5V2M1ckE?oc=5",
+      "source_name": "NACAC",
+      "source_type": "policy",
+      "country_id": "us",
+      "country_name": "United States",
+      "country_flag": "🇺🇸",
+      "category": "Education admissions",
+      "score": 41.0,
+      "action_advice": "顾问建议：提醒有意申请美国法学院的学生尽快核实目标院校的申请截止日与材料要求，并留意F-1签证及OPT/工签政策的最新动态。"
+    },
+    {
+      "title_en": "UNITED STATES DISTRICT COURT DISTRICT OF MASSACHUSETTS PRESIDENTS’ ALLIANCE ON HIGHER EDUCATION AND IMMIGRATION, et al., Plai - nafsa.org",
+      "summary_en": "UNITED STATES DISTRICT COURT DISTRICT OF MASSACHUSETTS PRESIDENTS’ ALLIANCE ON HIGHER EDUCATION AND IMMIGRATION, et al., Plai nafsa.org",
+      "summary_zh": "马萨诸塞州联邦地区法院受理了“高等教育与移民校长联盟”等原告提起的诉讼，涉及国际学生和学者签证政策的法律争议。该案可能影响未来签证审批标准与审理时效，对国际生的赴美留学及留美工作安排带来不确定性。",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOQUVQM2hXUTNDVWNmSFZsYkctNlprVkE1RzduSjlOYmVsRTZuWVgwRXN0eE1tOW9jZEl2MEhYYlN2OGdzdFNKSkJMb1BfZUdxRnFNQmt5NFRmUjZfWE90emdwaVVLNnlDei1RQ1ZIUmdKNUdsZkNKT0VNQlViR1VmNU9zZFpSTXU0UDVXbGs3UE5xRGRUVURhM3lZV01SMmhrNlJ3UmRkaw?oc=5",
+      "source_name": "NAFSA",
+      "source_type": "education",
+      "country_id": "us",
+      "country_name": "United States",
+      "country_flag": "🇺🇸",
       "category": "Immigration policy",
-      "score": 35.0,
-      "action_advice": "顾问建议：提醒计划赴澳的学生和家长密切关注该党支持率及大选动向，尽早递交签证申请，并准备备选留学国家方案以规避政策风险。"
+      "score": 30.0,
+      "action_advice": "顾问建议：提醒学生和家长密切关注该案进展及签证政策变化，尽早准备并提交签证材料，预留充足审理时间，避免因政策波动影响入学或工作安排。"
+    },
+    {
+      "title_en": "2026 estimate of people who have overstayed their visa released - immigration.govt.nz",
+      "summary_en": "2026 estimate of people who have overstayed their visa released immigration.govt.nz",
+      "summary_zh": "新西兰移民局发布了2026年逾期滞留签证人数的估算数据，反映当前移民合规监管的持续关注。该信息对国际学生的主要影响在于提醒签证持有人务必遵守签证条款和停留期限，避免因逾期滞留影响未来签证申请或入境记录。",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOX0pEY2tQVVpSZGdRUFpFdXl3YmdGeFZSRTVkNW1NaWFUQTZEaHBaUVFZajhKQW1CbkFkRXpHNTVMOENsWTJkOHNEQnR0aW02bzFDQmRVcS1wZ0twV2tQLXM4LW5SOTdxdjZiMTd3a2FUT1RhLWJ6cmY2TFB6Q1FTR0p0eVFIWDhsZWhzNlExbi1jRkc2R2NVN196ckYzOEdFdmRJVGJMbE9Nc2wwZ2tjd0tmQmFDandx?oc=5",
+      "source_name": "Immigration New Zealand",
+      "source_type": "immigration",
+      "country_id": "nz",
+      "country_name": "New Zealand",
+      "country_flag": "🇳🇿",
+      "category": "Immigration policy",
+      "score": 5.0,
+      "action_advice": "顾问建议：提醒学生和家长务必核对签证到期日，提前规划续签或离境安排，避免任何逾期滞留记录影响后续签证申请。"
     }
   ]
 }
