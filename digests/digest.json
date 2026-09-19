@@ -1,34 +1,48 @@
 {
-  "date_label": "2026-09-19",
-  "slot": "morning",
+  "date_label": "2026-09-20",
+  "slot": "evening",
   "items": [
     {
-      "title_en": "Application Deadline: Founders’ Circles - Polsky Center for Entrepreneurship and Innovation",
-      "summary_en": "Application Deadline: Founders’ Circles Polsky Center for Entrepreneurship and Innovation",
-      "summary_zh": "芝加哥大学波尔斯基创业与创新中心的 Founders’ Circles 项目已公布申请截止日期。该项目面向有创业兴趣的学生，属于大学招生相关机会，国际生同样可以关注并申请。",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9fZEN5Y1R3MmdFRkF4MF9uN2dTMURWeXg2cDU0TlgwY0dRSkYza21uUWNnc3pQbG9CY3NhNno4WU1NcGdqTUN3Tzg3aHhVUjFxOVM3NDI0a2ZBQkNXLXFOdTBLcExZSy1fdG1jSmxMOUx0V3hhRjNVU1UxaTFzZmM?oc=5",
-      "source_name": "University of Chicago",
+      "title_en": "UNSW Science Vacation Research Scholarship - UNSW Scholarships",
+      "summary_en": "UNSW Science Vacation Research Scholarship UNSW Scholarships",
+      "summary_zh": "新南威尔士大学（UNSW）理学院发布假期研究奖学金（Vacation Research Scholarship）信息，面向本科生提供科研实践机会。该奖学金通常有明确的申请截止日期，国际学生需留意签证与工作权利限制，并预留材料审理时间。",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1rdHFTZnBmX0t6d2FoRkZtSWEwQnI5RmE3anhBRXlLWXNLdXFGWDE3azlZUUhYcklYZ3c0MmU1d0NiQTFyaTVNTzhhOFNMcnhvZkxvSjJNNldCMmU4OTZySFg4ZEctR1hM?oc=5",
+      "source_name": "UNSW Sydney",
       "source_type": "university",
-      "country_id": "us",
-      "country_name": "United States",
-      "country_flag": "🇺🇸",
+      "country_id": "au",
+      "country_name": "Australia",
+      "country_flag": "🇦🇺",
       "category": "University admissions",
-      "score": 50.0,
-      "action_advice": "顾问建议：提醒对创业感兴趣的学生尽快查看该项目申请要求，并在截止日期前完成材料准备与提交。"
+      "score": 52.0,
+      "action_advice": "顾问建议：提醒有意申请的学生尽快确认截止日期并提前准备成绩单、推荐信等材料，同时核查学生签证条款对参与科研项目及任何津贴的影响。"
     },
     {
-      "title_en": "Citizenship and Immigration Services - USCIS (.gov)",
-      "summary_en": "Citizenship and Immigration Services USCIS (.gov)",
-      "summary_zh": "美国公民及移民服务局（USCIS）官网发布最新信息，涉及移民政策相关动态。该信息可能影响国际学生的签证申请流程与在美身份维持要求，需关注后续具体政策调整对留学规划的影响。",
-      "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE9NR0dlbGdhWGtsRnFhbmpvOHl6aXczcFhHRERUY0JydWVNV180MnQyZ3E4MDhjX1JmQnpKUS0tR1ZxYTZhYWVV?oc=5",
-      "source_name": "USCIS (Google News)",
-      "source_type": "immigration",
+      "title_en": "Associate Director of Admissions - New York City, NY job with NYU | 194460 - NAFSA Careers",
+      "summary_en": "Associate Director of Admissions - New York City, NY job with NYU | 194460 NAFSA Careers",
+      "summary_zh": "纽约大学（NYU）正在招聘招生副主任（Associate Director of Admissions），工作地点为纽约市，该职位信息由NAFSA Careers发布。此招聘动态本身不涉及签证或工签政策变化，但反映出NYU招生团队可能正在扩充或调整，或对国际生申请审理流程与时效产生间接影响。",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5RVlJiM3hmeGNaRENuUWNMclVSYXFuQVg4dXVtN3JlamNIUFhuMm1LSzk3UTZ5SzBQcnRpakZVcG56MlNnTDVvdmpnd1l1N0VzWVFIaEo1U0R1c09IeFkxM1lwYVM4MFFQZ002aDdRZXB3UGtVaExSeWVn?oc=5",
+      "source_name": "NAFSA",
+      "source_type": "education",
       "country_id": "us",
       "country_name": "United States",
       "country_flag": "🇺🇸",
-      "category": "Immigration policy",
-      "score": 5.0,
-      "action_advice": "顾问建议：提醒学生和家长定期查看USCIS官网更新，并在签证申请或身份变更前咨询专业顾问，确保材料符合最新政策要求。"
+      "category": "Education admissions",
+      "score": 34.0,
+      "action_advice": "顾问建议：提醒计划申请NYU的学生持续关注该校招生办公室的人事变动及后续申请截止日、材料审理时效等官方通知，避免因内部调整而错过关键时间节点。"
+    },
+    {
+      "title_en": "Student Residence Permit - Study in Finland",
+      "summary_en": "Student Residence Permit Study in Finland",
+      "summary_zh": "芬兰更新了学生居留许可相关信息，涉及申请截止日期、签证与工作许可政策以及材料要求和审理时效。国际学生需关注这些变化，以确保按时提交完整申请并了解毕业后工签路径。",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9CMG4za1hELTYzbXVWQzJvaDA3V2tWTVJRN295enNoaDZfaHFnZUZUeDVBNHpxWXNDbkV2WHVYckExbE5MZnAzTlZYSW54RmlUUFhPV0ViUUpqTW1XTERUZDZwOFphVkUzRFY0S2loZ0laX3M?oc=5",
+      "source_name": "Study in Finland",
+      "source_type": "education",
+      "country_id": "fi",
+      "country_name": "Finland",
+      "country_flag": "🇫🇮",
+      "category": "Education policy",
+      "score": 30.0,
+      "action_advice": "顾问建议：提醒学生尽快核对芬兰居留许可的申请截止日与材料清单，并提前准备资金证明和保险文件，避免因审理延迟影响入学。"
     }
   ]
 }
