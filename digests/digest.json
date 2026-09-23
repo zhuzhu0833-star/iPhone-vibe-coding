@@ -1,82 +1,40 @@
 {
   "date_label": "2026-09-23",
-  "slot": "evening",
+  "slot": "morning",
   "items": [
     {
-      "title_en": "Caltech Rises to No. 5 in the U.S. News Best Colleges Ranking",
-      "summary_en": "Caltech has been recognized among the nation's top universities, ranking fifth, in a tie with Stanford University, in the 2027 U.S. News & World Report Best Colleges list , released September 22. The placement is the Institute's largest single-year climb in more than 25 years on the widely cited U.S. News list. Caltech earned the top national placement in four of the 17 metrics behind the ranki...",
-      "summary_zh": "加州理工学院在9月22日发布的2027年U.S. News最佳大学排名中升至第五位，与斯坦福大学并列，这是该校25年多来在该榜单上最大的单年涨幅，并在17项排名指标中的4项获得全美第一。该排名变化本身不涉及申请截止日、签证或工签政策调整，但可能提升该校申请热度与竞争强度，对国际生而言意味着录取难度和材料审理时效压力可能增加。",
-      "link": "https://www.caltech.edu/about/news/caltech-rises-to-no-5-in-the-us-news-best-colleges-ranking",
-      "source_name": "Caltech",
+      "title_en": "Global Excellence Scholarship – Postgraduate Taught (September 2027) - Queen Mary University of London",
+      "summary_en": "Global Excellence Scholarship – Postgraduate Taught (September 2027) Queen Mary University of London",
+      "summary_zh": "伦敦玛丽女王大学发布2027年9月入学的全球卓越奖学金（授课型研究生）信息，面向国际学生提供学费减免支持。该奖学金旨在吸引优秀国际生申请其授课型硕士课程，可能影响2027年秋季入学的申请竞争与录取趋势。",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNcjBObXZOR3ZwV2hjZ0tPa0pMN0NkVkpOODlJU1JfZEVfT1pUQ2FQX19DeENZTHYwQktUTlRmT2hGeWltdEJkWmdyZVRrQ0E0Mktnb2lULVVrRWVDSjB5ZWtYaUQ2SWJ1S2VROEN5Ykk4NTl1ZmtwUU5YNlpsOERSalF6Nm1odzhIRFpXUll5MnhONldRTER0Z3lxZzZSRzhkTndVSEx2YzJkdlY2UVpCLUpR?oc=5",
+      "source_name": "Queen Mary University of London",
       "source_type": "university",
-      "country_id": "us",
-      "country_name": "United States",
-      "country_flag": "🇺🇸",
-      "category": "University admissions",
-      "score": 61.0,
-      "action_advice": "顾问建议：提醒计划申请Caltech的学生尽早确认申请截止日并提前准备材料，同时关注签证预约与工签政策动态，避免因竞争加剧和审理时效延长而影响申请节奏。"
-    },
-    {
-      "title_en": "Application Deadline: AI Bootcamp for Entrepreneurs: AI-Powered Go-To-Market - Polsky Center for Entrepreneurship and Innovation",
-      "summary_en": "Application Deadline: AI Bootcamp for Entrepreneurs: AI-Powered Go-To-Market Polsky Center for Entrepreneurship and Innovation",
-      "summary_zh": "芝加哥大学Polsky创业与创新中心推出的“AI Bootcamp for Entrepreneurs: AI-Powered Go-To-Market”创业训练营已进入申请截止阶段。该项目面向对AI驱动市场推广感兴趣的创业者，国际学生需留意申请截止日期及可能的签证与工作许可要求。",
-      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPU0tBa3pfVkN4R2xKTlptbTdVZUZxZzE0UnpFeTEwWjFlZ0dNaEx2MlhCQmlRZTR5WXU2bmc1VWJZaHVVM2ZPM1NtMlNRT2d5NWl0TDlzZlo2ODg3MzhZMVJlNG1XOF93bkZuUlBkUnRPRXVNRjBTV29Zc21kSEpIZnp0OUp3dkt3c3pGOWNoZzJpZG1RT2VvakVnWXZ2YTlvS0U0NXAxbV93azVVMEE?oc=5",
-      "source_name": "University of Chicago",
-      "source_type": "university",
-      "country_id": "us",
-      "country_name": "United States",
-      "country_flag": "🇺🇸",
-      "category": "University admissions",
-      "score": 56.0,
-      "action_advice": "顾问建议：提醒有意申请的学生尽快确认截止日期并准备材料，同时核查该项目是否涉及签证或工作许可影响，避免错过申请窗口。"
-    },
-    {
-      "title_en": "‘No clear way’ for UK sector to grow international student intake - Times Higher Education",
-      "summary_en": "‘No clear way’ for UK sector to grow international student intake Times Higher Education",
-      "summary_zh": "泰晤士高等教育报道指出，英国高校在扩大国际学生招生方面面临“没有明确路径”的困境，行业增长前景不明。这一趋势可能影响未来国际生的申请竞争格局、录取名额分配及签证与工签政策的走向。",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPWVdYcG9EOVZyT0sydEhwRHVrWlJEM0EwaDc3RTB3dkxyWUh3OUZ1dU1IdC1uczk0SEEwV0F0Y1RqQjdOemppXzRsZl8xNzhnRTlBT2J4aENpeEhtQmNMNWpGQVhoUFFZZENpQkR4VTBGR2lDc2w4N2VjbFNycldEbFh6R3V3bXdaSHVUcXNfc1RzT3lKQ2JTLWl2MHFwSXc?oc=5",
-      "source_name": "Times Higher Education",
-      "source_type": "media",
       "country_id": "uk",
       "country_name": "United Kingdom",
       "country_flag": "🇬🇧",
-      "category": "Education admissions",
-      "score": 47.0,
-      "action_advice": "顾问建议：提醒学生和家长密切关注英国各校申请截止日期及签证、工签政策变化，尽早准备材料并预留充足审理时间，避免因政策收紧或审理延迟影响入学。"
+      "category": "University admissions",
+      "score": 55.0,
+      "action_advice": "顾问建议：提醒计划2027年秋季入读英国硕士的学生尽早关注该奖学金申请截止日期与资格要求，并同步准备课程申请以提升获奖机会。"
     },
     {
-      "title_en": "What New Data on Race and Admissions Will Miss (opinion) - Inside Higher Ed",
-      "summary_en": "What New Data on Race and Admissions Will Miss (opinion) Inside Higher Ed",
-      "summary_zh": "《Inside Higher Ed》评论文章指出，关于种族与招生的新数据可能忽略关键背景，无法全面反映招生中的实际情况。对于国际学生而言，这提醒我们美国高校在招生中涉及种族因素的讨论仍存在争议，可能间接影响申请策略与材料准备。",
-      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQZWJFcDk4VEYwbmlpYWVfSUV4SlRwSS1fRnQ0M1lVeXFzLVlRaC1TQ0dYVkJjdWQxdWF3OUIzc2pQLXVoOU9CSUhWVjJiVmEzdEZqaXFjTlJidlhMVDV6cUg2TGtaSU5oaTlFcHBqdm04MkFSbVhwUGx5LUJmcnJiXzVraDd2bEkyelF3cnhVS0w3UzBoOHBmS3RaT3VkUmlaYmtONTFBaWZFVlU?oc=5",
-      "source_name": "Inside Higher Ed",
-      "source_type": "media",
+      "title_en": "FAQs: SEVP Appeals and Motions - ICE | U.S. Immigration and Customs Enforcement (.gov)",
+      "summary_en": "FAQs: SEVP Appeals and Motions ICE | U.S. Immigration and Customs Enforcement (.gov)",
+      "summary_zh": "美国移民与海关执法局（ICE）下属的学生和交流访问者项目（SEVP）发布了关于上诉和动议的常见问题解答，明确了国际学生及学校在SEVP相关决定（如学校认证、学生身份终止等）后的申诉流程与时限要求。该政策动向提醒国际生，若遇到SEVP不利决定，需按官方程序及时提出上诉或动议，否则可能影响合法留美身份。",
+      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBaS21vd2luTndtd2RqV09JRWZzQ05MOTIwSVk5eVRFZ3FPNWlSXy1XNXE3Nkk0WWcxNy1RUGhqYXdySHVjbmtvRXd2LTRkZw?oc=5",
+      "source_name": "SEVP / ICE",
+      "source_type": "policy",
       "country_id": "us",
       "country_name": "United States",
       "country_flag": "🇺🇸",
-      "category": "Education admissions",
-      "score": 39.0,
-      "action_advice": "顾问建议：提醒学生和家长不要过度依赖单一招生数据，应结合目标院校最新政策与截止日期，提前准备并核实申请材料与签证时间线。"
-    },
-    {
-      "title_en": "国庆节放假通知 2015-09-28 - 中国留学网",
-      "summary_en": "国庆节放假通知 2015-09-28 中国留学网",
-      "summary_zh": "教育部留学服务中心发布2015年国庆节放假通知，期间相关服务窗口将暂停办公。该通知影响留学回国人员办理学历认证、就业报到等手续的时效，可能造成材料审理延迟。",
-      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPaE00Tjl4Y1BudUlTN0JqNDJOM1Z4cEI4ZGdhbFpUMHJwd0NjZHlrOWxSRzF6VUlFenlSM0dRaEExYml1R3hWODhqRDl3NV9wV1R0RDk0Mk1nQTYzeTAzeUMzS1ZHZjRvN3FJY0NucXBXVU83aWRCY205QVpTOE9xLTB4eGo2aFJ2MTU2Q25KcExMTDVBaWVRRWtEMVphNmhSZXV5UFBFQVZ5WEU4YmZRaVlaZTJUblVoWEppU2FGSTUzazE3Tmxz?oc=5",
-      "source_name": "教育部留学服务中心 CSCSE",
-      "source_type": "policy",
-      "country_id": "cn",
-      "country_name": "China",
-      "country_flag": "🇨🇳",
       "category": "Immigration policy",
       "score": 37.0,
-      "action_advice": "顾问建议：提醒学生和家长提前规划材料提交时间，避开假期前后高峰期，并关注节后恢复办公的具体日期以免耽误申请进度。"
+      "action_advice": "顾问建议：提醒学生和家长务必保存SEVP所有官方通知，一旦收到不利决定，立即在截止日期前联系学校DSO并咨询移民律师，按FAQ指引提交上诉或动议。"
     },
     {
-      "title_en": "Executive Director of Undergraduate Admissions and Recruitment job with Georgia Southern University | 194576 - NAFSA Careers",
-      "summary_en": "Executive Director of Undergraduate Admissions and Recruitment job with Georgia Southern University | 194576 NAFSA Careers",
-      "summary_zh": "佐治亚南方大学正在招聘本科招生与招募执行主任，该职位负责统筹本科招生工作，可能影响未来国际生招生策略与录取流程。目前该招聘信息未涉及具体申请截止日、签证或工签政策变化，对国际生暂无直接政策影响。",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNZTIzNk5Ed2VYVG0tbmhOcTZGRlpBXzFFLXhHZURLaVNJY044SDZnY0dnWmlWT19KdzR6RHJ2U3lGUlNKMGRSYmJka0kybE1QLU43YTUteGZ4UUZPZG43a3BoZ2dmdEVIZy1GY21USG9kczY2NUtlNjR0X1NQMWRSRlN6MWJtUEc2RGYzRzRLOHppTUs1UURLelZaUEtYUTAyWUE?oc=5",
+      "title_en": "Admissions Specialist - New York City, NY job with Robert Half | 194596 - NAFSA Careers",
+      "summary_en": "Admissions Specialist - New York City, NY job with Robert Half | 194596 NAFSA Careers",
+      "summary_zh": "NAFSA职业板块发布纽约市招生专员岗位（Robert Half招聘，编号194596），属于教育招生类职位信息，未涉及具体招生政策、学费或录取趋势变化。该信息对国际学生无直接影响，但反映美国高校招生岗位需求仍在。",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5ia1ZhZDBERmJDbG9ZVV9nZU5BblFkLXlFNFRDUUw3YTFpZXpjM0pTM1VTVV9uQU1lSU93UXBWR2Z0N0NsZ19JUW9ERzdVeklYcl9XMVpMS05PYUozdlBsamdVQUYxSWFyNHlZ?oc=5",
       "source_name": "NAFSA",
       "source_type": "education",
       "country_id": "us",
@@ -84,7 +42,7 @@
       "country_flag": "🇺🇸",
       "category": "Education admissions",
       "score": 34.0,
-      "action_advice": "顾问建议：提醒学生和家长持续关注该校后续招生政策更新，暂无需因该招聘信息调整申请计划。"
+      "action_advice": "顾问建议：提醒关注美国招生岗位动态的学生和家长，此类招聘信息仅作行业参考，不应作为选校或申请依据，如需了解录取趋势请以学校官方数据为准。"
     }
   ]
 }
