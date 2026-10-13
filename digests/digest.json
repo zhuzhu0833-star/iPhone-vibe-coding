@@ -1,40 +1,54 @@
 {
-  "date_label": "2026-10-13",
-  "slot": "morning",
+  "date_label": "2026-10-14",
+  "slot": "evening",
   "items": [
     {
-      "title_en": "New scholarship to support Afghan women to study at Oxford - University of Oxford",
-      "summary_en": "New scholarship to support Afghan women to study at Oxford University of Oxford",
-      "summary_zh": "牛津大学新设奖学金，专门支持阿富汗女性赴牛津求学。该政策为阿富汗女性国际生提供新的资助渠道，有助于降低其留学经济门槛，但名额和申请条件尚需关注官方细则。",
-      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQUjBaRDVudFdUMEtwbFhBQzkyaW5DNEhUVE9pTjhMZzFzd29qQ2NfQUFZRnZ6MXo4REVkWWpqTnNJdjVGN3RqblNrQXFsOUM4X0xBT0pTbDdyb3Rsc2E1cmFZdS1wazB5UElVaTI4QXFFSmlVYXVJNkVTYlVabU94eG12eHZHT25XYVNud19QWEVuY1NzTE9VdVNXTQ?oc=5",
-      "source_name": "University of Oxford",
+      "title_en": "Undergraduate tuition fees 2027 - University of Sheffield",
+      "summary_en": "Undergraduate tuition fees 2027 University of Sheffield",
+      "summary_zh": "谢菲尔德大学发布了2027年本科入学学费信息，涉及国际生学费标准。该信息属于招生政策更新，提醒申请者关注费用变化对留学预算的影响。",
+      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9Nb015azhIY1h4MkoxUWxCM0JXaW5iWXdtZFhEUFc2azBfNWxZRmNaOGNyQUg0cndnRVhCRzZjNFIwU1NBVXFISnJqYjJ3SEt3dUhsX05feUhObmR3aXRkSVB0T3k3dw?oc=5",
+      "source_name": "University of Sheffield",
       "source_type": "university",
       "country_id": "uk",
       "country_name": "United Kingdom",
       "country_flag": "🇬🇧",
       "category": "University admissions",
-      "score": 55.0,
-      "action_advice": "顾问建议：提醒有意申请英国顶尖院校的阿富汗女性学生及家长尽快查阅牛津大学官方奖学金页面，确认资格与截止日期并提前准备申请材料。"
+      "score": 52.0,
+      "action_advice": "顾问建议：提醒计划申请2027年入学的学生及家长尽快查阅谢菲尔德大学官网确认最新学费，并据此调整资金准备与申请时间规划。"
     },
     {
-      "title_en": "关于6月17日暂停网上服务的通知 - 教育部留学服务中心网上服务大厅",
-      "summary_en": "关于6月17日暂停网上服务的通知 教育部留学服务中心网上服务大厅",
-      "summary_zh": "教育部留学服务中心网上服务大厅发布通知，将于6月17日暂停网上服务。该暂停可能影响学历认证等在线业务的办理，对正在申请认证的国际学生造成短期不便。",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQT3A3dDFBTDdabWdSNzI2MDcybEJOSEFBSGtsdndYUzVDQzQ4ZmppamhWVjVjWDctQVcwbkVJVW9uQk85eGJTdFlqUUJoWnlTblp1S3JxNURWamlyYzhzMWo1V2tmWHYzeHEzQlVvTmZzRGQwVVVrSEp3YmlDU01GWWk3clhhV2xIMkM0?oc=5",
-      "source_name": "CSCSE 学历认证服务",
+      "title_en": "Senior College Admissions Counselor & Essay Editor in San Francisco, CA for Blue Stars Admissions Consulting LLC - National Association for College Admission Counseling (NACAC)",
+      "summary_en": "Senior College Admissions Counselor & Essay Editor in San Francisco, CA for Blue Stars Admissions Consulting LLC National Association for College Admission Counseling (NACAC)",
+      "summary_zh": "美国全国大学招生咨询协会（NACAC）发布招聘信息，为位于旧金山的Blue Stars Admissions Consulting LLC招募高级大学招生顾问兼文书编辑。该职位反映出美国大学申请辅导市场对专业文书编辑与招生策略人才的需求持续存在，对国际学生而言，意味着可借助专业顾问提升申请材料质量与竞争力。",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNV1BrdlQ5ZlNQWURFNFRVcU9fOW4xYUdSQkRERmtjcWxrWVA2VHc4bG9LSzdZSUVKMW9lN0dVTDR3RG53QXpTdi1nRENTR3I0VEhiR29NWlpHS2xjLXdIcHdYT2c1SFRsbUlmU0xacGZkbXhIeU9tb013NGQ0eVZUd2tMcVBVRUI0aWZrNGdUc2Z5NnVla1E?oc=5",
+      "source_name": "NACAC",
       "source_type": "policy",
-      "country_id": "cn",
-      "country_name": "China",
-      "country_flag": "🇨🇳",
+      "country_id": "us",
+      "country_name": "United States",
+      "country_flag": "🇺🇸",
+      "category": "Education admissions",
+      "score": 41.0,
+      "action_advice": "顾问建议：提醒学生和家长在申请截止日前尽早联系专业文书编辑，确保材料质量并预留充足审理时间。"
+    },
+    {
+      "title_en": "Supplementary Information for the 2026-2028 Immigration Levels Plan - Canada.ca",
+      "summary_en": "Supplementary Information for the 2026-2028 Immigration Levels Plan Canada.ca",
+      "summary_zh": "加拿大移民部（IRCC）发布了2026-2028年移民水平计划的补充信息，涉及未来三年移民配额与类别调整方向。该计划可能影响国际学生毕业后工签、永久居民申请路径及签证审理时效，建议密切关注后续具体政策细则。",
+      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPRjlBdkhOcWhZSGFtQ3pFYUE2cjJoVnppY29fSUFkc1h3Q0lHT191WlFsRXQxbUpmTmR2SmlpNThWNFljZWlmcEI4QncyZ0dUSnk2MGFnVHBUNDFuRFc0cDYtdF9Mem9KYk83VDNIbmpWc0FVMHlzd2QzWTMtNlBPam5veHJZXzkzSmFlQTVibHo3b184UUl3bEJIV1dQbXdrQzhfemVrWkh2OFRaT3JwTW82UDJubFhYNl9tYzRISkxBeVdQYUZmamhlRGNiLW9jUDVkZnA1T3A?oc=5",
+      "source_name": "IRCC (Google News)",
+      "source_type": "policy",
+      "country_id": "ca",
+      "country_name": "Canada",
+      "country_flag": "🇨🇦",
       "category": "Immigration policy",
       "score": 37.0,
-      "action_advice": "顾问建议：提醒计划在6月17日前后办理学历认证的学生提前完成申请或避开该时段，并关注服务恢复通知。"
+      "action_advice": "顾问建议：提醒计划赴加留学或即将毕业的学生及时关注IRCC官网更新，提前准备签证与工签材料，并合理规划申请时间以应对可能的审理延迟。"
     },
     {
-      "title_en": "Admissions Counselor: Enrollment Mgmt - Elkins Park, PA job with Temple University | 195121 - NAFSA Careers",
-      "summary_en": "Admissions Counselor: Enrollment Mgmt - Elkins Park, PA job with Temple University | 195121 NAFSA Careers",
-      "summary_zh": "天普大学在宾州埃尔金斯帕克招聘招生顾问，属于招生管理岗位，反映该校持续投入招生一线工作。该职位信息由NAFSA发布，显示美国高校仍在积极配置招生人力，对国际生而言意味着申请季的咨询与审核服务可能保持稳定。",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE83NFdzMHFXaEk4N2dEdTR5dUM4bkl4amVtRk5Va1hENlZHNmNkcVhLQVh1Um91emdiZ1JXZHdYQUFOWnRxRl8wdHBaV2x4WEVUTnMxT2tTR0NJdWVWMWF5TGV1Q29GbmhxcVcxSEdSZmpLRUVhUUFFMjBsbjBOclk?oc=5",
+      "title_en": "College Admissions Counselor - College Grove, TN job with Farm and Forge Club | 195051 - NAFSA Careers",
+      "summary_en": "College Admissions Counselor - College Grove, TN job with Farm and Forge Club | 195051 NAFSA Careers",
+      "summary_zh": "NAFSA 招聘信息显示，田纳西州 College Grove 的 Farm and Forge Club 正在招聘大学招生顾问，该职位与 NAFSA 职业中心相关。此信息属于教育招生领域的就业机会，不涉及签证或工签政策变化，对国际学生申请截止日、材料审理时效等无直接影响。",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE55LUE5eURVQXBzU1MtSU9JMU5sNTAxTDlmMU51cUhyY3hhQy0zSEJxRzlnaEgyWHlVZU5MMno1QXg2Q01DVWN4SHBra3JpTDd6THAwMUZHTmZmZld0bVBaTks4b2RfeUlxRHU3TXExYjhGWUtz?oc=5",
       "source_name": "NAFSA",
       "source_type": "education",
       "country_id": "us",
@@ -42,21 +56,7 @@
       "country_flag": "🇺🇸",
       "category": "Education admissions",
       "score": 34.0,
-      "action_advice": "顾问建议：提醒学生和家长关注目标院校招生团队的人员变动与沟通渠道，尽早通过官方招生顾问确认申请材料与截止日期，避免因人员调整延误申请。"
-    },
-    {
-      "title_en": "School Nominations Direct Admission Scheme - Education Bureau",
-      "summary_en": "School Nominations Direct Admission Scheme Education Bureau",
-      "summary_zh": "香港教育局推出「学校推荐直接录取计划」，属于本地招生政策动向，主要面向香港本地中学推荐学生直接入读大学，不涉及国际生统一申请渠道。该计划可能分流部分本地学位名额，对国际生录取竞争和名额分配产生间接影响。",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPWjVlWlFiQk5qY0NSMFZnY01wMHNxdV93MFhXNTIzdlhJTU9rdHEtVFVOLUxpZTRoamtwd0QtSjBmSHFlNkFhUkE5NWp0eVBPbEVtNDFLNHVXeE9qV1pVdENNOXQ4aGowRWJMWi1RcjhEWUtKXzZTWFdlM21ndlhPakJkZWI?oc=5",
-      "source_name": "Education Bureau HK",
-      "source_type": "education",
-      "country_id": "hk",
-      "country_name": "Hong Kong",
-      "country_flag": "🇭🇰",
-      "category": "Education admissions",
-      "score": 32.0,
-      "action_advice": "顾问建议：提醒计划申请香港高校的国际生及家长关注该计划占用的学位比例，尽早确认目标院校的国际生名额与申请截止日期。"
+      "action_advice": "顾问建议：提醒学生和家长关注 NAFSA 职业中心等平台获取招生相关职位信息，但不必因此调整当前申请或签证准备计划。"
     }
   ]
 }
