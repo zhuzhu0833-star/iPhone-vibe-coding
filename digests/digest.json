@@ -1,20 +1,34 @@
 {
-  "date_label": "2026-10-18",
-  "slot": "morning",
+  "date_label": "2026-10-19",
+  "slot": "evening",
   "items": [
     {
-      "title_en": "Regional Admissions Counselor Austin or Houston (preferred), TX in Salt Lake City, UT for University of Utah - National Association for College Admission Counseling (NACAC)",
-      "summary_en": "Regional Admissions Counselor Austin or Houston (preferred), TX in Salt Lake City, UT for University of Utah National Association for College Admission Counseling (NACAC)",
-      "summary_zh": "犹他大学通过NACAC发布区域招生顾问职位招聘，工作地点设在得克萨斯州奥斯汀或休斯敦（优先），办公地点标注为犹他州盐湖城。该岗位旨在加强该校在得州地区的招生拓展，反映出美国高校持续加大区域招生投入、争夺生源的动向。对国际生而言，此类区域招生布局可能带来更多面向特定地区的宣讲与录取机会，但具体政策与录取标准尚未变化。",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNRXVpTE5KamdPMFRGV1ZQMVZHRnZMSDBidkVtVFhEMDdkZDd5RVBtdXNBLU9IdXlYbjBTelByR0d2dWxjT2F3RklsRUNWUmJZMFpyUmhENm0zd0VnUUF6cWpqdUlOdWhKNW93SXdJMnR5NjMySE1IUnRBb1pFeV80WjNOTWEtcDBWRFNmMHRyMF9BcG5JUHNHOGFVRk5qWjFRcllsaHpB?oc=5",
-      "source_name": "NACAC",
+      "title_en": "International Admission Requirements - University of Alberta",
+      "summary_en": "International Admission Requirements University of Alberta",
+      "summary_zh": "阿尔伯塔大学发布国际招生要求页面，汇总本科国际申请者的入学条件与材料要求。该页面为申请准备提供官方指引，涉及申请截止日期、签证与工签政策、材料提交及审理时效等关键信息。国际生需据此核对自身条件并合理安排申请时间。",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQY0ZxR0kybkgtUWtlMTBkemQyZGRZQ0t6OXJYc3JIbG9TQk40bE9rVGlWQ2RjOWNFd1g4aEt2RklReE9BREdkVVBLd2tZWHhpazhFT1U2ay1pdEJOSlNkVTVKU2N5cTl4RmtEdmFqUThPRGVaeGJ3em0yTDAwSUdGbkU4VFlxWmVHZExoMUU4SWo3c25GV0Z3alBza1pDS1U?oc=5",
+      "source_name": "University of Alberta",
+      "source_type": "university",
+      "country_id": "ca",
+      "country_name": "Canada",
+      "country_flag": "🇨🇦",
+      "category": "University admissions",
+      "score": 52.0,
+      "action_advice": "顾问建议：提醒学生和家长尽快查阅该校官网确认目标专业的申请截止日与材料清单，并同步规划签证与工签时间线。"
+    },
+    {
+      "title_en": "Express Entry: Job offer - Canada.ca",
+      "summary_en": "Express Entry: Job offer Canada.ca",
+      "summary_zh": "加拿大移民局（IRCC）官网发布Express Entry（快速通道）中关于工作邀请（Job offer）的说明页面，涉及技术移民申请中工作邀请的认定与使用规则。该政策直接影响希望通过快速通道申请永久居民的国际学生，尤其是毕业后依赖雇主offer加分或满足资格者。编辑提示本期关注申请截止日、签证与工签政策及审理时效，需留意相关更新。",
+      "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQWV9mSTNyV0l2Yi1rcFVyTHZVX3p6OHlkWjI0TDNpcllmc0M3b1hjdFIxTDhNZV9kYndYdFhDU1NuUUtabjRma3JXM2FvVDYzRGZJbnRPUm44R3JIV2tKNlpUOUtkektHeFF0bUlFYnkta2lrRkxtMnBrak1xTG0xS053TlJzVHVlbktNczNOSEdVV2UwNWhYd0FjTHRfa2tScDJfaWx4dlV2dEFrN1JxT0EyZ0xtUF9kWmhoZndOTQ?oc=5",
+      "source_name": "IRCC (Google News)",
       "source_type": "policy",
-      "country_id": "us",
-      "country_name": "United States",
-      "country_flag": "🇺🇸",
+      "country_id": "ca",
+      "country_name": "Canada",
+      "country_flag": "🇨🇦",
       "category": "Education admissions",
-      "score": 41.0,
-      "action_advice": "顾问建议：提醒有意申请犹他大学的学生关注该校在得州及周边地区的招生宣讲活动，主动联系区域招生顾问获取最新录取与奖学金信息。"
+      "score": 37.0,
+      "action_advice": "顾问建议：提醒有意走快速通道的学生及时核对IRCC官网关于工作邀请的最新要求，确认雇主offer是否符合加分条件，并关注申请截止日与工签审理时效，尽早规划材料准备。"
     }
   ]
 }
