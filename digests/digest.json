@@ -1,20 +1,48 @@
 {
   "date_label": "2026-11-08",
-  "slot": "evening",
+  "slot": "morning",
   "items": [
     {
-      "title_en": "First Work and Holiday visa - Immigration and citizenship Website",
-      "summary_en": "First Work and Holiday visa Immigration and citizenship Website",
-      "summary_zh": "澳大利亚内政部官网发布首个打工与度假签证（Work and Holiday visa）相关信息，涉及申请截止日期、签证与工作许可政策以及材料要求和审理时效。该政策面向符合条件的国际青年，为其提供短期工作与度假机会，国际生需关注申请窗口和材料准备时间。",
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOMzlJSE0zYmNXN0VpZ0NyMTFIZEJaX19WdjRWOWIzdVRseWhocWI1WS1nOHpyQ21BNTVqR0N1NjVIRTlGaEVHeHJvMmRya0tPXzlkc2hNVWdxcHRfTTJnbk8zQnQtbXlFQndxRXJKb1BHUHh6V2ZmVlZydWM0cERhN0ZXRVA3TE9EWkJhc0s2RkRINF93Ri1BdGtma2otWkF2dVdJVXJic18?oc=5",
-      "source_name": "Department of Home Affairs",
+      "title_en": "South Korea’s free tuition plan could reshape international student recruitment - The PIE News",
+      "summary_en": "South Korea’s free tuition plan could reshape international student recruitment The PIE News",
+      "summary_zh": "韩国推出免费学费计划，可能重塑国际学生招生格局。该政策动向涉及学费与录取趋势，或降低留学成本并吸引更多国际生源。顾问需关注其对招生数据和申请策略的潜在影响。",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQbmJIS1JvYzNUX3dncEk0YUdWaE5ISlZqT2NPY04wRDl3bGxyMnFyWHNwNTV5Y3dDbVYxbkZGeXNBb0lXNVhRb291ME51RkpNbDZ1dU1IcW1ycVNhV00wcEx6REttM3lNdTduYVVrTEdLQ3RpQTM0dE1HeUtZbEROYVVpc0p1T0N5dE4tRWl2a1hMSFhodDVFQkt0REJmOGhfXzBtLQ?oc=5",
+      "source_name": "The PIE News",
+      "source_type": "media",
+      "country_id": "global",
+      "country_name": "International",
+      "country_flag": "🌍",
+      "category": "Education admissions",
+      "score": 45.0,
+      "action_advice": "顾问建议：提醒学生和家长密切关注韩国免费学费计划的具体适用条件与申请截止时间，并结合自身预算提前规划备选留学方案。"
+    },
+    {
+      "title_en": "Canada extends 150,000 international student arrivals target to 2029 - The PIE News",
+      "summary_en": "Canada extends 150,000 international student arrivals target to 2029 The PIE News",
+      "summary_zh": "加拿大将15万国际学生入境目标延长至2029年，表明其在国际教育招生上保持中长期规划。该政策动向意味着未来数年加拿大对国际学生的接收规模仍将维持较高水平，对有意赴加留学的学生是积极信号，但具体录取与签证审理节奏仍需关注。",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOaXNuWFBpSlV4MXN6RVoyY2lHTjVuSnU4cGpybVRIbnVNTnhXMERySEF5X2dWdTBPMTJVSmhRU1FfeVdOWWgtY05kUGw0T3R5eWgxNHdPS2ZaZDZBUFJXYW1hbnVaVDd5S0x4Q2tZWTZTenA5V0N4N0IzNFpqdXFVRDJkaUpCZ3hSQUdIWXFSdkR2Nmpud2c?oc=5",
+      "source_name": "The PIE News",
+      "source_type": "media",
+      "country_id": "global",
+      "country_name": "International",
+      "country_flag": "🌍",
+      "category": "Education policy",
+      "score": 40.0,
+      "action_advice": "顾问建议：提醒学生和家长关注加拿大各院校及签证政策的最新细则，尽早规划申请与材料准备，避免因政策调整影响入学时间。"
+    },
+    {
+      "title_en": "V36 -1- - Immigration & Checkpoints Authority (ICA)",
+      "summary_en": "V36 -1- Immigration & Checkpoints Authority (ICA)",
+      "summary_zh": "新加坡移民与关卡局（ICA）发布V36 -1-号公告，涉及移民与检查站管理相关事项。该政策动向可能影响国际学生的签证办理与入境流程，需关注后续具体细则对留学生签证申请及通关要求的变化。",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFB3VE1PY1FJM0gtQTdVMDlJRjNBdTVMUWo5M3Y4ZVF0aG9LU0Y1bnlQdGgtamllMGstZU5ObnBjdWVTMWZEcnB2Z25UT01lOXlTZDgtdERaM3RzYWpiUDJSbkFmbnI0VjNYWEVWaUNPbUljVV9FWU1Bdy15ekZwZw?oc=5",
+      "source_name": "ICA Singapore",
       "source_type": "immigration",
-      "country_id": "au",
-      "country_name": "Australia",
-      "country_flag": "🇦🇺",
+      "country_id": "sg",
+      "country_name": "Singapore",
+      "country_flag": "🇸🇬",
       "category": "Immigration policy",
       "score": 5.0,
-      "action_advice": "顾问建议：提醒有意申请的学生尽快核对资格与材料清单，关注官方申请截止日期并预留充足审理时间，避免错过本轮申请。"
+      "action_advice": "顾问建议：提醒学生和家长密切关注ICA官方公告的后续细则，提前确认签证与入境材料要求，避免因政策调整影响出行安排。"
     }
   ]
 }
