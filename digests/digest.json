@@ -1,34 +1,62 @@
 {
-  "date_label": "2026-11-10",
-  "slot": "morning",
+  "date_label": "2026-11-11",
+  "slot": "evening",
   "items": [
     {
-      "title_en": "DOJ Sues Penn State Over In-State Tuition for Noncitizens - Inside Higher Ed",
-      "summary_en": "DOJ Sues Penn State Over In-State Tuition for Noncitizens Inside Higher Ed",
-      "summary_zh": "美国司法部起诉宾夕法尼亚州立大学，指控其向非公民学生提供州内学费待遇违反联邦法律。此案涉及公立大学学费政策与公民身份挂钩的合规问题，可能影响国际学生申请州内学费优惠的资格认定。若判决收紧，国际学生将更难享受州内学费，就读成本可能上升。",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNVHpNWG5FLUt6TjU2QmJMR292TURCeS0xM0ZUTTBndUNObVlmZ0ZCSS1qZ2l0M0Q1Ykc0N0o0SDdYOFNCQ0dZOUF3R21iLU9vaVpoRDVuZUNuckpRWW10Rlp6Q3JKcTlWR1RqNUlBZVVfS1F3T0pNQVRsbXJrakdNVEx6NUNyeXZKdnhRT3N1b0F2RmlLbXZrdGZkQzZuVVV0cHpmMWRMUzJCVmZTWmxYYXdFLWV6Zw?oc=5",
+      "title_en": "Connecting the dots: Why UK admissions needs systems thinking - UCAS",
+      "summary_en": "Connecting the dots: Why UK admissions needs systems thinking UCAS",
+      "summary_zh": "UCAS 发布文章，呼吁英国招生体系采用系统性思维，连接各环节以提升整体效率。该讨论可能影响未来申请流程、截止日期安排及审理时效，对国际学生的申请节奏和材料准备提出更高要求。",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPR2hiaVlpbDlBOVR6cWxTLWg1SkkwX1p6YXVPV0N5SmI1bDY1V2NDWEpmUVFMVlFtOHEyU1U4RjRMd3dtb2N4M3piakFyYVZQdzFkWUNvUjcxYW9YRzhNbDRwWDVybVpqUUlvRGw5dzZnZEhfcEJvS19RVEF5TW9SRWdidGNHbm02V0V2QnJOcllWel83UUU3aWVFdmctV3BCMThkTmxxOXA?oc=5",
+      "source_name": "UCAS",
+      "source_type": "policy",
+      "country_id": "uk",
+      "country_name": "United Kingdom",
+      "country_flag": "🇬🇧",
+      "category": "Education admissions",
+      "score": 44.0,
+      "action_advice": "顾问建议：提醒学生和家长密切关注 UCAS 及各院校最新截止日期与审理时效变化，提前准备申请材料并预留签证办理时间。"
+    },
+    {
+      "title_en": "International Student Interest in U.S. Surges After Midterms - Inside Higher Ed",
+      "summary_en": "International Student Interest in U.S. Surges After Midterms Inside Higher Ed",
+      "summary_zh": "美国中期选举后，国际学生赴美留学兴趣显著上升。该报道聚焦申请截止日期、签证与工作签证政策以及材料审理时效等关键环节，提示政策与招生环境可能发生变化，对国际生的申请节奏和签证规划产生直接影响。",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQWFhFeVBMVTItSVZVa1ZtcGZTOVYzQkgxX3NuOGt0NWMyaFMzbWFybURHSE5iNUhEZ3FyVzJhTjEzVTBTN0NSX3ZvLUk1bVpMa2pLblFRRmdkTDJRc0JBdVlxbHpLd0dIRXB5UkxrQjNXOGhETzVVQ2oycF93eFQ1OG1RajM3RFpLWUFoNlhVTFY2NVY5NkYwZEZXdHktVFVJUm5nZzVOX01QWVk1T1J5bzh2MDI?oc=5",
       "source_name": "Inside Higher Ed",
       "source_type": "media",
       "country_id": "us",
       "country_name": "United States",
       "country_flag": "🇺🇸",
-      "category": "Education admissions",
+      "category": "Education policy",
       "score": 40.0,
-      "action_advice": "顾问建议：提醒计划申请宾州州立大学的学生和家长密切关注此案进展，暂勿将州内学费优惠纳入留学预算，并按国际生学费标准做好资金准备。"
+      "action_advice": "顾问建议：提醒学生和家长密切关注目标院校申请截止日及签证、工签政策最新动态，尽早准备申请材料并预留充足的审理时间。"
     },
     {
-      "title_en": "Changes for resident visa applications if dependent children are unlawfully in New Zealand - Immigration New Zealand",
-      "summary_en": "Changes for resident visa applications if dependent children are unlawfully in New Zealand Immigration New Zealand",
-      "summary_zh": "新西兰移民局宣布，若受抚养子女在新西兰处于非法居留状态，居民签证申请将面临新变化。该政策调整可能影响携带子女申请居民签证的国际学生家庭，需特别关注子女的合法居留身份问题。",
-      "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNZVRfT0pGbUk0MVJxVGpkMTF2VjF5SUxfTS1QUGVRa3FFVDh5c0FiTjhFektDeHZYbDgxZEdvX2dONWtWaXZUbU8yX29rNkNtZXhUbFpwWENCcHpCVFlTdk01SERjN2VQYUIwdUx0dVExaS1NcXpGVFJoTWhXY2dTbjRVUmhJVWZEVU5vNlFhRmE2WmhiQzYyY3ZST0p6Q0dHUkZ6LUJpdm12Y3dLZWZaUnc4Z2NfcC0tRGhGWm5QaE5vcUFwWVpEcUlqQWFfZjBIOUd4czRTdFhxcUZs?oc=5",
-      "source_name": "Immigration New Zealand",
-      "source_type": "immigration",
-      "country_id": "nz",
-      "country_name": "New Zealand",
-      "country_flag": "🇳🇿",
+      "title_en": "Rural Community Immigration Program: Settlement funds - Canada.ca",
+      "summary_en": "Rural Community Immigration Program: Settlement funds Canada.ca",
+      "summary_zh": "加拿大IRCC官网发布农村社区移民项目（RCIP）的定居资金要求说明，明确了申请该试点项目所需的资金证明标准。该项目为愿意在指定农村社区工作和定居的申请人提供移民途径，资金要求直接影响申请资格与材料准备。对国际生而言，如考虑通过农村社区雇主担保或试点项目转移民，需提前核对自身资金状况是否符合要求。",
+      "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPTE5iM0FpVmJ0UlAzcVdfcDBVSWw5VU9rZUwtUUxYZnNCQmNrV2xxMlFPSHRzQXVPSDhZNzlBRjF6NVhBVFpJNlhvbFlyTEdUa1ZVUi1YLVBZcDVEYjAyc3g0aFppazBqb3M4VGo4VUpRMnFEcld3OFFwRHJHZ1Vmc2h2T0hKLWtNc3kzVXZXX2p3aE9iYnVscGRxVVJ5bEc3N0xVNU5JQ2RWRG9NblFjYnF5S210aThmRk5EbGhLUThsbHI4R1dNLWlSYTdjU0R5SFVoVURrUjRtVk1jZGVqMG8zeTJPLVppNk5KVk80SQ?oc=5",
+      "source_name": "IRCC (Google News)",
+      "source_type": "policy",
+      "country_id": "ca",
+      "country_name": "Canada",
+      "country_flag": "🇨🇦",
       "category": "Immigration policy",
-      "score": 5.0,
-      "action_advice": "顾问建议：提醒有受抚养子女的学生家长，在提交居民签证申请前务必确认子女在新西兰的居留身份合法，避免因子女非法居留导致申请受阻。"
+      "score": 37.0,
+      "action_advice": "顾问建议：提醒有意走农村社区移民路径的学生尽早查阅IRCC官网确认最新定居资金标准，并据此规划资金证明与申请时间，避免因材料不符影响递交。"
+    },
+    {
+      "title_en": "UK business schools’ finances strained amid fall in international enrolments - The PIE News",
+      "summary_en": "UK business schools’ finances strained amid fall in international enrolments The PIE News",
+      "summary_zh": "英国商学院因国际学生入学人数下降而面临财务压力，这一趋势可能影响课程设置、招生名额及对国际生的支持服务。国际生源减少或促使院校调整录取策略与申请审理节奏，学生需关注目标院校的招生动态及截止日期变化。",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNTS02dG5HbmVkU2M0N2tnRHlOQ0RSR1c3c0FDVml2Zmd4cGNsT0NiN1ZDaG91T25xUlcyeUJKVXp6UktCQWlteEtyYjBxbGlmSTJFZXNRY1RjR3prZzVDUEoxUk1STHpnLWd4VDdpU2p2MzVncHpEMDNGZ2xGaDk3b0NDUXIwbEFUMHBkdDBFY2V5V1VPcWNCRklJM0owWEFyM2k0VHNrTDJneW5ZWDEw?oc=5",
+      "source_name": "The PIE News",
+      "source_type": "media",
+      "country_id": "global",
+      "country_name": "International",
+      "country_flag": "🌍",
+      "category": "Education admissions",
+      "score": 35.0,
+      "action_advice": "顾问建议：提醒学生和家长尽早确认目标商学院的最新申请截止日与材料要求，并密切留意签证与工签政策更新，避免因审理时效延误入学。"
     }
   ]
 }
