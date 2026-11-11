@@ -1,40 +1,12 @@
 {
   "date_label": "2026-11-11",
-  "slot": "evening",
+  "slot": "morning",
   "items": [
     {
-      "title_en": "Connecting the dots: Why UK admissions needs systems thinking - UCAS",
-      "summary_en": "Connecting the dots: Why UK admissions needs systems thinking UCAS",
-      "summary_zh": "UCAS 发布文章，呼吁英国招生体系采用系统性思维，连接各环节以提升整体效率。该讨论可能影响未来申请流程、截止日期安排及审理时效，对国际学生的申请节奏和材料准备提出更高要求。",
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPR2hiaVlpbDlBOVR6cWxTLWg1SkkwX1p6YXVPV0N5SmI1bDY1V2NDWEpmUVFMVlFtOHEyU1U4RjRMd3dtb2N4M3piakFyYVZQdzFkWUNvUjcxYW9YRzhNbDRwWDVybVpqUUlvRGw5dzZnZEhfcEJvS19RVEF5TW9SRWdidGNHbm02V0V2QnJOcllWel83UUU3aWVFdmctV3BCMThkTmxxOXA?oc=5",
-      "source_name": "UCAS",
-      "source_type": "policy",
-      "country_id": "uk",
-      "country_name": "United Kingdom",
-      "country_flag": "🇬🇧",
-      "category": "Education admissions",
-      "score": 44.0,
-      "action_advice": "顾问建议：提醒学生和家长密切关注 UCAS 及各院校最新截止日期与审理时效变化，提前准备申请材料并预留签证办理时间。"
-    },
-    {
-      "title_en": "International Student Interest in U.S. Surges After Midterms - Inside Higher Ed",
-      "summary_en": "International Student Interest in U.S. Surges After Midterms Inside Higher Ed",
-      "summary_zh": "美国中期选举后，国际学生赴美留学兴趣显著上升。该报道聚焦申请截止日期、签证与工作签证政策以及材料审理时效等关键环节，提示政策与招生环境可能发生变化，对国际生的申请节奏和签证规划产生直接影响。",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQWFhFeVBMVTItSVZVa1ZtcGZTOVYzQkgxX3NuOGt0NWMyaFMzbWFybURHSE5iNUhEZ3FyVzJhTjEzVTBTN0NSX3ZvLUk1bVpMa2pLblFRRmdkTDJRc0JBdVlxbHpLd0dIRXB5UkxrQjNXOGhETzVVQ2oycF93eFQ1OG1RajM3RFpLWUFoNlhVTFY2NVY5NkYwZEZXdHktVFVJUm5nZzVOX01QWVk1T1J5bzh2MDI?oc=5",
-      "source_name": "Inside Higher Ed",
-      "source_type": "media",
-      "country_id": "us",
-      "country_name": "United States",
-      "country_flag": "🇺🇸",
-      "category": "Education policy",
-      "score": 40.0,
-      "action_advice": "顾问建议：提醒学生和家长密切关注目标院校申请截止日及签证、工签政策最新动态，尽早准备申请材料并预留充足的审理时间。"
-    },
-    {
-      "title_en": "Rural Community Immigration Program: Settlement funds - Canada.ca",
-      "summary_en": "Rural Community Immigration Program: Settlement funds Canada.ca",
-      "summary_zh": "加拿大IRCC官网发布农村社区移民项目（RCIP）的定居资金要求说明，明确了申请该试点项目所需的资金证明标准。该项目为愿意在指定农村社区工作和定居的申请人提供移民途径，资金要求直接影响申请资格与材料准备。对国际生而言，如考虑通过农村社区雇主担保或试点项目转移民，需提前核对自身资金状况是否符合要求。",
-      "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxPTE5iM0FpVmJ0UlAzcVdfcDBVSWw5VU9rZUwtUUxYZnNCQmNrV2xxMlFPSHRzQXVPSDhZNzlBRjF6NVhBVFpJNlhvbFlyTEdUa1ZVUi1YLVBZcDVEYjAyc3g0aFppazBqb3M4VGo4VUpRMnFEcld3OFFwRHJHZ1Vmc2h2T0hKLWtNc3kzVXZXX2p3aE9iYnVscGRxVVJ5bEc3N0xVNU5JQ2RWRG9NblFjYnF5S210aThmRk5EbGhLUThsbHI4R1dNLWlSYTdjU0R5SFVoVURrUjRtVk1jZGVqMG8zeTJPLVppNk5KVk80SQ?oc=5",
+      "title_en": "Disposal at sea permit ATL-00718-1 - Canada.ca",
+      "summary_en": "Disposal at sea permit ATL-00718-1 Canada.ca",
+      "summary_zh": "加拿大政府官网发布海洋处置许可证 ATL-00718-1，属于环境管理类行政公告，并非移民或留学政策调整。该信息与招生数据、学费及录取趋势无直接关联，对国际学生赴加留学申请没有实质影响。",
+      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPSkhrUGtOQ1E3Mk9qQ05DeTFmZnZ4aEhaTjc3LW9lYTZwcVBBeHdJamdfUzhKczFMbTNZeURBZ3JYemZLZnNhUTFpZFo0SzBfYUVmVnRXeDg2TS1fdGlBM1BfbTVlaXdOMnBqelVaZFZmYkhzMWdNZ3N1SjNwTlZYdnM5TEk2elhuOTVLWkZRTXVWQ015TUU1SE1fUEs1X3R6Nkkwd3k1MFdxQ0tscWQyS1lFZDBiY1NPWGY5RloyZlpudDBteGhobUtkeE9YOU9lRmI2cUZRa3dOaEl0elBCeHJ3?oc=5",
       "source_name": "IRCC (Google News)",
       "source_type": "policy",
       "country_id": "ca",
@@ -42,21 +14,49 @@
       "country_flag": "🇨🇦",
       "category": "Immigration policy",
       "score": 37.0,
-      "action_advice": "顾问建议：提醒有意走农村社区移民路径的学生尽早查阅IRCC官网确认最新定居资金标准，并据此规划资金证明与申请时间，避免因材料不符影响递交。"
+      "action_advice": "顾问建议：无需就此通知学生或家长，继续按既定计划跟进院校申请与签证材料准备即可。"
     },
     {
-      "title_en": "UK business schools’ finances strained amid fall in international enrolments - The PIE News",
-      "summary_en": "UK business schools’ finances strained amid fall in international enrolments The PIE News",
-      "summary_zh": "英国商学院因国际学生入学人数下降而面临财务压力，这一趋势可能影响课程设置、招生名额及对国际生的支持服务。国际生源减少或促使院校调整录取策略与申请审理节奏，学生需关注目标院校的招生动态及截止日期变化。",
-      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNTS02dG5HbmVkU2M0N2tnRHlOQ0RSR1c3c0FDVml2Zmd4cGNsT0NiN1ZDaG91T25xUlcyeUJKVXp6UktCQWlteEtyYjBxbGlmSTJFZXNRY1RjR3prZzVDUEoxUk1STHpnLWd4VDdpU2p2MzVncHpEMDNGZ2xGaDk3b0NDUXIwbEFUMHBkdDBFY2V5V1VPcWNCRklJM0owWEFyM2k0VHNrTDJneW5ZWDEw?oc=5",
-      "source_name": "The PIE News",
-      "source_type": "media",
-      "country_id": "global",
-      "country_name": "International",
-      "country_flag": "🌍",
-      "category": "Education admissions",
-      "score": 35.0,
-      "action_advice": "顾问建议：提醒学生和家长尽早确认目标商学院的最新申请截止日与材料要求，并密切留意签证与工签政策更新，避免因审理时效延误入学。"
+      "title_en": "Disposal at sea permit ATL-00719-1 - Canada.ca",
+      "summary_en": "Disposal at sea permit ATL-00719-1 Canada.ca",
+      "summary_zh": "加拿大政府官网发布海洋处置许可 ATL-00719-1，属于环境管理类行政公告，并非移民或留学政策调整，对国际学生招生、签证或学费无直接影响。该信息与本期早报关注的招生数据、政策动向及录取趋势无关。",
+      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNa1hDNnVJc19rT0doeGVjMmxTc0hEUVpGR0tLRVAzeEJiYkdVOUdPTnFNcWhjdEs1ZDQ3eWVVSnVaempwSGN4bE9MUXJ3eGtvVElGZHZnVjNZSm5PV0YyNXpsZnJuZ3MxRTlLMzhXOTFzT0g0ZGRFSW1nVkNtbmJKaXF3cjlUNmptWWYzd0VsU3hBemFjM19HcW5HZnBmU2VxbGpUY09xbFRJTmNWNlRYMUJlYUVtaGQ0R3Nxbk9jdi00SXltbmpWT2hCMEYtY1U5eHNhTmFfRXhoa01iczhOTFln?oc=5",
+      "source_name": "IRCC (Google News)",
+      "source_type": "policy",
+      "country_id": "ca",
+      "country_name": "Canada",
+      "country_flag": "🇨🇦",
+      "category": "Immigration policy",
+      "score": 37.0,
+      "action_advice": "顾问建议：无需就此通知学生或家长，继续关注 IRCC 官方发布的学签、招生及学费相关政策更新即可。"
+    },
+    {
+      "title_en": "Disposal at sea permit PYR-00707-1 - Canada.ca",
+      "summary_en": "Disposal at sea permit PYR-00707-1 Canada.ca",
+      "summary_zh": "加拿大政府官网发布海洋处置许可 PYR-00707-1 相关信息，属于环境管理类行政公告，并非移民或留学政策调整。该内容与招生数据、学费及录取趋势无关，对国际学生无直接影响。",
+      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOTlJScUNuRG9fUVVTUDRzY28tQllORjRQYmNpWkRDbWM0b1J0SkI4cnlmcWZoSkczZ0lNQ25mcEEycVRoWXBvSE1IYU83emhFbkVIOG5hWUVveUs2ODJQekRLeEhRdndtazBHZVJsM2p3OTJnTlpNQ1dkT2ZNbEhHWG4wQUN4QlRFOWgwNUJaMWZuRHRyM1hkbF9SZVctdURTeGxLYU9xU1FzRTAxV0dDaVdMVHpTbS1fSnRSc0llclhHUHBtNGliRnZkcVJlNHpmQUtvTXBOaGNOVWd4SzR2aEln?oc=5",
+      "source_name": "IRCC (Google News)",
+      "source_type": "policy",
+      "country_id": "ca",
+      "country_name": "Canada",
+      "country_flag": "🇨🇦",
+      "category": "Immigration policy",
+      "score": 37.0,
+      "action_advice": "顾问建议：无需就此通知学生或家长，继续关注 IRCC 官方发布的留学与签证政策更新即可。"
+    },
+    {
+      "title_en": "(Subclass 771) Transit visa - Immigration and citizenship Website",
+      "summary_en": "(Subclass 771) Transit visa Immigration and citizenship Website",
+      "summary_zh": "澳大利亚内政部官网更新了过境签证（子类771）的页面信息，该签证允许旅客在澳大利亚过境停留不超过72小时。此次更新属于移民政策类信息调整，对计划经澳大利亚中转的国际学生具有参考价值，需关注过境条件及是否需要提前申请。",
+      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQcUhocndfd0lPdGdnbXowVVpTOEUwOWVPSk9mdUJuVUUwY0M0a3hMQzJNM3BtdFpYUmVYZnFCWi12bXNpSC1IbFdsUi1vNzFBUjYxeGlRbXBYcWhWbTh2dndlZUhkUWk3UnhGbEpGWi1ZekQ4VW1vbjNnUU1HdXRsajRiQQ?oc=5",
+      "source_name": "Department of Home Affairs",
+      "source_type": "immigration",
+      "country_id": "au",
+      "country_name": "Australia",
+      "country_flag": "🇦🇺",
+      "category": "Immigration policy",
+      "score": 5.0,
+      "action_advice": "顾问建议：提醒经澳大利亚中转的学生及家长提前确认是否需要办理771过境签证，并核对停留时限与申请材料，避免因中转手续不全影响行程。"
     }
   ]
 }
